@@ -1,0 +1,42 @@
+\hypertarget{DBScan_8cpp}{\section{D\-B\-Scan.\-cpp File Reference}
+\label{DBScan_8cpp}\index{D\-B\-Scan.\-cpp@{D\-B\-Scan.\-cpp}}
+}
+{\ttfamily \#include \char`\"{}structs.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}prototypes.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}globals.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$fstream$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$set$>$}\\*
+{\ttfamily \#include \char`\"{}R\-Tree.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}D\-B\-Scan.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$omp.\-h$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$unistd.\-h$>$}\\*
+Include dependency graph for D\-B\-Scan.\-cpp\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{DBScan_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const int \hyperlink{DBScan_8cpp_af9cfd37b7d8ec7350c9c03f7396dfd4f}{N\-U\-M\-M\-I\-N\-R\-E\-U\-S\-E\-P\-T\-S} =100
+\item 
+std\-::vector$<$ int $>$ \hyperlink{DBScan_8cpp_aea636a4db974aa94b19bd2f1f06e0ff1}{neighbour\-List}
+\item 
+std\-::vector$<$ int $>$ \hyperlink{DBScan_8cpp_a1e7b0a62b9706f13c1f2dc5cdf37336b}{neighbour\-List\-Parallel} \mbox{[}N\-S\-E\-A\-R\-C\-H\-T\-H\-R\-E\-A\-D\-S\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\hypertarget{DBScan_8cpp_aea636a4db974aa94b19bd2f1f06e0ff1}{\index{D\-B\-Scan.\-cpp@{D\-B\-Scan.\-cpp}!neighbour\-List@{neighbour\-List}}
+\index{neighbour\-List@{neighbour\-List}!DBScan.cpp@{D\-B\-Scan.\-cpp}}
+\subsubsection[{neighbour\-List}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$int$>$ neighbour\-List}}\label{DBScan_8cpp_aea636a4db974aa94b19bd2f1f06e0ff1}
+\hypertarget{DBScan_8cpp_a1e7b0a62b9706f13c1f2dc5cdf37336b}{\index{D\-B\-Scan.\-cpp@{D\-B\-Scan.\-cpp}!neighbour\-List\-Parallel@{neighbour\-List\-Parallel}}
+\index{neighbour\-List\-Parallel@{neighbour\-List\-Parallel}!DBScan.cpp@{D\-B\-Scan.\-cpp}}
+\subsubsection[{neighbour\-List\-Parallel}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$int$>$ neighbour\-List\-Parallel\mbox{[}N\-S\-E\-A\-R\-C\-H\-T\-H\-R\-E\-A\-D\-S\mbox{]}}}\label{DBScan_8cpp_a1e7b0a62b9706f13c1f2dc5cdf37336b}
+\hypertarget{DBScan_8cpp_af9cfd37b7d8ec7350c9c03f7396dfd4f}{\index{D\-B\-Scan.\-cpp@{D\-B\-Scan.\-cpp}!N\-U\-M\-M\-I\-N\-R\-E\-U\-S\-E\-P\-T\-S@{N\-U\-M\-M\-I\-N\-R\-E\-U\-S\-E\-P\-T\-S}}
+\index{N\-U\-M\-M\-I\-N\-R\-E\-U\-S\-E\-P\-T\-S@{N\-U\-M\-M\-I\-N\-R\-E\-U\-S\-E\-P\-T\-S}!DBScan.cpp@{D\-B\-Scan.\-cpp}}
+\subsubsection[{N\-U\-M\-M\-I\-N\-R\-E\-U\-S\-E\-P\-T\-S}]{\setlength{\rightskip}{0pt plus 5cm}const int N\-U\-M\-M\-I\-N\-R\-E\-U\-S\-E\-P\-T\-S =100}}\label{DBScan_8cpp_af9cfd37b7d8ec7350c9c03f7396dfd4f}

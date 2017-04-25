@@ -1,0 +1,5 @@
+<map id="RTree::Iterator::FindNextData" name="RTree::Iterator::FindNextData">
+<area shape="rect" id="node2" href="$classRTree_1_1Iterator.html#a6f75eaf8c9ebe60f4a8cacbb7f4998fe" title="Pop element off iteration stack (For internal use only) " alt="" coords="255,5,393,32"/>
+<area shape="rect" id="node3" href="$structRTree_1_1Node.html#a3e34e35a8482978d456885d4bac76de4" title="RTree::Node::IsLeaf" alt="" coords="253,56,395,83"/>
+<area shape="rect" id="node4" href="$classRTree_1_1Iterator.html#afb35dcd6c652052684d5e8801d9cda7c" title="Push node and branch onto iteration stack (For internal use only) " alt="" coords="251,107,397,133"/>
+</map>

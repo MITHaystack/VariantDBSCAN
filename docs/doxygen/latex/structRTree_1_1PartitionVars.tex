@@ -1,0 +1,104 @@
+\hypertarget{structRTree_1_1PartitionVars}{\section{R\-Tree$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-:\-:Partition\-Vars Struct Reference}
+\label{structRTree_1_1PartitionVars}\index{R\-Tree$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::\-Partition\-Vars@{R\-Tree$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::\-Partition\-Vars}}
+}
+
+
+Variables for finding a split partition.  
+
+
+
+
+{\ttfamily \#include \char`\"{}R\-Tree.\-h\char`\"{}}
+
+
+
+Collaboration diagram for R\-Tree$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-:\-:Partition\-Vars\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structRTree_1_1PartitionVars__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{structRTree_1_1PartitionVars_aa4395bc76d345f0a081c164bf68d4744acff1a730449e4b3de500024b4b6b6175}{N\-O\-T\-\_\-\-T\-A\-K\-E\-N} = -\/1
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{structRTree_1_1PartitionVars_a15b570f93f49884ccd637731d033da51}{m\-\_\-partition} \mbox{[}\hyperlink{classRTree_afaccb2e611f17ff46b623771ad7043d7ac05afe446df73fa67991e5199453a37f}{M\-A\-X\-N\-O\-D\-E\-S}+1\mbox{]}
+\item 
+int \hyperlink{structRTree_1_1PartitionVars_a145b95cd4210c8e2dbb2015d379906e4}{m\-\_\-total}
+\item 
+int \hyperlink{structRTree_1_1PartitionVars_a150d1fb0e446df4172c68eafbd0fc00d}{m\-\_\-min\-Fill}
+\item 
+int \hyperlink{structRTree_1_1PartitionVars_acbf70d46606cebe104471635d1c06c56}{m\-\_\-count} \mbox{[}2\mbox{]}
+\item 
+\hyperlink{structRTree_1_1Rect}{Rect} \hyperlink{structRTree_1_1PartitionVars_ab59894eefb7f3f6cc7254bbc90cd2570}{m\-\_\-cover} \mbox{[}2\mbox{]}
+\item 
+E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L \hyperlink{structRTree_1_1PartitionVars_aadf67cd0f0c071993f47b77b1e7a3b78}{m\-\_\-area} \mbox{[}2\mbox{]}
+\item 
+\hyperlink{structRTree_1_1Branch}{Branch} \hyperlink{structRTree_1_1PartitionVars_a73b5e398b4073ff923afaa765367958b}{m\-\_\-branch\-Buf} \mbox{[}\hyperlink{classRTree_afaccb2e611f17ff46b623771ad7043d7ac05afe446df73fa67991e5199453a37f}{M\-A\-X\-N\-O\-D\-E\-S}+1\mbox{]}
+\item 
+int \hyperlink{structRTree_1_1PartitionVars_abaaed8bac2d71bc6debadc5136078a0b}{m\-\_\-branch\-Count}
+\item 
+\hyperlink{structRTree_1_1Rect}{Rect} \hyperlink{structRTree_1_1PartitionVars_a61d9eaaae4128365146d923123f4b8d1}{m\-\_\-cover\-Split}
+\item 
+E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L \hyperlink{structRTree_1_1PartitionVars_ada65c4c4ae559f43f3b632bda1b7b7f2}{m\-\_\-cover\-Split\-Area}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$struct R\-Tree$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::\-Partition\-Vars}
+
+Variables for finding a split partition. 
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{structRTree_1_1PartitionVars_aa4395bc76d345f0a081c164bf68d4744}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ anonymous enum}}\label{structRTree_1_1PartitionVars_aa4395bc76d345f0a081c164bf68d4744}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{N\-O\-T\-\_\-\-T\-A\-K\-E\-N@{N\-O\-T\-\_\-\-T\-A\-K\-E\-N}!R\-Tree\-::\-Partition\-Vars@{R\-Tree\-::\-Partition\-Vars}}\index{R\-Tree\-::\-Partition\-Vars@{R\-Tree\-::\-Partition\-Vars}!N\-O\-T\-\_\-\-T\-A\-K\-E\-N@{N\-O\-T\-\_\-\-T\-A\-K\-E\-N}}\item[{\em 
+\hypertarget{structRTree_1_1PartitionVars_aa4395bc76d345f0a081c164bf68d4744acff1a730449e4b3de500024b4b6b6175}{N\-O\-T\-\_\-\-T\-A\-K\-E\-N}\label{structRTree_1_1PartitionVars_aa4395bc76d345f0a081c164bf68d4744acff1a730449e4b3de500024b4b6b6175}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Field Documentation}
+\hypertarget{structRTree_1_1PartitionVars_aadf67cd0f0c071993f47b77b1e7a3b78}{\index{R\-Tree\-::\-Partition\-Vars@{R\-Tree\-::\-Partition\-Vars}!m\-\_\-area@{m\-\_\-area}}
+\index{m\-\_\-area@{m\-\_\-area}!RTree::PartitionVars@{R\-Tree\-::\-Partition\-Vars}}
+\subsubsection[{m\-\_\-area}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Partition\-Vars\-::m\-\_\-area\mbox{[}2\mbox{]}}}\label{structRTree_1_1PartitionVars_aadf67cd0f0c071993f47b77b1e7a3b78}
+\hypertarget{structRTree_1_1PartitionVars_a73b5e398b4073ff923afaa765367958b}{\index{R\-Tree\-::\-Partition\-Vars@{R\-Tree\-::\-Partition\-Vars}!m\-\_\-branch\-Buf@{m\-\_\-branch\-Buf}}
+\index{m\-\_\-branch\-Buf@{m\-\_\-branch\-Buf}!RTree::PartitionVars@{R\-Tree\-::\-Partition\-Vars}}
+\subsubsection[{m\-\_\-branch\-Buf}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ {\bf Branch} {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Partition\-Vars\-::m\-\_\-branch\-Buf\mbox{[}{\bf M\-A\-X\-N\-O\-D\-E\-S}+1\mbox{]}}}\label{structRTree_1_1PartitionVars_a73b5e398b4073ff923afaa765367958b}
+\hypertarget{structRTree_1_1PartitionVars_abaaed8bac2d71bc6debadc5136078a0b}{\index{R\-Tree\-::\-Partition\-Vars@{R\-Tree\-::\-Partition\-Vars}!m\-\_\-branch\-Count@{m\-\_\-branch\-Count}}
+\index{m\-\_\-branch\-Count@{m\-\_\-branch\-Count}!RTree::PartitionVars@{R\-Tree\-::\-Partition\-Vars}}
+\subsubsection[{m\-\_\-branch\-Count}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ int {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Partition\-Vars\-::m\-\_\-branch\-Count}}\label{structRTree_1_1PartitionVars_abaaed8bac2d71bc6debadc5136078a0b}
+\hypertarget{structRTree_1_1PartitionVars_acbf70d46606cebe104471635d1c06c56}{\index{R\-Tree\-::\-Partition\-Vars@{R\-Tree\-::\-Partition\-Vars}!m\-\_\-count@{m\-\_\-count}}
+\index{m\-\_\-count@{m\-\_\-count}!RTree::PartitionVars@{R\-Tree\-::\-Partition\-Vars}}
+\subsubsection[{m\-\_\-count}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ int {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Partition\-Vars\-::m\-\_\-count\mbox{[}2\mbox{]}}}\label{structRTree_1_1PartitionVars_acbf70d46606cebe104471635d1c06c56}
+\hypertarget{structRTree_1_1PartitionVars_ab59894eefb7f3f6cc7254bbc90cd2570}{\index{R\-Tree\-::\-Partition\-Vars@{R\-Tree\-::\-Partition\-Vars}!m\-\_\-cover@{m\-\_\-cover}}
+\index{m\-\_\-cover@{m\-\_\-cover}!RTree::PartitionVars@{R\-Tree\-::\-Partition\-Vars}}
+\subsubsection[{m\-\_\-cover}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ {\bf Rect} {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Partition\-Vars\-::m\-\_\-cover\mbox{[}2\mbox{]}}}\label{structRTree_1_1PartitionVars_ab59894eefb7f3f6cc7254bbc90cd2570}
+\hypertarget{structRTree_1_1PartitionVars_a61d9eaaae4128365146d923123f4b8d1}{\index{R\-Tree\-::\-Partition\-Vars@{R\-Tree\-::\-Partition\-Vars}!m\-\_\-cover\-Split@{m\-\_\-cover\-Split}}
+\index{m\-\_\-cover\-Split@{m\-\_\-cover\-Split}!RTree::PartitionVars@{R\-Tree\-::\-Partition\-Vars}}
+\subsubsection[{m\-\_\-cover\-Split}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ {\bf Rect} {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Partition\-Vars\-::m\-\_\-cover\-Split}}\label{structRTree_1_1PartitionVars_a61d9eaaae4128365146d923123f4b8d1}
+\hypertarget{structRTree_1_1PartitionVars_ada65c4c4ae559f43f3b632bda1b7b7f2}{\index{R\-Tree\-::\-Partition\-Vars@{R\-Tree\-::\-Partition\-Vars}!m\-\_\-cover\-Split\-Area@{m\-\_\-cover\-Split\-Area}}
+\index{m\-\_\-cover\-Split\-Area@{m\-\_\-cover\-Split\-Area}!RTree::PartitionVars@{R\-Tree\-::\-Partition\-Vars}}
+\subsubsection[{m\-\_\-cover\-Split\-Area}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Partition\-Vars\-::m\-\_\-cover\-Split\-Area}}\label{structRTree_1_1PartitionVars_ada65c4c4ae559f43f3b632bda1b7b7f2}
+\hypertarget{structRTree_1_1PartitionVars_a150d1fb0e446df4172c68eafbd0fc00d}{\index{R\-Tree\-::\-Partition\-Vars@{R\-Tree\-::\-Partition\-Vars}!m\-\_\-min\-Fill@{m\-\_\-min\-Fill}}
+\index{m\-\_\-min\-Fill@{m\-\_\-min\-Fill}!RTree::PartitionVars@{R\-Tree\-::\-Partition\-Vars}}
+\subsubsection[{m\-\_\-min\-Fill}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ int {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Partition\-Vars\-::m\-\_\-min\-Fill}}\label{structRTree_1_1PartitionVars_a150d1fb0e446df4172c68eafbd0fc00d}
+\hypertarget{structRTree_1_1PartitionVars_a15b570f93f49884ccd637731d033da51}{\index{R\-Tree\-::\-Partition\-Vars@{R\-Tree\-::\-Partition\-Vars}!m\-\_\-partition@{m\-\_\-partition}}
+\index{m\-\_\-partition@{m\-\_\-partition}!RTree::PartitionVars@{R\-Tree\-::\-Partition\-Vars}}
+\subsubsection[{m\-\_\-partition}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ int {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Partition\-Vars\-::m\-\_\-partition\mbox{[}{\bf M\-A\-X\-N\-O\-D\-E\-S}+1\mbox{]}}}\label{structRTree_1_1PartitionVars_a15b570f93f49884ccd637731d033da51}
+\hypertarget{structRTree_1_1PartitionVars_a145b95cd4210c8e2dbb2015d379906e4}{\index{R\-Tree\-::\-Partition\-Vars@{R\-Tree\-::\-Partition\-Vars}!m\-\_\-total@{m\-\_\-total}}
+\index{m\-\_\-total@{m\-\_\-total}!RTree::PartitionVars@{R\-Tree\-::\-Partition\-Vars}}
+\subsubsection[{m\-\_\-total}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ int {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Partition\-Vars\-::m\-\_\-total}}\label{structRTree_1_1PartitionVars_a145b95cd4210c8e2dbb2015d379906e4}
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{RTree_8h}{R\-Tree.\-h}\end{DoxyCompactItemize}

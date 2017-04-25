@@ -1,0 +1,2 @@
+//shared library prototype
+extern "C" int libVDBSCAN(double * inputx, double * inputy, unsigned int datasetSize, double * inputEpsilon, unsigned int * inputMinpts, unsigned int numVariants, int MBBsize, unsigned int * retArr, bool verbose);

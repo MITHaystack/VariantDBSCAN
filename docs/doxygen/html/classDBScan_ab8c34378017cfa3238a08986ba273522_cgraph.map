@@ -1,0 +1,7 @@
+<map id="DBScan::getNeighboursParallelMPB" name="DBScan::getNeighboursParallelMPB">
+<area shape="rect" id="node2" href="$classDBScan.html#a8d882d909001edadc803668743908cc9" title="DBScan::generateMBBNormal" alt="" coords="304,5,504,32"/>
+<area shape="rect" id="node4" href="$prototypes_8h.html#a7fecd955d0dfe6edde6077a0f61f950d" title="Callback function for the R&#45;tree. " alt="" coords="288,56,520,83"/>
+<area shape="rect" id="node5" href="$classDBScan.html#a62ea9b65ded887ede6d8b675aef2ce17" title="DBScan::filterCandidatesMPB" alt="" coords="305,107,503,133"/>
+<area shape="rect" id="node3" href="$classDBScan.html#ae133eef10ed34bf676d46b1dee6af918" title="DBScan::generateMBB" alt="" coords="581,5,739,32"/>
+<area shape="rect" id="node6" href="$classDBScan.html#ab42218899ad9b1f5b432df5a3c0c82d3" title="DBScan::EuclidianDistance" alt="" coords="568,107,752,133"/>
+</map>

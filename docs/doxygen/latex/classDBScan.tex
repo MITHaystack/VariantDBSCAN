@@ -1,0 +1,416 @@
+\hypertarget{classDBScan}{\section{D\-B\-Scan Class Reference}
+\label{classDBScan}\index{D\-B\-Scan@{D\-B\-Scan}}
+}
+
+
+{\ttfamily \#include \char`\"{}D\-B\-Scan.\-h\char`\"{}}
+
+
+
+Collaboration diagram for D\-B\-Scan\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDBScan__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classDBScan_adbbf078f15acf6fae053d8c288b2e97b}{D\-B\-Scan} (std\-::vector$<$ struct \hyperlink{structdataElem}{data\-Elem} $>$ $\ast$ptr\-Data, double epsilon, int minimum\-Pts, \hyperlink{classRTree}{R\-Tree}$<$ int, double, 2, float $>$ $\ast$index\-Ptr, std\-::vector$<$ std\-::vector$<$ int $>$ $>$ $\ast$ptr\-\_\-\-M\-P\-B\-\_\-lookup, \hyperlink{classRTree}{R\-Tree}$<$ int, double, 2, float $>$ $\ast$high\-Res\-Index)
+\item 
+void \hyperlink{classDBScan_a55a2c6e7364f2780b2032182d3616bde}{alg\-D\-B\-Scan\-Parallel} ()
+\item 
+void \hyperlink{classDBScan_a7b7115631994fa281c1dca261973e6a5}{alg\-D\-B\-Scan\-Parallel\-Reuse\-Cluster\-Results} ()
+\item 
+void \hyperlink{classDBScan_a7d85d5c3c8c06c22dd4c77769baf8104}{generate\-M\-B\-B\-Around\-Cluster} (std\-::vector$<$ int $>$ $\ast$cluster\-Points, double $\ast$M\-B\-B\-\_\-min, double $\ast$M\-B\-B\-\_\-max)
+\item 
+void \hyperlink{classDBScan_a25383a5401de748f1525cd1aa3705afb}{append\-M\-B\-B\-By\-Epsilon} (double $\ast$M\-B\-B\-\_\-min, double $\ast$M\-B\-B\-\_\-max, double eps)
+\item 
+void \hyperlink{classDBScan_abaad1d98678fbf99b1c6c67fc3474a3f}{D\-B\-Scan\-Parallel\-M\-P\-B\-S\-T\-U\-M\-P} (int finished\-Instance\-I\-D, bool $\ast$destroyed\-Arr, std\-::vector$<$ int $>$ $\ast$candidates\-To\-Grow\-From)
+\item 
+void \hyperlink{classDBScan_a31e46e492a6b4a6baa6682f8faf0e2de}{assign\-Points\-To\-Predefined\-Cluster} (int finished\-Instance\-I\-D)
+\item 
+void \hyperlink{classDBScan_a186a8a9666a4b66bd002e8bf568b0747}{set\-Cluster\-Schedule\-Density} (std\-::vector$<$ int $>$ $\ast$schedule, std\-::vector$<$ int $>$ cluster\-Arr\mbox{[}$\,$\mbox{]}, int num\-Clusters\-In\-Other\-Instance)
+\item 
+void \hyperlink{classDBScan_ab6eb34d3cad064c121cc156920e62270}{schedule\-Selector} (std\-::vector$<$ int $>$ $\ast$schedule, std\-::vector$<$ int $>$ cluster\-Arr\mbox{[}$\,$\mbox{]}, int num\-Clusters\-In\-Other\-Instance)
+\item 
+int \hyperlink{classDBScan_ab9f99900ed37f14a166d9c9cc486101a}{get\-D\-B\-Scan\-Num\-Clusters} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \hyperlink{classDBScan_abf662378982ad01ee4b4b0e713887d42}{comparedensity\-Structfn} (const \hyperlink{structdensityStruct}{density\-Struct} \&a, const \hyperlink{structdensityStruct}{density\-Struct} \&b)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+std\-::vector$<$ int $>$ \hyperlink{classDBScan_aa363c8aa510fcbd54979f16047d5f0a3}{cluster\-I\-Ds}
+\item 
+std\-::vector$<$ \hyperlink{classDBScan}{D\-B\-Scan} $\ast$ $>$ \hyperlink{classDBScan_a8270fd572c31089b33fff1e047c00633}{instance\-Vect}
+\item 
+int \hyperlink{classDBScan_abf8ba9bc0c2b8ff8fab4c9d070f78ec7}{num\-Clusters\-For\-Stats}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classDBScan_ab919d93ea8f7c4ef59d5112b05ec109b}{initialize\-Visited\-Points} (int size)
+\item 
+void \hyperlink{classDBScan_ae133eef10ed34bf676d46b1dee6af918}{generate\-M\-B\-B} (struct \hyperlink{structdataElem}{data\-Elem} $\ast$point, double \hyperlink{classDBScan_a9878125297973f29db8b41287e0c9b4d}{distance}, double $\ast$M\-B\-B\-\_\-min, double $\ast$M\-B\-B\-\_\-max)
+\item 
+bool \hyperlink{classDBScan_a8d882d909001edadc803668743908cc9}{generate\-M\-B\-B\-Normal} (struct \hyperlink{structdataElem}{data\-Elem} $\ast$point, double \hyperlink{classDBScan_a9878125297973f29db8b41287e0c9b4d}{distance}, double $\ast$M\-B\-B\-\_\-min, double $\ast$M\-B\-B\-\_\-max)
+\item 
+int \hyperlink{classDBScan_a62ea9b65ded887ede6d8b675aef2ce17}{filter\-Candidates\-M\-P\-B} (struct \hyperlink{structdataElem}{data\-Elem} $\ast$point, std\-::vector$<$ int $>$ $\ast$candidate\-Set, double \hyperlink{classDBScan_a9878125297973f29db8b41287e0c9b4d}{distance}, std\-::vector$<$ int $>$ $\ast$set\-I\-Ds\-In\-Dist\-Ptr)
+\item 
+void \hyperlink{classDBScan_ab8c34378017cfa3238a08986ba273522}{get\-Neighbours\-Parallel\-M\-P\-B} (struct \hyperlink{structdataElem}{data\-Elem} $\ast$point, double \hyperlink{classDBScan_a9878125297973f29db8b41287e0c9b4d}{distance}, std\-::vector$<$ int $>$ $\ast$set\-I\-Ds\-In\-Dist\-Ptr)
+\item 
+double \hyperlink{classDBScan_ab42218899ad9b1f5b432df5a3c0c82d3}{Euclidian\-Distance} (struct \hyperlink{structdataElem}{data\-Elem} $\ast$point1, struct \hyperlink{structdataElem}{data\-Elem} $\ast$point2)
+\item 
+void \hyperlink{classDBScan_af954708e115d00319a5cb53faffd52b1}{copy\-Vect} (std\-::vector$<$ int $>$ $\ast$dest, std\-::vector$<$ int $>$ $\ast$source)
+\item 
+void \hyperlink{classDBScan_acb4f0c75d09349200c0a354033d32e6c}{initialize\-Cluster\-I\-Ds} (int size)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classDBScan_a9878125297973f29db8b41287e0c9b4d}{distance}
+\item 
+int \hyperlink{classDBScan_ad117fc93029bcc699b919bb17e658292}{min\-Pts}
+\item 
+int \hyperlink{classDBScan_af88f51ce2f50e9f26c813426131497e9}{cluster\-Cnt}
+\item 
+std\-::vector$<$ bool $>$ \hyperlink{classDBScan_a03bbe4567af4354c0cba4e580cf72578}{visited}
+\item 
+std\-::vector$<$ struct \hyperlink{structdataElem}{data\-Elem} $>$ $\ast$ \hyperlink{classDBScan_a247c7a0e0cd8f2aa24770bced14b82b5}{data\-Points}
+\item 
+std\-::vector$<$ std\-::vector$<$ int $>$ $>$ $\ast$ \hyperlink{classDBScan_a4f4c2b033e9c3ec3bfb1cc43744e36a3}{ptr\-M\-P\-Blookup}
+\item 
+std\-::vector$<$ int $>$ \hyperlink{classDBScan_affdefd0416bc3ba42ee2c069d8ac7eb3}{set\-I\-Ds\-In\-Dist}
+\item 
+\hyperlink{classRTree}{R\-Tree}$<$ int, double, 2, float $>$ $\ast$ \hyperlink{classDBScan_a406fc451a7b6b25b11cb08545a03e281}{tree}
+\item 
+\hyperlink{classRTree}{R\-Tree}$<$ int, double, 2, float $>$ $\ast$ \hyperlink{classDBScan_a8fd30e735fa3b426e519a8ecb7586c4d}{tree\-High\-Resolution}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classDBScan_adbbf078f15acf6fae053d8c288b2e97b}{\index{D\-B\-Scan@{D\-B\-Scan}!D\-B\-Scan@{D\-B\-Scan}}
+\index{D\-B\-Scan@{D\-B\-Scan}!DBScan@{D\-B\-Scan}}
+\subsubsection[{D\-B\-Scan}]{\setlength{\rightskip}{0pt plus 5cm}D\-B\-Scan\-::\-D\-B\-Scan (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ struct {\bf data\-Elem} $>$ $\ast$}]{ptr\-Data, }
+\item[{double}]{epsilon, }
+\item[{int}]{minimum\-Pts, }
+\item[{{\bf R\-Tree}$<$ int, double, 2, float $>$ $\ast$}]{index\-Ptr, }
+\item[{std\-::vector$<$ std\-::vector$<$ int $>$ $>$ $\ast$}]{ptr\-\_\-\-M\-P\-B\-\_\-lookup, }
+\item[{{\bf R\-Tree}$<$ int, double, 2, float $>$ $\ast$}]{high\-Res\-Index}
+\end{DoxyParamCaption}
+)}}\label{classDBScan_adbbf078f15acf6fae053d8c288b2e97b}
+Constructor for the implementation that reuses results from one variant to another variant\-: Input\-: pointer to the data elements ($\ast$ptr\-Data) the distance\-: epsilon the minimum number of points to form a cluster\-: minimum\-Pts a pointer to the R-\/tree index\-: $\ast$index\-Ptr a lookup array to the data elements stored in each M\-B\-B of the index\-: $\ast$ptr\-\_\-\-M\-P\-B\-\_\-lookup The high resolution R-\/tree that's used when \char`\"{}growing the cluster\char`\"{} when reusing data\-: $\ast$high\-Res\-Index 
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDBScan_adbbf078f15acf6fae053d8c288b2e97b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classDBScan_a55a2c6e7364f2780b2032182d3616bde}{\index{D\-B\-Scan@{D\-B\-Scan}!alg\-D\-B\-Scan\-Parallel@{alg\-D\-B\-Scan\-Parallel}}
+\index{alg\-D\-B\-Scan\-Parallel@{alg\-D\-B\-Scan\-Parallel}!DBScan@{D\-B\-Scan}}
+\subsubsection[{alg\-D\-B\-Scan\-Parallel}]{\setlength{\rightskip}{0pt plus 5cm}void D\-B\-Scan\-::alg\-D\-B\-Scan\-Parallel (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classDBScan_a55a2c6e7364f2780b2032182d3616bde}
+Allows clustering in parallel of multiple variants Uses a single R-\/tree index, but separate buffers for each thread 
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDBScan_a55a2c6e7364f2780b2032182d3616bde_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classDBScan_a7b7115631994fa281c1dca261973e6a5}{\index{D\-B\-Scan@{D\-B\-Scan}!alg\-D\-B\-Scan\-Parallel\-Reuse\-Cluster\-Results@{alg\-D\-B\-Scan\-Parallel\-Reuse\-Cluster\-Results}}
+\index{alg\-D\-B\-Scan\-Parallel\-Reuse\-Cluster\-Results@{alg\-D\-B\-Scan\-Parallel\-Reuse\-Cluster\-Results}!DBScan@{D\-B\-Scan}}
+\subsubsection[{alg\-D\-B\-Scan\-Parallel\-Reuse\-Cluster\-Results}]{\setlength{\rightskip}{0pt plus 5cm}void D\-B\-Scan\-::alg\-D\-B\-Scan\-Parallel\-Reuse\-Cluster\-Results (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classDBScan_a7b7115631994fa281c1dca261973e6a5}
+D\-B\-S\-C\-A\-N version that takes the clustered output from one instance and then reuses it for another instance 
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDBScan_a7b7115631994fa281c1dca261973e6a5_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classDBScan_a25383a5401de748f1525cd1aa3705afb}{\index{D\-B\-Scan@{D\-B\-Scan}!append\-M\-B\-B\-By\-Epsilon@{append\-M\-B\-B\-By\-Epsilon}}
+\index{append\-M\-B\-B\-By\-Epsilon@{append\-M\-B\-B\-By\-Epsilon}!DBScan@{D\-B\-Scan}}
+\subsubsection[{append\-M\-B\-B\-By\-Epsilon}]{\setlength{\rightskip}{0pt plus 5cm}void D\-B\-Scan\-::append\-M\-B\-B\-By\-Epsilon (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{M\-B\-B\-\_\-min, }
+\item[{double $\ast$}]{M\-B\-B\-\_\-max, }
+\item[{double}]{eps}
+\end{DoxyParamCaption}
+)}}\label{classDBScan_a25383a5401de748f1525cd1aa3705afb}
+Method that appends an M\-B\-B by epsilon \hypertarget{classDBScan_a31e46e492a6b4a6baa6682f8faf0e2de}{\index{D\-B\-Scan@{D\-B\-Scan}!assign\-Points\-To\-Predefined\-Cluster@{assign\-Points\-To\-Predefined\-Cluster}}
+\index{assign\-Points\-To\-Predefined\-Cluster@{assign\-Points\-To\-Predefined\-Cluster}!DBScan@{D\-B\-Scan}}
+\subsubsection[{assign\-Points\-To\-Predefined\-Cluster}]{\setlength{\rightskip}{0pt plus 5cm}void D\-B\-Scan\-::assign\-Points\-To\-Predefined\-Cluster (
+\begin{DoxyParamCaption}
+\item[{int}]{finished\-Instance\-I\-D}
+\end{DoxyParamCaption}
+)}}\label{classDBScan_a31e46e492a6b4a6baa6682f8faf0e2de}
+Method that builds new clusters from previously generated clusters 
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDBScan_a31e46e492a6b4a6baa6682f8faf0e2de_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classDBScan_abf662378982ad01ee4b4b0e713887d42}{\index{D\-B\-Scan@{D\-B\-Scan}!comparedensity\-Structfn@{comparedensity\-Structfn}}
+\index{comparedensity\-Structfn@{comparedensity\-Structfn}!DBScan@{D\-B\-Scan}}
+\subsubsection[{comparedensity\-Structfn}]{\setlength{\rightskip}{0pt plus 5cm}bool D\-B\-Scan\-::comparedensity\-Structfn (
+\begin{DoxyParamCaption}
+\item[{const {\bf density\-Struct} \&}]{a, }
+\item[{const {\bf density\-Struct} \&}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classDBScan_abf662378982ad01ee4b4b0e713887d42}
+Comparison function \hypertarget{classDBScan_af954708e115d00319a5cb53faffd52b1}{\index{D\-B\-Scan@{D\-B\-Scan}!copy\-Vect@{copy\-Vect}}
+\index{copy\-Vect@{copy\-Vect}!DBScan@{D\-B\-Scan}}
+\subsubsection[{copy\-Vect}]{\setlength{\rightskip}{0pt plus 5cm}void D\-B\-Scan\-::copy\-Vect (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ int $>$ $\ast$}]{dest, }
+\item[{std\-::vector$<$ int $>$ $\ast$}]{source}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classDBScan_af954708e115d00319a5cb53faffd52b1}
+copies the contents from the source vector and appends them to the dest vector \hypertarget{classDBScan_abaad1d98678fbf99b1c6c67fc3474a3f}{\index{D\-B\-Scan@{D\-B\-Scan}!D\-B\-Scan\-Parallel\-M\-P\-B\-S\-T\-U\-M\-P@{D\-B\-Scan\-Parallel\-M\-P\-B\-S\-T\-U\-M\-P}}
+\index{D\-B\-Scan\-Parallel\-M\-P\-B\-S\-T\-U\-M\-P@{D\-B\-Scan\-Parallel\-M\-P\-B\-S\-T\-U\-M\-P}!DBScan@{D\-B\-Scan}}
+\subsubsection[{D\-B\-Scan\-Parallel\-M\-P\-B\-S\-T\-U\-M\-P}]{\setlength{\rightskip}{0pt plus 5cm}void D\-B\-Scan\-::\-D\-B\-Scan\-Parallel\-M\-P\-B\-S\-T\-U\-M\-P (
+\begin{DoxyParamCaption}
+\item[{int}]{finished\-Instance\-I\-D, }
+\item[{bool $\ast$}]{destroyed\-Arr, }
+\item[{std\-::vector$<$ int $>$ $\ast$}]{candidates\-To\-Grow\-From}
+\end{DoxyParamCaption}
+)}}\label{classDBScan_abaad1d98678fbf99b1c6c67fc3474a3f}
+\char`\"{}\-Stump\char`\"{} of \hyperlink{classDBScan}{D\-B\-Scan} used when assigning points to predefined clusters just the part of the algorithm that expands the eps-\/neighbourhood 
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDBScan_abaad1d98678fbf99b1c6c67fc3474a3f_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classDBScan_ab42218899ad9b1f5b432df5a3c0c82d3}{\index{D\-B\-Scan@{D\-B\-Scan}!Euclidian\-Distance@{Euclidian\-Distance}}
+\index{Euclidian\-Distance@{Euclidian\-Distance}!DBScan@{D\-B\-Scan}}
+\subsubsection[{Euclidian\-Distance}]{\setlength{\rightskip}{0pt plus 5cm}double D\-B\-Scan\-::\-Euclidian\-Distance (
+\begin{DoxyParamCaption}
+\item[{struct {\bf data\-Elem} $\ast$}]{point1, }
+\item[{struct {\bf data\-Elem} $\ast$}]{point2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classDBScan_ab42218899ad9b1f5b432df5a3c0c82d3}
+Euclidian distance calculation between two points to filter the candidate set \hypertarget{classDBScan_a62ea9b65ded887ede6d8b675aef2ce17}{\index{D\-B\-Scan@{D\-B\-Scan}!filter\-Candidates\-M\-P\-B@{filter\-Candidates\-M\-P\-B}}
+\index{filter\-Candidates\-M\-P\-B@{filter\-Candidates\-M\-P\-B}!DBScan@{D\-B\-Scan}}
+\subsubsection[{filter\-Candidates\-M\-P\-B}]{\setlength{\rightskip}{0pt plus 5cm}int D\-B\-Scan\-::filter\-Candidates\-M\-P\-B (
+\begin{DoxyParamCaption}
+\item[{struct {\bf data\-Elem} $\ast$}]{point, }
+\item[{std\-::vector$<$ int $>$ $\ast$}]{candidate\-Set, }
+\item[{double}]{distance, }
+\item[{std\-::vector$<$ int $>$ $\ast$}]{set\-I\-Ds\-In\-Dist\-Ptr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classDBScan_a62ea9b65ded887ede6d8b675aef2ce17}
+Filter candidate points from the index search 
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDBScan_a62ea9b65ded887ede6d8b675aef2ce17_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classDBScan_ae133eef10ed34bf676d46b1dee6af918}{\index{D\-B\-Scan@{D\-B\-Scan}!generate\-M\-B\-B@{generate\-M\-B\-B}}
+\index{generate\-M\-B\-B@{generate\-M\-B\-B}!DBScan@{D\-B\-Scan}}
+\subsubsection[{generate\-M\-B\-B}]{\setlength{\rightskip}{0pt plus 5cm}void D\-B\-Scan\-::generate\-M\-B\-B (
+\begin{DoxyParamCaption}
+\item[{struct {\bf data\-Elem} $\ast$}]{point, }
+\item[{double}]{distance, }
+\item[{double $\ast$}]{M\-B\-B\-\_\-min, }
+\item[{double $\ast$}]{M\-B\-B\-\_\-max}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classDBScan_ae133eef10ed34bf676d46b1dee6af918}
+M\-B\-B generation. The \char`\"{}\-Normal\char`\"{} refers to when we had the periodic boundary condition for the datasets and we did not need to wrap around generate a query M\-B\-B around the point to search for the values \hypertarget{classDBScan_a7d85d5c3c8c06c22dd4c77769baf8104}{\index{D\-B\-Scan@{D\-B\-Scan}!generate\-M\-B\-B\-Around\-Cluster@{generate\-M\-B\-B\-Around\-Cluster}}
+\index{generate\-M\-B\-B\-Around\-Cluster@{generate\-M\-B\-B\-Around\-Cluster}!DBScan@{D\-B\-Scan}}
+\subsubsection[{generate\-M\-B\-B\-Around\-Cluster}]{\setlength{\rightskip}{0pt plus 5cm}void D\-B\-Scan\-::generate\-M\-B\-B\-Around\-Cluster (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ int $>$ $\ast$}]{cluster\-Points, }
+\item[{double $\ast$}]{M\-B\-B\-\_\-min, }
+\item[{double $\ast$}]{M\-B\-B\-\_\-max}
+\end{DoxyParamCaption}
+)}}\label{classDBScan_a7d85d5c3c8c06c22dd4c77769baf8104}
+Method that generates an M\-B\-B around a cluster for reusing data between variants \hypertarget{classDBScan_a8d882d909001edadc803668743908cc9}{\index{D\-B\-Scan@{D\-B\-Scan}!generate\-M\-B\-B\-Normal@{generate\-M\-B\-B\-Normal}}
+\index{generate\-M\-B\-B\-Normal@{generate\-M\-B\-B\-Normal}!DBScan@{D\-B\-Scan}}
+\subsubsection[{generate\-M\-B\-B\-Normal}]{\setlength{\rightskip}{0pt plus 5cm}bool D\-B\-Scan\-::generate\-M\-B\-B\-Normal (
+\begin{DoxyParamCaption}
+\item[{struct {\bf data\-Elem} $\ast$}]{point, }
+\item[{double}]{distance, }
+\item[{double $\ast$}]{M\-B\-B\-\_\-min, }
+\item[{double $\ast$}]{M\-B\-B\-\_\-max}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classDBScan_a8d882d909001edadc803668743908cc9}
+M\-B\-B generation. The \char`\"{}\-Normal\char`\"{} refers to when we had the periodic boundary condition for the datasets and we did not need to wrap around generate a query M\-B\-B around the point to search for the values 
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDBScan_a8d882d909001edadc803668743908cc9_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classDBScan_ab9f99900ed37f14a166d9c9cc486101a}{\index{D\-B\-Scan@{D\-B\-Scan}!get\-D\-B\-Scan\-Num\-Clusters@{get\-D\-B\-Scan\-Num\-Clusters}}
+\index{get\-D\-B\-Scan\-Num\-Clusters@{get\-D\-B\-Scan\-Num\-Clusters}!DBScan@{D\-B\-Scan}}
+\subsubsection[{get\-D\-B\-Scan\-Num\-Clusters}]{\setlength{\rightskip}{0pt plus 5cm}int D\-B\-Scan\-::get\-D\-B\-Scan\-Num\-Clusters (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classDBScan_ab9f99900ed37f14a166d9c9cc486101a}
+Gets the number of clusters generated by a \hyperlink{classDBScan}{D\-B\-Scan} instance for reusing data \hypertarget{classDBScan_ab8c34378017cfa3238a08986ba273522}{\index{D\-B\-Scan@{D\-B\-Scan}!get\-Neighbours\-Parallel\-M\-P\-B@{get\-Neighbours\-Parallel\-M\-P\-B}}
+\index{get\-Neighbours\-Parallel\-M\-P\-B@{get\-Neighbours\-Parallel\-M\-P\-B}!DBScan@{D\-B\-Scan}}
+\subsubsection[{get\-Neighbours\-Parallel\-M\-P\-B}]{\setlength{\rightskip}{0pt plus 5cm}void D\-B\-Scan\-::get\-Neighbours\-Parallel\-M\-P\-B (
+\begin{DoxyParamCaption}
+\item[{struct {\bf data\-Elem} $\ast$}]{point, }
+\item[{double}]{distance, }
+\item[{std\-::vector$<$ int $>$ $\ast$}]{set\-I\-Ds\-In\-Dist\-Ptr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classDBScan_ab8c34378017cfa3238a08986ba273522}
+Epsilon-\/neighborhood search 
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDBScan_ab8c34378017cfa3238a08986ba273522_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classDBScan_acb4f0c75d09349200c0a354033d32e6c}{\index{D\-B\-Scan@{D\-B\-Scan}!initialize\-Cluster\-I\-Ds@{initialize\-Cluster\-I\-Ds}}
+\index{initialize\-Cluster\-I\-Ds@{initialize\-Cluster\-I\-Ds}!DBScan@{D\-B\-Scan}}
+\subsubsection[{initialize\-Cluster\-I\-Ds}]{\setlength{\rightskip}{0pt plus 5cm}void D\-B\-Scan\-::initialize\-Cluster\-I\-Ds (
+\begin{DoxyParamCaption}
+\item[{int}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classDBScan_acb4f0c75d09349200c0a354033d32e6c}
+initializes the vector storing the I\-Ds of the cluster of the data points \hypertarget{classDBScan_ab919d93ea8f7c4ef59d5112b05ec109b}{\index{D\-B\-Scan@{D\-B\-Scan}!initialize\-Visited\-Points@{initialize\-Visited\-Points}}
+\index{initialize\-Visited\-Points@{initialize\-Visited\-Points}!DBScan@{D\-B\-Scan}}
+\subsubsection[{initialize\-Visited\-Points}]{\setlength{\rightskip}{0pt plus 5cm}void D\-B\-Scan\-::initialize\-Visited\-Points (
+\begin{DoxyParamCaption}
+\item[{int}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classDBScan_ab919d93ea8f7c4ef59d5112b05ec109b}
+initialize all of the points to initially not be visited \hypertarget{classDBScan_ab6eb34d3cad064c121cc156920e62270}{\index{D\-B\-Scan@{D\-B\-Scan}!schedule\-Selector@{schedule\-Selector}}
+\index{schedule\-Selector@{schedule\-Selector}!DBScan@{D\-B\-Scan}}
+\subsubsection[{schedule\-Selector}]{\setlength{\rightskip}{0pt plus 5cm}void D\-B\-Scan\-::schedule\-Selector (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ int $>$ $\ast$}]{schedule, }
+\item[{std\-::vector$<$ int $>$}]{cluster\-Arr\mbox{[}$\,$\mbox{]}, }
+\item[{int}]{num\-Clusters\-In\-Other\-Instance}
+\end{DoxyParamCaption}
+)}}\label{classDBScan_ab6eb34d3cad064c121cc156920e62270}
+Selects the cluster reuse criteria Clus\-Density in the paper only 
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDBScan_ab6eb34d3cad064c121cc156920e62270_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classDBScan_a186a8a9666a4b66bd002e8bf568b0747}{\index{D\-B\-Scan@{D\-B\-Scan}!set\-Cluster\-Schedule\-Density@{set\-Cluster\-Schedule\-Density}}
+\index{set\-Cluster\-Schedule\-Density@{set\-Cluster\-Schedule\-Density}!DBScan@{D\-B\-Scan}}
+\subsubsection[{set\-Cluster\-Schedule\-Density}]{\setlength{\rightskip}{0pt plus 5cm}void D\-B\-Scan\-::set\-Cluster\-Schedule\-Density (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ int $>$ $\ast$}]{schedule, }
+\item[{std\-::vector$<$ int $>$}]{cluster\-Arr\mbox{[}$\,$\mbox{]}, }
+\item[{int}]{num\-Clusters\-In\-Other\-Instance}
+\end{DoxyParamCaption}
+)}}\label{classDBScan_a186a8a9666a4b66bd002e8bf568b0747}
+\hyperlink{classSchedule}{Schedule} of cluster reuse processing based on density (Clus\-Density in the paper) 
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDBScan_a186a8a9666a4b66bd002e8bf568b0747_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Field Documentation}
+\hypertarget{classDBScan_af88f51ce2f50e9f26c813426131497e9}{\index{D\-B\-Scan@{D\-B\-Scan}!cluster\-Cnt@{cluster\-Cnt}}
+\index{cluster\-Cnt@{cluster\-Cnt}!DBScan@{D\-B\-Scan}}
+\subsubsection[{cluster\-Cnt}]{\setlength{\rightskip}{0pt plus 5cm}int D\-B\-Scan\-::cluster\-Cnt\hspace{0.3cm}{\ttfamily [private]}}}\label{classDBScan_af88f51ce2f50e9f26c813426131497e9}
+the number of clusters found after calling the algorithm \hypertarget{classDBScan_aa363c8aa510fcbd54979f16047d5f0a3}{\index{D\-B\-Scan@{D\-B\-Scan}!cluster\-I\-Ds@{cluster\-I\-Ds}}
+\index{cluster\-I\-Ds@{cluster\-I\-Ds}!DBScan@{D\-B\-Scan}}
+\subsubsection[{cluster\-I\-Ds}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$int$>$ D\-B\-Scan\-::cluster\-I\-Ds}}\label{classDBScan_aa363c8aa510fcbd54979f16047d5f0a3}
+Vector that keeps track of the assignment of the points to a cluster. Cluster 0 means a noise point. The indices of the vector correspond to the data points. Element i in cluster\-I\-Ds corresponds to the cluster that data element i is in within the data\-Points struct. \hypertarget{classDBScan_a247c7a0e0cd8f2aa24770bced14b82b5}{\index{D\-B\-Scan@{D\-B\-Scan}!data\-Points@{data\-Points}}
+\index{data\-Points@{data\-Points}!DBScan@{D\-B\-Scan}}
+\subsubsection[{data\-Points}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$struct {\bf data\-Elem}$>$$\ast$ D\-B\-Scan\-::data\-Points\hspace{0.3cm}{\ttfamily [private]}}}\label{classDBScan_a247c7a0e0cd8f2aa24770bced14b82b5}
+pointer to the data elements \hypertarget{classDBScan_a9878125297973f29db8b41287e0c9b4d}{\index{D\-B\-Scan@{D\-B\-Scan}!distance@{distance}}
+\index{distance@{distance}!DBScan@{D\-B\-Scan}}
+\subsubsection[{distance}]{\setlength{\rightskip}{0pt plus 5cm}double D\-B\-Scan\-::distance\hspace{0.3cm}{\ttfamily [private]}}}\label{classDBScan_a9878125297973f29db8b41287e0c9b4d}
+D\-B\-S\-C\-A\-N Epsilon parameter \hypertarget{classDBScan_a8270fd572c31089b33fff1e047c00633}{\index{D\-B\-Scan@{D\-B\-Scan}!instance\-Vect@{instance\-Vect}}
+\index{instance\-Vect@{instance\-Vect}!DBScan@{D\-B\-Scan}}
+\subsubsection[{instance\-Vect}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf D\-B\-Scan} $\ast$$>$ D\-B\-Scan\-::instance\-Vect}}\label{classDBScan_a8270fd572c31089b33fff1e047c00633}
+Vector of pointers to the \hyperlink{classDBScan}{D\-B\-Scan} instances that may have points for data reuse \hypertarget{classDBScan_ad117fc93029bcc699b919bb17e658292}{\index{D\-B\-Scan@{D\-B\-Scan}!min\-Pts@{min\-Pts}}
+\index{min\-Pts@{min\-Pts}!DBScan@{D\-B\-Scan}}
+\subsubsection[{min\-Pts}]{\setlength{\rightskip}{0pt plus 5cm}int D\-B\-Scan\-::min\-Pts\hspace{0.3cm}{\ttfamily [private]}}}\label{classDBScan_ad117fc93029bcc699b919bb17e658292}
+D\-B\-S\-C\-A\-N Min\-Pts parameter \hypertarget{classDBScan_abf8ba9bc0c2b8ff8fab4c9d070f78ec7}{\index{D\-B\-Scan@{D\-B\-Scan}!num\-Clusters\-For\-Stats@{num\-Clusters\-For\-Stats}}
+\index{num\-Clusters\-For\-Stats@{num\-Clusters\-For\-Stats}!DBScan@{D\-B\-Scan}}
+\subsubsection[{num\-Clusters\-For\-Stats}]{\setlength{\rightskip}{0pt plus 5cm}int D\-B\-Scan\-::num\-Clusters\-For\-Stats}}\label{classDBScan_abf8ba9bc0c2b8ff8fab4c9d070f78ec7}
+The number of clusters created (for statistics) \hypertarget{classDBScan_a4f4c2b033e9c3ec3bfb1cc43744e36a3}{\index{D\-B\-Scan@{D\-B\-Scan}!ptr\-M\-P\-Blookup@{ptr\-M\-P\-Blookup}}
+\index{ptr\-M\-P\-Blookup@{ptr\-M\-P\-Blookup}!DBScan@{D\-B\-Scan}}
+\subsubsection[{ptr\-M\-P\-Blookup}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$std\-::vector$<$int$>$ $>$$\ast$ D\-B\-Scan\-::ptr\-M\-P\-Blookup\hspace{0.3cm}{\ttfamily [private]}}}\label{classDBScan_a4f4c2b033e9c3ec3bfb1cc43744e36a3}
+pointer to the lookup array for multiple pointers per M\-B\-B (M\-P\-B) \hypertarget{classDBScan_affdefd0416bc3ba42ee2c069d8ac7eb3}{\index{D\-B\-Scan@{D\-B\-Scan}!set\-I\-Ds\-In\-Dist@{set\-I\-Ds\-In\-Dist}}
+\index{set\-I\-Ds\-In\-Dist@{set\-I\-Ds\-In\-Dist}!DBScan@{D\-B\-Scan}}
+\subsubsection[{set\-I\-Ds\-In\-Dist}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$int$>$ D\-B\-Scan\-::set\-I\-Ds\-In\-Dist\hspace{0.3cm}{\ttfamily [private]}}}\label{classDBScan_affdefd0416bc3ba42ee2c069d8ac7eb3}
+temporary vector used to store the ids of the candidates that are actually within the threshold distance \hypertarget{classDBScan_a406fc451a7b6b25b11cb08545a03e281}{\index{D\-B\-Scan@{D\-B\-Scan}!tree@{tree}}
+\index{tree@{tree}!DBScan@{D\-B\-Scan}}
+\subsubsection[{tree}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-Tree}$<$int,double,2,float$>$$\ast$ D\-B\-Scan\-::tree\hspace{0.3cm}{\ttfamily [private]}}}\label{classDBScan_a406fc451a7b6b25b11cb08545a03e281}
+pointer to the R-\/tree index \hypertarget{classDBScan_a8fd30e735fa3b426e519a8ecb7586c4d}{\index{D\-B\-Scan@{D\-B\-Scan}!tree\-High\-Resolution@{tree\-High\-Resolution}}
+\index{tree\-High\-Resolution@{tree\-High\-Resolution}!DBScan@{D\-B\-Scan}}
+\subsubsection[{tree\-High\-Resolution}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\-Tree}$<$int,double,2,float$>$$\ast$ D\-B\-Scan\-::tree\-High\-Resolution\hspace{0.3cm}{\ttfamily [private]}}}\label{classDBScan_a8fd30e735fa3b426e519a8ecb7586c4d}
+pointer to the R-\/tree index that has 1 point per box when results can be reused across clustering runs \hypertarget{classDBScan_a03bbe4567af4354c0cba4e580cf72578}{\index{D\-B\-Scan@{D\-B\-Scan}!visited@{visited}}
+\index{visited@{visited}!DBScan@{D\-B\-Scan}}
+\subsubsection[{visited}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$bool$>$ D\-B\-Scan\-::visited\hspace{0.3cm}{\ttfamily [private]}}}\label{classDBScan_a03bbe4567af4354c0cba4e580cf72578}
+vector that keeps track of the points that have beeen visited 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{DBScan_8h}{D\-B\-Scan.\-h}\item 
+\hyperlink{DBScan_8cpp}{D\-B\-Scan.\-cpp}\end{DoxyCompactItemize}

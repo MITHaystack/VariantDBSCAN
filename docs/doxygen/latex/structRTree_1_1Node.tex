@@ -1,0 +1,88 @@
+\hypertarget{structRTree_1_1Node}{\section{R\-Tree$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-:\-:Node Struct Reference}
+\label{structRTree_1_1Node}\index{R\-Tree$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::\-Node@{R\-Tree$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::\-Node}}
+}
+
+
+\hyperlink{structRTree_1_1Node}{Node} for each branch level.  
+
+
+
+
+{\ttfamily \#include \char`\"{}R\-Tree.\-h\char`\"{}}
+
+
+
+Collaboration diagram for R\-Tree$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-:\-:Node\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structRTree_1_1Node__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{structRTree_1_1Node_a6a330138c4d6e2280ac16770cdfcaf09}{Is\-Internal\-Node} ()
+\item 
+bool \hyperlink{structRTree_1_1Node_a3e34e35a8482978d456885d4bac76de4}{Is\-Leaf} ()
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{structRTree_1_1Node_ab2393bb1bfe7c8baa84ec4f205d990ed}{m\-\_\-count}
+\begin{DoxyCompactList}\small\item\em Count. \end{DoxyCompactList}\item 
+int \hyperlink{structRTree_1_1Node_a894162b955540567f0519bbbc33a6bf5}{m\-\_\-level}
+\begin{DoxyCompactList}\small\item\em Leaf is zero, others positive. \end{DoxyCompactList}\item 
+\hyperlink{structRTree_1_1Branch}{Branch} \hyperlink{structRTree_1_1Node_abc3b3eb3c889a004ca5a30628dd8775a}{m\-\_\-branch} \mbox{[}\hyperlink{classRTree_afaccb2e611f17ff46b623771ad7043d7ac05afe446df73fa67991e5199453a37f}{M\-A\-X\-N\-O\-D\-E\-S}\mbox{]}
+\begin{DoxyCompactList}\small\item\em \hyperlink{structRTree_1_1Branch}{Branch}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$struct R\-Tree$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::\-Node}
+
+\hyperlink{structRTree_1_1Node}{Node} for each branch level. 
+
+\subsection{Member Function Documentation}
+\hypertarget{structRTree_1_1Node_a6a330138c4d6e2280ac16770cdfcaf09}{\index{R\-Tree\-::\-Node@{R\-Tree\-::\-Node}!Is\-Internal\-Node@{Is\-Internal\-Node}}
+\index{Is\-Internal\-Node@{Is\-Internal\-Node}!RTree::Node@{R\-Tree\-::\-Node}}
+\subsubsection[{Is\-Internal\-Node}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ bool {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Node\-::\-Is\-Internal\-Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{structRTree_1_1Node_a6a330138c4d6e2280ac16770cdfcaf09}
+\hypertarget{structRTree_1_1Node_a3e34e35a8482978d456885d4bac76de4}{\index{R\-Tree\-::\-Node@{R\-Tree\-::\-Node}!Is\-Leaf@{Is\-Leaf}}
+\index{Is\-Leaf@{Is\-Leaf}!RTree::Node@{R\-Tree\-::\-Node}}
+\subsubsection[{Is\-Leaf}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ bool {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Node\-::\-Is\-Leaf (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{structRTree_1_1Node_a3e34e35a8482978d456885d4bac76de4}
+
+
+\subsection{Field Documentation}
+\hypertarget{structRTree_1_1Node_abc3b3eb3c889a004ca5a30628dd8775a}{\index{R\-Tree\-::\-Node@{R\-Tree\-::\-Node}!m\-\_\-branch@{m\-\_\-branch}}
+\index{m\-\_\-branch@{m\-\_\-branch}!RTree::Node@{R\-Tree\-::\-Node}}
+\subsubsection[{m\-\_\-branch}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ {\bf Branch} {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Node\-::m\-\_\-branch\mbox{[}{\bf M\-A\-X\-N\-O\-D\-E\-S}\mbox{]}}}\label{structRTree_1_1Node_abc3b3eb3c889a004ca5a30628dd8775a}
+
+
+\hyperlink{structRTree_1_1Branch}{Branch}. 
+
+\hypertarget{structRTree_1_1Node_ab2393bb1bfe7c8baa84ec4f205d990ed}{\index{R\-Tree\-::\-Node@{R\-Tree\-::\-Node}!m\-\_\-count@{m\-\_\-count}}
+\index{m\-\_\-count@{m\-\_\-count}!RTree::Node@{R\-Tree\-::\-Node}}
+\subsubsection[{m\-\_\-count}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ int {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Node\-::m\-\_\-count}}\label{structRTree_1_1Node_ab2393bb1bfe7c8baa84ec4f205d990ed}
+
+
+Count. 
+
+\hypertarget{structRTree_1_1Node_a894162b955540567f0519bbbc33a6bf5}{\index{R\-Tree\-::\-Node@{R\-Tree\-::\-Node}!m\-\_\-level@{m\-\_\-level}}
+\index{m\-\_\-level@{m\-\_\-level}!RTree::Node@{R\-Tree\-::\-Node}}
+\subsubsection[{m\-\_\-level}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ int {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Node\-::m\-\_\-level}}\label{structRTree_1_1Node_a894162b955540567f0519bbbc33a6bf5}
+
+
+Leaf is zero, others positive. 
+
+
+
+The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{RTree_8h}{R\-Tree.\-h}\end{DoxyCompactItemize}

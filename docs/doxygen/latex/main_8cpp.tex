@@ -1,0 +1,193 @@
+\hypertarget{main_8cpp}{\section{main.\-cpp File Reference}
+\label{main_8cpp}\index{main.\-cpp@{main.\-cpp}}
+}
+{\ttfamily \#include $<$math.\-h$>$}\\*
+{\ttfamily \#include $<$cstdlib$>$}\\*
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}prototypes.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}globals.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}R\-Tree.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}omp.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}D\-B\-Scan.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}schedule.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$algorithm$>$}\\*
+{\ttfamily \#include $<$string.\-h$>$}\\*
+{\ttfamily \#include $<$fstream$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$limits$>$}\\*
+Include dependency graph for main.\-cpp\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{main_8cpp_a2a1fa7bbb574f193ee87a385a0c0f06b}{lib\-V\-D\-B\-S\-C\-A\-N} (double $\ast$inputx, double $\ast$inputy, unsigned int dataset\-Size, double $\ast$input\-Epsilon, unsigned int $\ast$input\-Minpts, unsigned int num\-Variants, int M\-B\-Bsize, unsigned int $\ast$ret\-Arr, bool verbose)
+\item 
+void \hyperlink{main_8cpp_afa8668a508acc63abb9a705f8f643656}{create\-Entry\-M\-B\-B\-Multiple\-Points} (std\-::vector$<$ \hyperlink{structdataElem}{data\-Elem} $>$ $\ast$\hyperlink{globals_8h_ac152ac2be0eb07c2b73b4bb54a8f1952}{data\-Points}, std\-::vector$<$ std\-::vector$<$ int $>$ $>$ $\ast$M\-P\-B\-\_\-ids, \hyperlink{structMPBRect}{M\-P\-B\-Rect} $\ast$data\-Rects\-M\-P\-B, int M\-B\-B\-Size)
+\begin{DoxyCompactList}\small\item\em Generates M\-B\-Bs for for the R-\/tree when indexing multiple points per M\-B\-B. \end{DoxyCompactList}\item 
+void \hyperlink{main_8cpp_a8c639584f626e061f0aead36ffa60038}{create\-Entry\-M\-B\-Bs} (std\-::vector$<$ \hyperlink{structdataElem}{data\-Elem} $>$ $\ast$\hyperlink{globals_8h_ac152ac2be0eb07c2b73b4bb54a8f1952}{data\-Points}, \hyperlink{structRect}{Rect} $\ast$data\-Rects)
+\begin{DoxyCompactList}\small\item\em Generates M\-B\-Bs for the R-\/tree. \end{DoxyCompactList}\item 
+void \hyperlink{main_8cpp_a6ad8dcc1d9af410f2f4640967a4620a6}{bin\-Dataset} (std\-::vector$<$ \hyperlink{structdataElem}{data\-Elem} $>$ $\ast$\hyperlink{globals_8h_ac152ac2be0eb07c2b73b4bb54a8f1952}{data\-Points}, int num\-Bins, std\-::vector$<$ int $>$ $\ast$mapping, bool verbose)
+\begin{DoxyCompactList}\small\item\em Bins the 2-\/\-D input dataset, and keeps track of where the points in space were mapped to the original input dataset. \end{DoxyCompactList}\item 
+bool \hyperlink{main_8cpp_a786d2eaac37700e364631015ca72e846}{compare\-By\-Epsilon} (const \hyperlink{structexperiment}{experiment} \&a, const \hyperlink{structexperiment}{experiment} \&b)
+\begin{DoxyCompactList}\small\item\em Comparison function for sorting. \end{DoxyCompactList}\item 
+bool \hyperlink{main_8cpp_acd7e170375eea7e22e77c1b85f2636bf}{compare\-Data\-Elem\-Struct\-Func} (const \hyperlink{structdataElem}{data\-Elem} \&elem1, const \hyperlink{structdataElem}{data\-Elem} \&elem2)
+\begin{DoxyCompactList}\small\item\em Comparison function for sorting. \end{DoxyCompactList}\item 
+int \hyperlink{main_8cpp_ab6302c1085a6ee3030e2a1fa2125e07b}{bin\-\_\-x} (double x)
+\begin{DoxyCompactList}\small\item\em Used for binning the input dataset. \end{DoxyCompactList}\item 
+int \hyperlink{main_8cpp_a1b8bf045673fe0bbea47084f6ae126eb}{bin\-\_\-y} (double x)
+\begin{DoxyCompactList}\small\item\em Used for binning the input dataset. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{main_8cpp_ab6302c1085a6ee3030e2a1fa2125e07b}{\index{main.\-cpp@{main.\-cpp}!bin\-\_\-x@{bin\-\_\-x}}
+\index{bin\-\_\-x@{bin\-\_\-x}!main.cpp@{main.\-cpp}}
+\subsubsection[{bin\-\_\-x}]{\setlength{\rightskip}{0pt plus 5cm}int bin\-\_\-x (
+\begin{DoxyParamCaption}
+\item[{double}]{x}
+\end{DoxyParamCaption}
+)}}\label{main_8cpp_ab6302c1085a6ee3030e2a1fa2125e07b}
+
+
+Used for binning the input dataset. 
+
+\hypertarget{main_8cpp_a1b8bf045673fe0bbea47084f6ae126eb}{\index{main.\-cpp@{main.\-cpp}!bin\-\_\-y@{bin\-\_\-y}}
+\index{bin\-\_\-y@{bin\-\_\-y}!main.cpp@{main.\-cpp}}
+\subsubsection[{bin\-\_\-y}]{\setlength{\rightskip}{0pt plus 5cm}int bin\-\_\-y (
+\begin{DoxyParamCaption}
+\item[{double}]{x}
+\end{DoxyParamCaption}
+)}}\label{main_8cpp_a1b8bf045673fe0bbea47084f6ae126eb}
+
+
+Used for binning the input dataset. 
+
+\hypertarget{main_8cpp_a6ad8dcc1d9af410f2f4640967a4620a6}{\index{main.\-cpp@{main.\-cpp}!bin\-Dataset@{bin\-Dataset}}
+\index{bin\-Dataset@{bin\-Dataset}!main.cpp@{main.\-cpp}}
+\subsubsection[{bin\-Dataset}]{\setlength{\rightskip}{0pt plus 5cm}void bin\-Dataset (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ {\bf data\-Elem} $>$ $\ast$}]{data\-Points, }
+\item[{int}]{num\-Bins, }
+\item[{std\-::vector$<$ int $>$ $\ast$}]{mapping, }
+\item[{bool}]{verbose}
+\end{DoxyParamCaption}
+)}}\label{main_8cpp_a6ad8dcc1d9af410f2f4640967a4620a6}
+
+
+Bins the 2-\/\-D input dataset, and keeps track of where the points in space were mapped to the original input dataset. 
+
+\hypertarget{main_8cpp_a786d2eaac37700e364631015ca72e846}{\index{main.\-cpp@{main.\-cpp}!compare\-By\-Epsilon@{compare\-By\-Epsilon}}
+\index{compare\-By\-Epsilon@{compare\-By\-Epsilon}!main.cpp@{main.\-cpp}}
+\subsubsection[{compare\-By\-Epsilon}]{\setlength{\rightskip}{0pt plus 5cm}bool compare\-By\-Epsilon (
+\begin{DoxyParamCaption}
+\item[{const {\bf experiment} \&}]{a, }
+\item[{const {\bf experiment} \&}]{b}
+\end{DoxyParamCaption}
+)}}\label{main_8cpp_a786d2eaac37700e364631015ca72e846}
+
+
+Comparison function for sorting. 
+
+\hypertarget{main_8cpp_acd7e170375eea7e22e77c1b85f2636bf}{\index{main.\-cpp@{main.\-cpp}!compare\-Data\-Elem\-Struct\-Func@{compare\-Data\-Elem\-Struct\-Func}}
+\index{compare\-Data\-Elem\-Struct\-Func@{compare\-Data\-Elem\-Struct\-Func}!main.cpp@{main.\-cpp}}
+\subsubsection[{compare\-Data\-Elem\-Struct\-Func}]{\setlength{\rightskip}{0pt plus 5cm}bool compare\-Data\-Elem\-Struct\-Func (
+\begin{DoxyParamCaption}
+\item[{const {\bf data\-Elem} \&}]{elem1, }
+\item[{const {\bf data\-Elem} \&}]{elem2}
+\end{DoxyParamCaption}
+)}}\label{main_8cpp_acd7e170375eea7e22e77c1b85f2636bf}
+
+
+Comparison function for sorting. 
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{main_8cpp_acd7e170375eea7e22e77c1b85f2636bf_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{main_8cpp_afa8668a508acc63abb9a705f8f643656}{\index{main.\-cpp@{main.\-cpp}!create\-Entry\-M\-B\-B\-Multiple\-Points@{create\-Entry\-M\-B\-B\-Multiple\-Points}}
+\index{create\-Entry\-M\-B\-B\-Multiple\-Points@{create\-Entry\-M\-B\-B\-Multiple\-Points}!main.cpp@{main.\-cpp}}
+\subsubsection[{create\-Entry\-M\-B\-B\-Multiple\-Points}]{\setlength{\rightskip}{0pt plus 5cm}void create\-Entry\-M\-B\-B\-Multiple\-Points (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ {\bf data\-Elem} $>$ $\ast$}]{data\-Points, }
+\item[{std\-::vector$<$ std\-::vector$<$ int $>$ $>$ $\ast$}]{M\-P\-B\-\_\-ids, }
+\item[{{\bf M\-P\-B\-Rect} $\ast$}]{data\-Rects\-M\-P\-B, }
+\item[{int}]{M\-B\-B\-Size}
+\end{DoxyParamCaption}
+)}}\label{main_8cpp_afa8668a508acc63abb9a705f8f643656}
+
+
+Generates M\-B\-Bs for for the R-\/tree when indexing multiple points per M\-B\-B. 
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp_afa8668a508acc63abb9a705f8f643656_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{main_8cpp_a8c639584f626e061f0aead36ffa60038}{\index{main.\-cpp@{main.\-cpp}!create\-Entry\-M\-B\-Bs@{create\-Entry\-M\-B\-Bs}}
+\index{create\-Entry\-M\-B\-Bs@{create\-Entry\-M\-B\-Bs}!main.cpp@{main.\-cpp}}
+\subsubsection[{create\-Entry\-M\-B\-Bs}]{\setlength{\rightskip}{0pt plus 5cm}void create\-Entry\-M\-B\-Bs (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ {\bf data\-Elem} $>$ $\ast$}]{data\-Points, }
+\item[{{\bf Rect} $\ast$}]{data\-Rects}
+\end{DoxyParamCaption}
+)}}\label{main_8cpp_a8c639584f626e061f0aead36ffa60038}
+
+
+Generates M\-B\-Bs for the R-\/tree. 
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{main_8cpp_a8c639584f626e061f0aead36ffa60038_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{main_8cpp_a2a1fa7bbb574f193ee87a385a0c0f06b}{\index{main.\-cpp@{main.\-cpp}!lib\-V\-D\-B\-S\-C\-A\-N@{lib\-V\-D\-B\-S\-C\-A\-N}}
+\index{lib\-V\-D\-B\-S\-C\-A\-N@{lib\-V\-D\-B\-S\-C\-A\-N}!main.cpp@{main.\-cpp}}
+\subsubsection[{lib\-V\-D\-B\-S\-C\-A\-N}]{\setlength{\rightskip}{0pt plus 5cm}int lib\-V\-D\-B\-S\-C\-A\-N (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{inputx, }
+\item[{double $\ast$}]{inputy, }
+\item[{unsigned int}]{dataset\-Size, }
+\item[{double $\ast$}]{input\-Epsilon, }
+\item[{unsigned int $\ast$}]{input\-Minpts, }
+\item[{unsigned int}]{num\-Variants, }
+\item[{int}]{M\-B\-Bsize, }
+\item[{unsigned int $\ast$}]{ret\-Arr, }
+\item[{bool}]{verbose}
+\end{DoxyParamCaption}
+)}}\label{main_8cpp_a2a1fa7bbb574f193ee87a385a0c0f06b}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp_a2a1fa7bbb574f193ee87a385a0c0f06b_cgraph}
+\end{center}
+\end{figure}
+
+

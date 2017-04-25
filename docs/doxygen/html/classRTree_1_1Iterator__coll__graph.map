@@ -1,0 +1,6 @@
+<map id="RTree&lt; DATATYPE, ELEMTYPE, NUMDIMS, ELEMTYPEREAL, TMAXNODES, TMINNODES &gt;::Iterator" name="RTree&lt; DATATYPE, ELEMTYPE, NUMDIMS, ELEMTYPEREAL, TMAXNODES, TMINNODES &gt;::Iterator">
+<area shape="rect" id="node2" href="$structRTree_1_1Iterator_1_1StackElement.html" title="RTree\&lt; DATATYPE, ELEMTYPE,\l NUMDIMS, ELEMTYPEREAL,\l TMAXNODES, TMINNODES \&gt;\l::Iterator::StackElement" alt="" coords="365,5,589,75"/>
+<area shape="rect" id="node3" href="$structRTree_1_1Node.html" title="Node for each branch level. " alt="" coords="5,60,256,116"/>
+<area shape="rect" id="node4" href="$structRTree_1_1Branch.html" title="RTree\&lt; DATATYPE, ELEMTYPE,\l NUMDIMS, ELEMTYPEREAL,\l TMAXNODES, TMINNODES \&gt;\l::Branch" alt="" coords="365,99,589,170"/>
+<area shape="rect" id="node5" href="$structRTree_1_1Rect.html" title="Minimal bounding rectangle (n&#45;dimensional) " alt="" coords="7,151,255,207"/>
+</map>

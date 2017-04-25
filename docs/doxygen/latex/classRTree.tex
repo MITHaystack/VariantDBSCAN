@@ -1,0 +1,659 @@
+\hypertarget{classRTree}{\section{R\-Tree$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$ Class Template Reference}
+\label{classRTree}\index{R\-Tree$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$@{R\-Tree$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$}}
+}
+
+
+{\ttfamily \#include \char`\"{}R\-Tree.\-h\char`\"{}}
+
+
+
+Collaboration diagram for R\-Tree$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classRTree__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structRTree_1_1Branch}{Branch}
+\item 
+class \hyperlink{classRTree_1_1Iterator}{Iterator}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classRTree_1_1Iterator}{Iterator} is not remove safe. \end{DoxyCompactList}\item 
+struct \hyperlink{structRTree_1_1ListNode}{List\-Node}
+\begin{DoxyCompactList}\small\item\em A link list of nodes for reinsertion after a delete operation. \end{DoxyCompactList}\item 
+struct \hyperlink{structRTree_1_1Node}{Node}
+\begin{DoxyCompactList}\small\item\em \hyperlink{structRTree_1_1Node}{Node} for each branch level. \end{DoxyCompactList}\item 
+struct \hyperlink{structRTree_1_1PartitionVars}{Partition\-Vars}
+\begin{DoxyCompactList}\small\item\em Variables for finding a split partition. \end{DoxyCompactList}\item 
+struct \hyperlink{structRTree_1_1Rect}{Rect}
+\begin{DoxyCompactList}\small\item\em Minimal bounding rectangle (n-\/dimensional) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{classRTree_afaccb2e611f17ff46b623771ad7043d7ac05afe446df73fa67991e5199453a37f}{M\-A\-X\-N\-O\-D\-E\-S} = T\-M\-A\-X\-N\-O\-D\-E\-S, 
+\hyperlink{classRTree_afaccb2e611f17ff46b623771ad7043d7a3be3d8c82fd5bfbd5e5a496e9877d71a}{M\-I\-N\-N\-O\-D\-E\-S} = T\-M\-I\-N\-N\-O\-D\-E\-S
+ \}
+\item 
+typedef bool($\ast$ \hyperlink{classRTree_a989db5f20fcdc26231e8b76be83caee4}{t\-\_\-result\-Callback} )(D\-A\-T\-A\-T\-Y\-P\-E, void $\ast$)
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRTree_a09630e761ba4e88a94a4a80ad40c0700}{R\-Tree} ()
+\item 
+virtual \hyperlink{classRTree_aad9b714d15f488cd1747cdb619f6b7ee}{$\sim$\-R\-Tree} ()
+\item 
+void \hyperlink{classRTree_a98d1f0a325921db826b2a2d5a407c9be}{Insert} (const E\-L\-E\-M\-T\-Y\-P\-E a\-\_\-min\mbox{[}N\-U\-M\-D\-I\-M\-S\mbox{]}, const E\-L\-E\-M\-T\-Y\-P\-E a\-\_\-max\mbox{[}N\-U\-M\-D\-I\-M\-S\mbox{]}, const D\-A\-T\-A\-T\-Y\-P\-E \&a\-\_\-data\-Id)
+\item 
+void \hyperlink{classRTree_a1b4b6b4c73bc47029ba696c49265c043}{Remove} (const E\-L\-E\-M\-T\-Y\-P\-E a\-\_\-min\mbox{[}N\-U\-M\-D\-I\-M\-S\mbox{]}, const E\-L\-E\-M\-T\-Y\-P\-E a\-\_\-max\mbox{[}N\-U\-M\-D\-I\-M\-S\mbox{]}, const D\-A\-T\-A\-T\-Y\-P\-E \&a\-\_\-data\-Id)
+\item 
+int \hyperlink{classRTree_a3a66726a96bf3c1542d13a2991a25157}{Search} (const E\-L\-E\-M\-T\-Y\-P\-E a\-\_\-min\mbox{[}N\-U\-M\-D\-I\-M\-S\mbox{]}, const E\-L\-E\-M\-T\-Y\-P\-E a\-\_\-max\mbox{[}N\-U\-M\-D\-I\-M\-S\mbox{]}, \hyperlink{classRTree_a989db5f20fcdc26231e8b76be83caee4}{t\-\_\-result\-Callback} a\-\_\-result\-Callback, void $\ast$a\-\_\-context)
+\item 
+void \hyperlink{classRTree_a396f1031eb2c8224715741fd0b77349d}{Remove\-All} ()
+\begin{DoxyCompactList}\small\item\em Remove all entries from tree. \end{DoxyCompactList}\item 
+int \hyperlink{classRTree_a813cdf63ce3e3e255821d9ba4bc9e7df}{Count} ()
+\begin{DoxyCompactList}\small\item\em Count the data elements in this container. This is slow as no internal counter is maintained. \end{DoxyCompactList}\item 
+bool \hyperlink{classRTree_adbd1f87715d22ed75b2b8be738583fc2}{Load} (const char $\ast$a\-\_\-file\-Name)
+\begin{DoxyCompactList}\small\item\em Load tree contents from file. \end{DoxyCompactList}\item 
+bool \hyperlink{classRTree_ad02dc25a34d9b5b291c8ff3f1b002b09}{Load} (\hyperlink{classRTFileStream}{R\-T\-File\-Stream} \&a\-\_\-stream)
+\begin{DoxyCompactList}\small\item\em Load tree contents from stream. \end{DoxyCompactList}\item 
+bool \hyperlink{classRTree_a6817692e1e8e416843be1ea628f7a074}{Save} (const char $\ast$a\-\_\-file\-Name)
+\begin{DoxyCompactList}\small\item\em Save tree contents to file. \end{DoxyCompactList}\item 
+bool \hyperlink{classRTree_a7066ea753180537a3a870c84e4fcefce}{Save} (\hyperlink{classRTFileStream}{R\-T\-File\-Stream} \&a\-\_\-stream)
+\begin{DoxyCompactList}\small\item\em Save tree contents to stream. \end{DoxyCompactList}\item 
+void \hyperlink{classRTree_acbcbd987b4f6549cd53e373e01b74efa}{Get\-First} (\hyperlink{classRTree_1_1Iterator}{Iterator} \&a\-\_\-it)
+\begin{DoxyCompactList}\small\item\em Get 'first' for iteration. \end{DoxyCompactList}\item 
+void \hyperlink{classRTree_a41da97d27b44e7d7e852150ced23a610}{Get\-Next} (\hyperlink{classRTree_1_1Iterator}{Iterator} \&a\-\_\-it)
+\begin{DoxyCompactList}\small\item\em Get Next for iteration. \end{DoxyCompactList}\item 
+bool \hyperlink{classRTree_a8b8c51698e5b8df1e715650a43aad7f4}{Is\-Null} (\hyperlink{classRTree_1_1Iterator}{Iterator} \&a\-\_\-it)
+\begin{DoxyCompactList}\small\item\em Is iterator N\-U\-L\-L, or at end? \end{DoxyCompactList}\item 
+D\-A\-T\-A\-T\-Y\-P\-E \& \hyperlink{classRTree_aab228fbd816b5e5c93666c37b47635f3}{Get\-At} (\hyperlink{classRTree_1_1Iterator}{Iterator} \&a\-\_\-it)
+\begin{DoxyCompactList}\small\item\em Get object at iterator position. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structRTree_1_1Node}{Node} $\ast$ \hyperlink{classRTree_af118b3fc992c88a61fb2e1ebc0c96fc9}{Alloc\-Node} ()
+\item 
+void \hyperlink{classRTree_a6b5438d9cb74dbfc63f3bfff275f506b}{Free\-Node} (\hyperlink{structRTree_1_1Node}{Node} $\ast$a\-\_\-node)
+\item 
+void \hyperlink{classRTree_aa24d93770aaa1042136daeabfdb8de3e}{Init\-Node} (\hyperlink{structRTree_1_1Node}{Node} $\ast$a\-\_\-node)
+\item 
+void \hyperlink{classRTree_aa065e71784e5cac81acd16c07c6abe5e}{Init\-Rect} (\hyperlink{structRTree_1_1Rect}{Rect} $\ast$a\-\_\-rect)
+\item 
+bool \hyperlink{classRTree_af8e10a4e616414ddf6c0ee40a6c95664}{Insert\-Rect\-Rec} (const \hyperlink{structRTree_1_1Branch}{Branch} \&a\-\_\-branch, \hyperlink{structRTree_1_1Node}{Node} $\ast$a\-\_\-node, \hyperlink{structRTree_1_1Node}{Node} $\ast$$\ast$a\-\_\-new\-Node, int a\-\_\-level)
+\item 
+bool \hyperlink{classRTree_a0a9b36fceaa83240e41d67b7665f6d3d}{Insert\-Rect} (const \hyperlink{structRTree_1_1Branch}{Branch} \&a\-\_\-branch, \hyperlink{structRTree_1_1Node}{Node} $\ast$$\ast$a\-\_\-root, int a\-\_\-level)
+\item 
+\hyperlink{structRTree_1_1Rect}{Rect} \hyperlink{classRTree_a19dc96034d7a3230ba877953247457e1}{Node\-Cover} (\hyperlink{structRTree_1_1Node}{Node} $\ast$a\-\_\-node)
+\item 
+bool \hyperlink{classRTree_a1028d814e1f54328cf58371ea4f9f9bf}{Add\-Branch} (const \hyperlink{structRTree_1_1Branch}{Branch} $\ast$a\-\_\-branch, \hyperlink{structRTree_1_1Node}{Node} $\ast$a\-\_\-node, \hyperlink{structRTree_1_1Node}{Node} $\ast$$\ast$a\-\_\-new\-Node)
+\item 
+void \hyperlink{classRTree_adcdcac926b2de35cc1f4f07e02b70bf6}{Disconnect\-Branch} (\hyperlink{structRTree_1_1Node}{Node} $\ast$a\-\_\-node, int a\-\_\-index)
+\item 
+int \hyperlink{classRTree_a142464629cd61c2541d6d0e0cc7d2d80}{Pick\-Branch} (const \hyperlink{structRTree_1_1Rect}{Rect} $\ast$a\-\_\-rect, \hyperlink{structRTree_1_1Node}{Node} $\ast$a\-\_\-node)
+\item 
+\hyperlink{structRTree_1_1Rect}{Rect} \hyperlink{classRTree_a295ad765615975e4b848592e424a5ca2}{Combine\-Rect} (const \hyperlink{structRTree_1_1Rect}{Rect} $\ast$a\-\_\-rect\-A, const \hyperlink{structRTree_1_1Rect}{Rect} $\ast$a\-\_\-rect\-B)
+\item 
+void \hyperlink{classRTree_aec268045161713d5225ed8151c5068dd}{Split\-Node} (\hyperlink{structRTree_1_1Node}{Node} $\ast$a\-\_\-node, const \hyperlink{structRTree_1_1Branch}{Branch} $\ast$a\-\_\-branch, \hyperlink{structRTree_1_1Node}{Node} $\ast$$\ast$a\-\_\-new\-Node)
+\item 
+E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L \hyperlink{classRTree_a7958e17fc046e5d648d8e23ffc82e849}{Rect\-Spherical\-Volume} (\hyperlink{structRTree_1_1Rect}{Rect} $\ast$a\-\_\-rect)
+\item 
+E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L \hyperlink{classRTree_af9f63fef551a4c3a42cd915618a9917a}{Rect\-Volume} (\hyperlink{structRTree_1_1Rect}{Rect} $\ast$a\-\_\-rect)
+\item 
+E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L \hyperlink{classRTree_a224ba0af4dcb435dbb016327307d664b}{Calc\-Rect\-Volume} (\hyperlink{structRTree_1_1Rect}{Rect} $\ast$a\-\_\-rect)
+\item 
+void \hyperlink{classRTree_a3b8fdb0a33793dba49f9870868a95a43}{Get\-Branches} (\hyperlink{structRTree_1_1Node}{Node} $\ast$a\-\_\-node, const \hyperlink{structRTree_1_1Branch}{Branch} $\ast$a\-\_\-branch, \hyperlink{structRTree_1_1PartitionVars}{Partition\-Vars} $\ast$a\-\_\-par\-Vars)
+\item 
+void \hyperlink{classRTree_a282f6ef6b93f714d8a8eca3c4d587cbd}{Choose\-Partition} (\hyperlink{structRTree_1_1PartitionVars}{Partition\-Vars} $\ast$a\-\_\-par\-Vars, int a\-\_\-min\-Fill)
+\item 
+void \hyperlink{classRTree_a88e9eef4ad30d4dee0c783df5e6840a0}{Load\-Nodes} (\hyperlink{structRTree_1_1Node}{Node} $\ast$a\-\_\-node\-A, \hyperlink{structRTree_1_1Node}{Node} $\ast$a\-\_\-node\-B, \hyperlink{structRTree_1_1PartitionVars}{Partition\-Vars} $\ast$a\-\_\-par\-Vars)
+\item 
+void \hyperlink{classRTree_aac207d4389fcca1aa0b72361d84117ec}{Init\-Par\-Vars} (\hyperlink{structRTree_1_1PartitionVars}{Partition\-Vars} $\ast$a\-\_\-par\-Vars, int a\-\_\-max\-Rects, int a\-\_\-min\-Fill)
+\item 
+void \hyperlink{classRTree_af4232dd5fd978fcce12ce32f9df20f58}{Pick\-Seeds} (\hyperlink{structRTree_1_1PartitionVars}{Partition\-Vars} $\ast$a\-\_\-par\-Vars)
+\item 
+void \hyperlink{classRTree_a5da8614a152145988f010a0b7ff9cb4d}{Classify} (int a\-\_\-index, int a\-\_\-group, \hyperlink{structRTree_1_1PartitionVars}{Partition\-Vars} $\ast$a\-\_\-par\-Vars)
+\item 
+bool \hyperlink{classRTree_a64a1092e85775014ce01e1bb6bc8a938}{Remove\-Rect} (\hyperlink{structRTree_1_1Rect}{Rect} $\ast$a\-\_\-rect, const D\-A\-T\-A\-T\-Y\-P\-E \&a\-\_\-id, \hyperlink{structRTree_1_1Node}{Node} $\ast$$\ast$a\-\_\-root)
+\item 
+bool \hyperlink{classRTree_a519d3084a57b45ed4e4167b382bc977e}{Remove\-Rect\-Rec} (\hyperlink{structRTree_1_1Rect}{Rect} $\ast$a\-\_\-rect, const D\-A\-T\-A\-T\-Y\-P\-E \&a\-\_\-id, \hyperlink{structRTree_1_1Node}{Node} $\ast$a\-\_\-node, \hyperlink{structRTree_1_1ListNode}{List\-Node} $\ast$$\ast$a\-\_\-list\-Node)
+\item 
+\hyperlink{structRTree_1_1ListNode}{List\-Node} $\ast$ \hyperlink{classRTree_aa688a31e4de0090985045cfabfa42d2d}{Alloc\-List\-Node} ()
+\item 
+void \hyperlink{classRTree_a0c92660832f03d899608d73b994e95a5}{Free\-List\-Node} (\hyperlink{structRTree_1_1ListNode}{List\-Node} $\ast$a\-\_\-list\-Node)
+\item 
+bool \hyperlink{classRTree_aa5b369536a94aa8ad9ec3b4f8f68302c}{Overlap} (\hyperlink{structRTree_1_1Rect}{Rect} $\ast$a\-\_\-rect\-A, \hyperlink{structRTree_1_1Rect}{Rect} $\ast$a\-\_\-rect\-B)
+\item 
+void \hyperlink{classRTree_a5d2b072588eae9e9058224942ae0294f}{Re\-Insert} (\hyperlink{structRTree_1_1Node}{Node} $\ast$a\-\_\-node, \hyperlink{structRTree_1_1ListNode}{List\-Node} $\ast$$\ast$a\-\_\-list\-Node)
+\item 
+bool \hyperlink{classRTree_a7f84e7f718b4473c435862965033a8d4}{Search} (\hyperlink{structRTree_1_1Node}{Node} $\ast$a\-\_\-node, \hyperlink{structRTree_1_1Rect}{Rect} $\ast$a\-\_\-rect, int \&a\-\_\-found\-Count, \hyperlink{classRTree_a989db5f20fcdc26231e8b76be83caee4}{t\-\_\-result\-Callback} a\-\_\-result\-Callback, void $\ast$a\-\_\-context)
+\item 
+void \hyperlink{classRTree_a5045d833566114335162fda10d58081d}{Remove\-All\-Rec} (\hyperlink{structRTree_1_1Node}{Node} $\ast$a\-\_\-node)
+\item 
+void \hyperlink{classRTree_a2508b9d85f5b5f553b313356c05c6e0c}{Reset} ()
+\item 
+void \hyperlink{classRTree_a22345d494c1d6bf907444f17802bd864}{Count\-Rec} (\hyperlink{structRTree_1_1Node}{Node} $\ast$a\-\_\-node, int \&a\-\_\-count)
+\item 
+bool \hyperlink{classRTree_a53a8af8a04a9a4a9eb93a6a0792fea95}{Save\-Rec} (\hyperlink{structRTree_1_1Node}{Node} $\ast$a\-\_\-node, \hyperlink{classRTFileStream}{R\-T\-File\-Stream} \&a\-\_\-stream)
+\item 
+bool \hyperlink{classRTree_aa432ad1d5dfc151c1f8eac388af41968}{Load\-Rec} (\hyperlink{structRTree_1_1Node}{Node} $\ast$a\-\_\-node, \hyperlink{classRTFileStream}{R\-T\-File\-Stream} \&a\-\_\-stream)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structRTree_1_1Node}{Node} $\ast$ \hyperlink{classRTree_a5028f4e28918519bc70cb1f615316582}{m\-\_\-root}
+\begin{DoxyCompactList}\small\item\em Root of tree. \end{DoxyCompactList}\item 
+E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L \hyperlink{classRTree_af26d4beb8ce3a381ee75eabeec4727e3}{m\-\_\-unit\-Sphere\-Volume}
+\begin{DoxyCompactList}\small\item\em Unit sphere constant for required number of dimensions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$class R\-Tree$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$}
+
+Implementation of \hyperlink{classRTree}{R\-Tree}, a multidimensional bounding rectangle tree. Example usage\-: For a 3-\/dimensional tree use R\-Tree$<$\-Object$\ast$, float, 3$>$ my\-Tree;
+
+This modified, templated C++ version by Greg Douglas at Auran (\href{http://www.auran.com}{\tt http\-://www.\-auran.\-com})
+
+D\-A\-T\-A\-T\-Y\-P\-E Referenced data, should be int, void$\ast$, obj$\ast$ etc. no larger than sizeof$<$void$\ast$$>$ and simple type E\-L\-E\-M\-T\-Y\-P\-E Type of element such as int or float N\-U\-M\-D\-I\-M\-S Number of dimensions such as 2 or 3 E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L Type of element that allows fractional and large values such as float or double, for use in volume calcs
+
+N\-O\-T\-E\-S\-: Inserting and removing data requires the knowledge of its constant Minimal Bounding Rectangle. This version uses new/delete for nodes, I recommend using a fixed size allocator for efficiency. Instead of using a callback function for returned results, I recommend and efficient pre-\/sized, grow-\/only memory array similar to M\-F\-C C\-Array or S\-T\-L Vector for returning search query result. 
+
+\subsection{Member Typedef Documentation}
+\hypertarget{classRTree_a989db5f20fcdc26231e8b76be83caee4}{\index{R\-Tree@{R\-Tree}!t\-\_\-result\-Callback@{t\-\_\-result\-Callback}}
+\index{t\-\_\-result\-Callback@{t\-\_\-result\-Callback}!RTree@{R\-Tree}}
+\subsubsection[{t\-\_\-result\-Callback}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ typedef bool($\ast$ {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::t\-\_\-result\-Callback)(D\-A\-T\-A\-T\-Y\-P\-E, void $\ast$)}}\label{classRTree_a989db5f20fcdc26231e8b76be83caee4}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classRTree_afaccb2e611f17ff46b623771ad7043d7}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ anonymous enum}}\label{classRTree_afaccb2e611f17ff46b623771ad7043d7}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{M\-A\-X\-N\-O\-D\-E\-S@{M\-A\-X\-N\-O\-D\-E\-S}!R\-Tree@{R\-Tree}}\index{R\-Tree@{R\-Tree}!M\-A\-X\-N\-O\-D\-E\-S@{M\-A\-X\-N\-O\-D\-E\-S}}\item[{\em 
+\hypertarget{classRTree_afaccb2e611f17ff46b623771ad7043d7ac05afe446df73fa67991e5199453a37f}{M\-A\-X\-N\-O\-D\-E\-S}\label{classRTree_afaccb2e611f17ff46b623771ad7043d7ac05afe446df73fa67991e5199453a37f}
+}]Max elements in node. \index{M\-I\-N\-N\-O\-D\-E\-S@{M\-I\-N\-N\-O\-D\-E\-S}!R\-Tree@{R\-Tree}}\index{R\-Tree@{R\-Tree}!M\-I\-N\-N\-O\-D\-E\-S@{M\-I\-N\-N\-O\-D\-E\-S}}\item[{\em 
+\hypertarget{classRTree_afaccb2e611f17ff46b623771ad7043d7a3be3d8c82fd5bfbd5e5a496e9877d71a}{M\-I\-N\-N\-O\-D\-E\-S}\label{classRTree_afaccb2e611f17ff46b623771ad7043d7a3be3d8c82fd5bfbd5e5a496e9877d71a}
+}]Min elements in node. \end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRTree_a09630e761ba4e88a94a4a80ad40c0700}{\index{R\-Tree@{R\-Tree}!R\-Tree@{R\-Tree}}
+\index{R\-Tree@{R\-Tree}!RTree@{R\-Tree}}
+\subsubsection[{R\-Tree}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::{\bf R\-Tree} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRTree_a09630e761ba4e88a94a4a80ad40c0700}
+\hypertarget{classRTree_aad9b714d15f488cd1747cdb619f6b7ee}{\index{R\-Tree@{R\-Tree}!$\sim$\-R\-Tree@{$\sim$\-R\-Tree}}
+\index{$\sim$\-R\-Tree@{$\sim$\-R\-Tree}!RTree@{R\-Tree}}
+\subsubsection[{$\sim$\-R\-Tree}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ virtual {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::$\sim${\bf R\-Tree} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classRTree_aad9b714d15f488cd1747cdb619f6b7ee}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRTree_a1028d814e1f54328cf58371ea4f9f9bf}{\index{R\-Tree@{R\-Tree}!Add\-Branch@{Add\-Branch}}
+\index{Add\-Branch@{Add\-Branch}!RTree@{R\-Tree}}
+\subsubsection[{Add\-Branch}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ bool {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Add\-Branch (
+\begin{DoxyParamCaption}
+\item[{const {\bf Branch} $\ast$}]{a\-\_\-branch, }
+\item[{{\bf Node} $\ast$}]{a\-\_\-node, }
+\item[{{\bf Node} $\ast$$\ast$}]{a\-\_\-new\-Node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRTree_a1028d814e1f54328cf58371ea4f9f9bf}
+\hypertarget{classRTree_aa688a31e4de0090985045cfabfa42d2d}{\index{R\-Tree@{R\-Tree}!Alloc\-List\-Node@{Alloc\-List\-Node}}
+\index{Alloc\-List\-Node@{Alloc\-List\-Node}!RTree@{R\-Tree}}
+\subsubsection[{Alloc\-List\-Node}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ {\bf List\-Node}$\ast$ {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Alloc\-List\-Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRTree_aa688a31e4de0090985045cfabfa42d2d}
+\hypertarget{classRTree_af118b3fc992c88a61fb2e1ebc0c96fc9}{\index{R\-Tree@{R\-Tree}!Alloc\-Node@{Alloc\-Node}}
+\index{Alloc\-Node@{Alloc\-Node}!RTree@{R\-Tree}}
+\subsubsection[{Alloc\-Node}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ {\bf Node}$\ast$ {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Alloc\-Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRTree_af118b3fc992c88a61fb2e1ebc0c96fc9}
+\hypertarget{classRTree_a224ba0af4dcb435dbb016327307d664b}{\index{R\-Tree@{R\-Tree}!Calc\-Rect\-Volume@{Calc\-Rect\-Volume}}
+\index{Calc\-Rect\-Volume@{Calc\-Rect\-Volume}!RTree@{R\-Tree}}
+\subsubsection[{Calc\-Rect\-Volume}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Calc\-Rect\-Volume (
+\begin{DoxyParamCaption}
+\item[{{\bf Rect} $\ast$}]{a\-\_\-rect}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRTree_a224ba0af4dcb435dbb016327307d664b}
+\hypertarget{classRTree_a282f6ef6b93f714d8a8eca3c4d587cbd}{\index{R\-Tree@{R\-Tree}!Choose\-Partition@{Choose\-Partition}}
+\index{Choose\-Partition@{Choose\-Partition}!RTree@{R\-Tree}}
+\subsubsection[{Choose\-Partition}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ void {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Choose\-Partition (
+\begin{DoxyParamCaption}
+\item[{{\bf Partition\-Vars} $\ast$}]{a\-\_\-par\-Vars, }
+\item[{int}]{a\-\_\-min\-Fill}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRTree_a282f6ef6b93f714d8a8eca3c4d587cbd}
+\hypertarget{classRTree_a5da8614a152145988f010a0b7ff9cb4d}{\index{R\-Tree@{R\-Tree}!Classify@{Classify}}
+\index{Classify@{Classify}!RTree@{R\-Tree}}
+\subsubsection[{Classify}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ void {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Classify (
+\begin{DoxyParamCaption}
+\item[{int}]{a\-\_\-index, }
+\item[{int}]{a\-\_\-group, }
+\item[{{\bf Partition\-Vars} $\ast$}]{a\-\_\-par\-Vars}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRTree_a5da8614a152145988f010a0b7ff9cb4d}
+\hypertarget{classRTree_a295ad765615975e4b848592e424a5ca2}{\index{R\-Tree@{R\-Tree}!Combine\-Rect@{Combine\-Rect}}
+\index{Combine\-Rect@{Combine\-Rect}!RTree@{R\-Tree}}
+\subsubsection[{Combine\-Rect}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ {\bf Rect} {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Combine\-Rect (
+\begin{DoxyParamCaption}
+\item[{const {\bf Rect} $\ast$}]{a\-\_\-rect\-A, }
+\item[{const {\bf Rect} $\ast$}]{a\-\_\-rect\-B}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRTree_a295ad765615975e4b848592e424a5ca2}
+\hypertarget{classRTree_a813cdf63ce3e3e255821d9ba4bc9e7df}{\index{R\-Tree@{R\-Tree}!Count@{Count}}
+\index{Count@{Count}!RTree@{R\-Tree}}
+\subsubsection[{Count}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ int {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRTree_a813cdf63ce3e3e255821d9ba4bc9e7df}
+
+
+Count the data elements in this container. This is slow as no internal counter is maintained. 
+
+\hypertarget{classRTree_a22345d494c1d6bf907444f17802bd864}{\index{R\-Tree@{R\-Tree}!Count\-Rec@{Count\-Rec}}
+\index{Count\-Rec@{Count\-Rec}!RTree@{R\-Tree}}
+\subsubsection[{Count\-Rec}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ void {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Count\-Rec (
+\begin{DoxyParamCaption}
+\item[{{\bf Node} $\ast$}]{a\-\_\-node, }
+\item[{int \&}]{a\-\_\-count}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRTree_a22345d494c1d6bf907444f17802bd864}
+\hypertarget{classRTree_adcdcac926b2de35cc1f4f07e02b70bf6}{\index{R\-Tree@{R\-Tree}!Disconnect\-Branch@{Disconnect\-Branch}}
+\index{Disconnect\-Branch@{Disconnect\-Branch}!RTree@{R\-Tree}}
+\subsubsection[{Disconnect\-Branch}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ void {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Disconnect\-Branch (
+\begin{DoxyParamCaption}
+\item[{{\bf Node} $\ast$}]{a\-\_\-node, }
+\item[{int}]{a\-\_\-index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRTree_adcdcac926b2de35cc1f4f07e02b70bf6}
+\hypertarget{classRTree_a0c92660832f03d899608d73b994e95a5}{\index{R\-Tree@{R\-Tree}!Free\-List\-Node@{Free\-List\-Node}}
+\index{Free\-List\-Node@{Free\-List\-Node}!RTree@{R\-Tree}}
+\subsubsection[{Free\-List\-Node}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ void {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Free\-List\-Node (
+\begin{DoxyParamCaption}
+\item[{{\bf List\-Node} $\ast$}]{a\-\_\-list\-Node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRTree_a0c92660832f03d899608d73b994e95a5}
+\hypertarget{classRTree_a6b5438d9cb74dbfc63f3bfff275f506b}{\index{R\-Tree@{R\-Tree}!Free\-Node@{Free\-Node}}
+\index{Free\-Node@{Free\-Node}!RTree@{R\-Tree}}
+\subsubsection[{Free\-Node}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ void {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Free\-Node (
+\begin{DoxyParamCaption}
+\item[{{\bf Node} $\ast$}]{a\-\_\-node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRTree_a6b5438d9cb74dbfc63f3bfff275f506b}
+\hypertarget{classRTree_aab228fbd816b5e5c93666c37b47635f3}{\index{R\-Tree@{R\-Tree}!Get\-At@{Get\-At}}
+\index{Get\-At@{Get\-At}!RTree@{R\-Tree}}
+\subsubsection[{Get\-At}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ D\-A\-T\-A\-T\-Y\-P\-E\& {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Get\-At (
+\begin{DoxyParamCaption}
+\item[{{\bf Iterator} \&}]{a\-\_\-it}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRTree_aab228fbd816b5e5c93666c37b47635f3}
+
+
+Get object at iterator position. 
+
+\hypertarget{classRTree_a3b8fdb0a33793dba49f9870868a95a43}{\index{R\-Tree@{R\-Tree}!Get\-Branches@{Get\-Branches}}
+\index{Get\-Branches@{Get\-Branches}!RTree@{R\-Tree}}
+\subsubsection[{Get\-Branches}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ void {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Get\-Branches (
+\begin{DoxyParamCaption}
+\item[{{\bf Node} $\ast$}]{a\-\_\-node, }
+\item[{const {\bf Branch} $\ast$}]{a\-\_\-branch, }
+\item[{{\bf Partition\-Vars} $\ast$}]{a\-\_\-par\-Vars}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRTree_a3b8fdb0a33793dba49f9870868a95a43}
+\hypertarget{classRTree_acbcbd987b4f6549cd53e373e01b74efa}{\index{R\-Tree@{R\-Tree}!Get\-First@{Get\-First}}
+\index{Get\-First@{Get\-First}!RTree@{R\-Tree}}
+\subsubsection[{Get\-First}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ void {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Get\-First (
+\begin{DoxyParamCaption}
+\item[{{\bf Iterator} \&}]{a\-\_\-it}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRTree_acbcbd987b4f6549cd53e373e01b74efa}
+
+
+Get 'first' for iteration. 
+
+\hypertarget{classRTree_a41da97d27b44e7d7e852150ced23a610}{\index{R\-Tree@{R\-Tree}!Get\-Next@{Get\-Next}}
+\index{Get\-Next@{Get\-Next}!RTree@{R\-Tree}}
+\subsubsection[{Get\-Next}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ void {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Get\-Next (
+\begin{DoxyParamCaption}
+\item[{{\bf Iterator} \&}]{a\-\_\-it}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRTree_a41da97d27b44e7d7e852150ced23a610}
+
+
+Get Next for iteration. 
+
+\hypertarget{classRTree_aa24d93770aaa1042136daeabfdb8de3e}{\index{R\-Tree@{R\-Tree}!Init\-Node@{Init\-Node}}
+\index{Init\-Node@{Init\-Node}!RTree@{R\-Tree}}
+\subsubsection[{Init\-Node}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ void {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Init\-Node (
+\begin{DoxyParamCaption}
+\item[{{\bf Node} $\ast$}]{a\-\_\-node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRTree_aa24d93770aaa1042136daeabfdb8de3e}
+\hypertarget{classRTree_aac207d4389fcca1aa0b72361d84117ec}{\index{R\-Tree@{R\-Tree}!Init\-Par\-Vars@{Init\-Par\-Vars}}
+\index{Init\-Par\-Vars@{Init\-Par\-Vars}!RTree@{R\-Tree}}
+\subsubsection[{Init\-Par\-Vars}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ void {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Init\-Par\-Vars (
+\begin{DoxyParamCaption}
+\item[{{\bf Partition\-Vars} $\ast$}]{a\-\_\-par\-Vars, }
+\item[{int}]{a\-\_\-max\-Rects, }
+\item[{int}]{a\-\_\-min\-Fill}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRTree_aac207d4389fcca1aa0b72361d84117ec}
+\hypertarget{classRTree_aa065e71784e5cac81acd16c07c6abe5e}{\index{R\-Tree@{R\-Tree}!Init\-Rect@{Init\-Rect}}
+\index{Init\-Rect@{Init\-Rect}!RTree@{R\-Tree}}
+\subsubsection[{Init\-Rect}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ void {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Init\-Rect (
+\begin{DoxyParamCaption}
+\item[{{\bf Rect} $\ast$}]{a\-\_\-rect}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRTree_aa065e71784e5cac81acd16c07c6abe5e}
+\hypertarget{classRTree_a98d1f0a325921db826b2a2d5a407c9be}{\index{R\-Tree@{R\-Tree}!Insert@{Insert}}
+\index{Insert@{Insert}!RTree@{R\-Tree}}
+\subsubsection[{Insert}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ void {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Insert (
+\begin{DoxyParamCaption}
+\item[{const E\-L\-E\-M\-T\-Y\-P\-E}]{a\-\_\-min\mbox{[}\-N\-U\-M\-D\-I\-M\-S\mbox{]}, }
+\item[{const E\-L\-E\-M\-T\-Y\-P\-E}]{a\-\_\-max\mbox{[}\-N\-U\-M\-D\-I\-M\-S\mbox{]}, }
+\item[{const D\-A\-T\-A\-T\-Y\-P\-E \&}]{a\-\_\-data\-Id}
+\end{DoxyParamCaption}
+)}}\label{classRTree_a98d1f0a325921db826b2a2d5a407c9be}
+Insert entry 
+\begin{DoxyParams}{Parameters}
+{\em a\-\_\-min} & Min of bounding rect \\
+\hline
+{\em a\-\_\-max} & Max of bounding rect \\
+\hline
+{\em a\-\_\-data\-Id} & Positive Id of data. Maybe zero, but negative numbers not allowed. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classRTree_a0a9b36fceaa83240e41d67b7665f6d3d}{\index{R\-Tree@{R\-Tree}!Insert\-Rect@{Insert\-Rect}}
+\index{Insert\-Rect@{Insert\-Rect}!RTree@{R\-Tree}}
+\subsubsection[{Insert\-Rect}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ bool {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Insert\-Rect (
+\begin{DoxyParamCaption}
+\item[{const {\bf Branch} \&}]{a\-\_\-branch, }
+\item[{{\bf Node} $\ast$$\ast$}]{a\-\_\-root, }
+\item[{int}]{a\-\_\-level}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRTree_a0a9b36fceaa83240e41d67b7665f6d3d}
+\hypertarget{classRTree_af8e10a4e616414ddf6c0ee40a6c95664}{\index{R\-Tree@{R\-Tree}!Insert\-Rect\-Rec@{Insert\-Rect\-Rec}}
+\index{Insert\-Rect\-Rec@{Insert\-Rect\-Rec}!RTree@{R\-Tree}}
+\subsubsection[{Insert\-Rect\-Rec}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ bool {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Insert\-Rect\-Rec (
+\begin{DoxyParamCaption}
+\item[{const {\bf Branch} \&}]{a\-\_\-branch, }
+\item[{{\bf Node} $\ast$}]{a\-\_\-node, }
+\item[{{\bf Node} $\ast$$\ast$}]{a\-\_\-new\-Node, }
+\item[{int}]{a\-\_\-level}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRTree_af8e10a4e616414ddf6c0ee40a6c95664}
+\hypertarget{classRTree_a8b8c51698e5b8df1e715650a43aad7f4}{\index{R\-Tree@{R\-Tree}!Is\-Null@{Is\-Null}}
+\index{Is\-Null@{Is\-Null}!RTree@{R\-Tree}}
+\subsubsection[{Is\-Null}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ bool {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Is\-Null (
+\begin{DoxyParamCaption}
+\item[{{\bf Iterator} \&}]{a\-\_\-it}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRTree_a8b8c51698e5b8df1e715650a43aad7f4}
+
+
+Is iterator N\-U\-L\-L, or at end? 
+
+\hypertarget{classRTree_adbd1f87715d22ed75b2b8be738583fc2}{\index{R\-Tree@{R\-Tree}!Load@{Load}}
+\index{Load@{Load}!RTree@{R\-Tree}}
+\subsubsection[{Load}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ bool {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Load (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{a\-\_\-file\-Name}
+\end{DoxyParamCaption}
+)}}\label{classRTree_adbd1f87715d22ed75b2b8be738583fc2}
+
+
+Load tree contents from file. 
+
+\hypertarget{classRTree_ad02dc25a34d9b5b291c8ff3f1b002b09}{\index{R\-Tree@{R\-Tree}!Load@{Load}}
+\index{Load@{Load}!RTree@{R\-Tree}}
+\subsubsection[{Load}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ bool {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Load (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-T\-File\-Stream} \&}]{a\-\_\-stream}
+\end{DoxyParamCaption}
+)}}\label{classRTree_ad02dc25a34d9b5b291c8ff3f1b002b09}
+
+
+Load tree contents from stream. 
+
+\hypertarget{classRTree_a88e9eef4ad30d4dee0c783df5e6840a0}{\index{R\-Tree@{R\-Tree}!Load\-Nodes@{Load\-Nodes}}
+\index{Load\-Nodes@{Load\-Nodes}!RTree@{R\-Tree}}
+\subsubsection[{Load\-Nodes}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ void {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Load\-Nodes (
+\begin{DoxyParamCaption}
+\item[{{\bf Node} $\ast$}]{a\-\_\-node\-A, }
+\item[{{\bf Node} $\ast$}]{a\-\_\-node\-B, }
+\item[{{\bf Partition\-Vars} $\ast$}]{a\-\_\-par\-Vars}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRTree_a88e9eef4ad30d4dee0c783df5e6840a0}
+\hypertarget{classRTree_aa432ad1d5dfc151c1f8eac388af41968}{\index{R\-Tree@{R\-Tree}!Load\-Rec@{Load\-Rec}}
+\index{Load\-Rec@{Load\-Rec}!RTree@{R\-Tree}}
+\subsubsection[{Load\-Rec}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ bool {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Load\-Rec (
+\begin{DoxyParamCaption}
+\item[{{\bf Node} $\ast$}]{a\-\_\-node, }
+\item[{{\bf R\-T\-File\-Stream} \&}]{a\-\_\-stream}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRTree_aa432ad1d5dfc151c1f8eac388af41968}
+\hypertarget{classRTree_a19dc96034d7a3230ba877953247457e1}{\index{R\-Tree@{R\-Tree}!Node\-Cover@{Node\-Cover}}
+\index{Node\-Cover@{Node\-Cover}!RTree@{R\-Tree}}
+\subsubsection[{Node\-Cover}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ {\bf Rect} {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Node\-Cover (
+\begin{DoxyParamCaption}
+\item[{{\bf Node} $\ast$}]{a\-\_\-node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRTree_a19dc96034d7a3230ba877953247457e1}
+\hypertarget{classRTree_aa5b369536a94aa8ad9ec3b4f8f68302c}{\index{R\-Tree@{R\-Tree}!Overlap@{Overlap}}
+\index{Overlap@{Overlap}!RTree@{R\-Tree}}
+\subsubsection[{Overlap}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ bool {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Overlap (
+\begin{DoxyParamCaption}
+\item[{{\bf Rect} $\ast$}]{a\-\_\-rect\-A, }
+\item[{{\bf Rect} $\ast$}]{a\-\_\-rect\-B}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRTree_aa5b369536a94aa8ad9ec3b4f8f68302c}
+\hypertarget{classRTree_a142464629cd61c2541d6d0e0cc7d2d80}{\index{R\-Tree@{R\-Tree}!Pick\-Branch@{Pick\-Branch}}
+\index{Pick\-Branch@{Pick\-Branch}!RTree@{R\-Tree}}
+\subsubsection[{Pick\-Branch}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ int {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Pick\-Branch (
+\begin{DoxyParamCaption}
+\item[{const {\bf Rect} $\ast$}]{a\-\_\-rect, }
+\item[{{\bf Node} $\ast$}]{a\-\_\-node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRTree_a142464629cd61c2541d6d0e0cc7d2d80}
+\hypertarget{classRTree_af4232dd5fd978fcce12ce32f9df20f58}{\index{R\-Tree@{R\-Tree}!Pick\-Seeds@{Pick\-Seeds}}
+\index{Pick\-Seeds@{Pick\-Seeds}!RTree@{R\-Tree}}
+\subsubsection[{Pick\-Seeds}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ void {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Pick\-Seeds (
+\begin{DoxyParamCaption}
+\item[{{\bf Partition\-Vars} $\ast$}]{a\-\_\-par\-Vars}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRTree_af4232dd5fd978fcce12ce32f9df20f58}
+\hypertarget{classRTree_a7958e17fc046e5d648d8e23ffc82e849}{\index{R\-Tree@{R\-Tree}!Rect\-Spherical\-Volume@{Rect\-Spherical\-Volume}}
+\index{Rect\-Spherical\-Volume@{Rect\-Spherical\-Volume}!RTree@{R\-Tree}}
+\subsubsection[{Rect\-Spherical\-Volume}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Rect\-Spherical\-Volume (
+\begin{DoxyParamCaption}
+\item[{{\bf Rect} $\ast$}]{a\-\_\-rect}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRTree_a7958e17fc046e5d648d8e23ffc82e849}
+\hypertarget{classRTree_af9f63fef551a4c3a42cd915618a9917a}{\index{R\-Tree@{R\-Tree}!Rect\-Volume@{Rect\-Volume}}
+\index{Rect\-Volume@{Rect\-Volume}!RTree@{R\-Tree}}
+\subsubsection[{Rect\-Volume}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Rect\-Volume (
+\begin{DoxyParamCaption}
+\item[{{\bf Rect} $\ast$}]{a\-\_\-rect}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRTree_af9f63fef551a4c3a42cd915618a9917a}
+\hypertarget{classRTree_a5d2b072588eae9e9058224942ae0294f}{\index{R\-Tree@{R\-Tree}!Re\-Insert@{Re\-Insert}}
+\index{Re\-Insert@{Re\-Insert}!RTree@{R\-Tree}}
+\subsubsection[{Re\-Insert}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ void {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Re\-Insert (
+\begin{DoxyParamCaption}
+\item[{{\bf Node} $\ast$}]{a\-\_\-node, }
+\item[{{\bf List\-Node} $\ast$$\ast$}]{a\-\_\-list\-Node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRTree_a5d2b072588eae9e9058224942ae0294f}
+\hypertarget{classRTree_a1b4b6b4c73bc47029ba696c49265c043}{\index{R\-Tree@{R\-Tree}!Remove@{Remove}}
+\index{Remove@{Remove}!RTree@{R\-Tree}}
+\subsubsection[{Remove}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ void {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Remove (
+\begin{DoxyParamCaption}
+\item[{const E\-L\-E\-M\-T\-Y\-P\-E}]{a\-\_\-min\mbox{[}\-N\-U\-M\-D\-I\-M\-S\mbox{]}, }
+\item[{const E\-L\-E\-M\-T\-Y\-P\-E}]{a\-\_\-max\mbox{[}\-N\-U\-M\-D\-I\-M\-S\mbox{]}, }
+\item[{const D\-A\-T\-A\-T\-Y\-P\-E \&}]{a\-\_\-data\-Id}
+\end{DoxyParamCaption}
+)}}\label{classRTree_a1b4b6b4c73bc47029ba696c49265c043}
+Remove entry 
+\begin{DoxyParams}{Parameters}
+{\em a\-\_\-min} & Min of bounding rect \\
+\hline
+{\em a\-\_\-max} & Max of bounding rect \\
+\hline
+{\em a\-\_\-data\-Id} & Positive Id of data. Maybe zero, but negative numbers not allowed. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classRTree_a396f1031eb2c8224715741fd0b77349d}{\index{R\-Tree@{R\-Tree}!Remove\-All@{Remove\-All}}
+\index{Remove\-All@{Remove\-All}!RTree@{R\-Tree}}
+\subsubsection[{Remove\-All}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ void {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Remove\-All (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classRTree_a396f1031eb2c8224715741fd0b77349d}
+
+
+Remove all entries from tree. 
+
+\hypertarget{classRTree_a5045d833566114335162fda10d58081d}{\index{R\-Tree@{R\-Tree}!Remove\-All\-Rec@{Remove\-All\-Rec}}
+\index{Remove\-All\-Rec@{Remove\-All\-Rec}!RTree@{R\-Tree}}
+\subsubsection[{Remove\-All\-Rec}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ void {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Remove\-All\-Rec (
+\begin{DoxyParamCaption}
+\item[{{\bf Node} $\ast$}]{a\-\_\-node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRTree_a5045d833566114335162fda10d58081d}
+\hypertarget{classRTree_a64a1092e85775014ce01e1bb6bc8a938}{\index{R\-Tree@{R\-Tree}!Remove\-Rect@{Remove\-Rect}}
+\index{Remove\-Rect@{Remove\-Rect}!RTree@{R\-Tree}}
+\subsubsection[{Remove\-Rect}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ bool {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Remove\-Rect (
+\begin{DoxyParamCaption}
+\item[{{\bf Rect} $\ast$}]{a\-\_\-rect, }
+\item[{const D\-A\-T\-A\-T\-Y\-P\-E \&}]{a\-\_\-id, }
+\item[{{\bf Node} $\ast$$\ast$}]{a\-\_\-root}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRTree_a64a1092e85775014ce01e1bb6bc8a938}
+\hypertarget{classRTree_a519d3084a57b45ed4e4167b382bc977e}{\index{R\-Tree@{R\-Tree}!Remove\-Rect\-Rec@{Remove\-Rect\-Rec}}
+\index{Remove\-Rect\-Rec@{Remove\-Rect\-Rec}!RTree@{R\-Tree}}
+\subsubsection[{Remove\-Rect\-Rec}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ bool {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Remove\-Rect\-Rec (
+\begin{DoxyParamCaption}
+\item[{{\bf Rect} $\ast$}]{a\-\_\-rect, }
+\item[{const D\-A\-T\-A\-T\-Y\-P\-E \&}]{a\-\_\-id, }
+\item[{{\bf Node} $\ast$}]{a\-\_\-node, }
+\item[{{\bf List\-Node} $\ast$$\ast$}]{a\-\_\-list\-Node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRTree_a519d3084a57b45ed4e4167b382bc977e}
+\hypertarget{classRTree_a2508b9d85f5b5f553b313356c05c6e0c}{\index{R\-Tree@{R\-Tree}!Reset@{Reset}}
+\index{Reset@{Reset}!RTree@{R\-Tree}}
+\subsubsection[{Reset}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ void {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRTree_a2508b9d85f5b5f553b313356c05c6e0c}
+\hypertarget{classRTree_a6817692e1e8e416843be1ea628f7a074}{\index{R\-Tree@{R\-Tree}!Save@{Save}}
+\index{Save@{Save}!RTree@{R\-Tree}}
+\subsubsection[{Save}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ bool {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Save (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{a\-\_\-file\-Name}
+\end{DoxyParamCaption}
+)}}\label{classRTree_a6817692e1e8e416843be1ea628f7a074}
+
+
+Save tree contents to file. 
+
+\hypertarget{classRTree_a7066ea753180537a3a870c84e4fcefce}{\index{R\-Tree@{R\-Tree}!Save@{Save}}
+\index{Save@{Save}!RTree@{R\-Tree}}
+\subsubsection[{Save}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ bool {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Save (
+\begin{DoxyParamCaption}
+\item[{{\bf R\-T\-File\-Stream} \&}]{a\-\_\-stream}
+\end{DoxyParamCaption}
+)}}\label{classRTree_a7066ea753180537a3a870c84e4fcefce}
+
+
+Save tree contents to stream. 
+
+\hypertarget{classRTree_a53a8af8a04a9a4a9eb93a6a0792fea95}{\index{R\-Tree@{R\-Tree}!Save\-Rec@{Save\-Rec}}
+\index{Save\-Rec@{Save\-Rec}!RTree@{R\-Tree}}
+\subsubsection[{Save\-Rec}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ bool {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Save\-Rec (
+\begin{DoxyParamCaption}
+\item[{{\bf Node} $\ast$}]{a\-\_\-node, }
+\item[{{\bf R\-T\-File\-Stream} \&}]{a\-\_\-stream}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRTree_a53a8af8a04a9a4a9eb93a6a0792fea95}
+\hypertarget{classRTree_a3a66726a96bf3c1542d13a2991a25157}{\index{R\-Tree@{R\-Tree}!Search@{Search}}
+\index{Search@{Search}!RTree@{R\-Tree}}
+\subsubsection[{Search}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ int {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Search (
+\begin{DoxyParamCaption}
+\item[{const E\-L\-E\-M\-T\-Y\-P\-E}]{a\-\_\-min\mbox{[}\-N\-U\-M\-D\-I\-M\-S\mbox{]}, }
+\item[{const E\-L\-E\-M\-T\-Y\-P\-E}]{a\-\_\-max\mbox{[}\-N\-U\-M\-D\-I\-M\-S\mbox{]}, }
+\item[{{\bf t\-\_\-result\-Callback}}]{a\-\_\-result\-Callback, }
+\item[{void $\ast$}]{a\-\_\-context}
+\end{DoxyParamCaption}
+)}}\label{classRTree_a3a66726a96bf3c1542d13a2991a25157}
+Find all within search rectangle 
+\begin{DoxyParams}{Parameters}
+{\em a\-\_\-min} & Min of search bounding rect \\
+\hline
+{\em a\-\_\-max} & Max of search bounding rect \\
+\hline
+{\em a\-\_\-search\-Result} & Search result array. Caller should set grow size. Function will reset, not append to array. \\
+\hline
+{\em a\-\_\-result\-Callback} & Callback function to return result. Callback should return 'true' to continue searching \\
+\hline
+{\em a\-\_\-context} & User context to pass as parameter to a\-\_\-result\-Callback \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the number of entries found 
+\end{DoxyReturn}
+\hypertarget{classRTree_a7f84e7f718b4473c435862965033a8d4}{\index{R\-Tree@{R\-Tree}!Search@{Search}}
+\index{Search@{Search}!RTree@{R\-Tree}}
+\subsubsection[{Search}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ bool {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Search (
+\begin{DoxyParamCaption}
+\item[{{\bf Node} $\ast$}]{a\-\_\-node, }
+\item[{{\bf Rect} $\ast$}]{a\-\_\-rect, }
+\item[{int \&}]{a\-\_\-found\-Count, }
+\item[{{\bf t\-\_\-result\-Callback}}]{a\-\_\-result\-Callback, }
+\item[{void $\ast$}]{a\-\_\-context}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRTree_a7f84e7f718b4473c435862965033a8d4}
+\hypertarget{classRTree_aec268045161713d5225ed8151c5068dd}{\index{R\-Tree@{R\-Tree}!Split\-Node@{Split\-Node}}
+\index{Split\-Node@{Split\-Node}!RTree@{R\-Tree}}
+\subsubsection[{Split\-Node}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ void {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Split\-Node (
+\begin{DoxyParamCaption}
+\item[{{\bf Node} $\ast$}]{a\-\_\-node, }
+\item[{const {\bf Branch} $\ast$}]{a\-\_\-branch, }
+\item[{{\bf Node} $\ast$$\ast$}]{a\-\_\-new\-Node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRTree_aec268045161713d5225ed8151c5068dd}
+
+
+\subsection{Field Documentation}
+\hypertarget{classRTree_a5028f4e28918519bc70cb1f615316582}{\index{R\-Tree@{R\-Tree}!m\-\_\-root@{m\-\_\-root}}
+\index{m\-\_\-root@{m\-\_\-root}!RTree@{R\-Tree}}
+\subsubsection[{m\-\_\-root}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ {\bf Node}$\ast$ {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::m\-\_\-root\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRTree_a5028f4e28918519bc70cb1f615316582}
+
+
+Root of tree. 
+
+\hypertarget{classRTree_af26d4beb8ce3a381ee75eabeec4727e3}{\index{R\-Tree@{R\-Tree}!m\-\_\-unit\-Sphere\-Volume@{m\-\_\-unit\-Sphere\-Volume}}
+\index{m\-\_\-unit\-Sphere\-Volume@{m\-\_\-unit\-Sphere\-Volume}!RTree@{R\-Tree}}
+\subsubsection[{m\-\_\-unit\-Sphere\-Volume}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::m\-\_\-unit\-Sphere\-Volume\hspace{0.3cm}{\ttfamily [protected]}}}\label{classRTree_af26d4beb8ce3a381ee75eabeec4727e3}
+
+
+Unit sphere constant for required number of dimensions. 
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{RTree_8h}{R\-Tree.\-h}\end{DoxyCompactItemize}

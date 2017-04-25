@@ -1,0 +1,126 @@
+\hypertarget{classRTFileStream}{\section{R\-T\-File\-Stream Class Reference}
+\label{classRTFileStream}\index{R\-T\-File\-Stream@{R\-T\-File\-Stream}}
+}
+
+
+{\ttfamily \#include \char`\"{}R\-Tree.\-h\char`\"{}}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRTFileStream_a9fc06ec1548eead586a4d3e98ba43921}{R\-T\-File\-Stream} ()
+\item 
+\hyperlink{classRTFileStream_ad7666167a8f708f4f42cc27df446033b}{$\sim$\-R\-T\-File\-Stream} ()
+\item 
+bool \hyperlink{classRTFileStream_ac6173a0c9e27f20e6be7967973a4c88a}{Open\-Read} (const char $\ast$a\-\_\-file\-Name)
+\item 
+bool \hyperlink{classRTFileStream_a96b4770d34e8c5188d928ca5e53adb8b}{Open\-Write} (const char $\ast$a\-\_\-file\-Name)
+\item 
+void \hyperlink{classRTFileStream_acaae552bed709bfeb980b392ce5d7752}{Close} ()
+\item 
+{\footnotesize template$<$typename T\-Y\-P\-E $>$ }\\size\-\_\-t \hyperlink{classRTFileStream_a5f58ae8de73d979a992e4d7cfcbd462c}{Write} (const T\-Y\-P\-E \&a\-\_\-value)
+\item 
+{\footnotesize template$<$typename T\-Y\-P\-E $>$ }\\size\-\_\-t \hyperlink{classRTFileStream_a7f13b1aa9c3fd6c116c9d482bfc4ae0d}{Write\-Array} (const T\-Y\-P\-E $\ast$a\-\_\-array, int a\-\_\-count)
+\item 
+{\footnotesize template$<$typename T\-Y\-P\-E $>$ }\\size\-\_\-t \hyperlink{classRTFileStream_a389780f31ac4853b850fce1ce6ee9df9}{Read} (T\-Y\-P\-E \&a\-\_\-value)
+\item 
+{\footnotesize template$<$typename T\-Y\-P\-E $>$ }\\size\-\_\-t \hyperlink{classRTFileStream_afb034999c38e44e2a80637bfc3b907e5}{Read\-Array} (T\-Y\-P\-E $\ast$a\-\_\-array, int a\-\_\-count)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+F\-I\-L\-E $\ast$ \hyperlink{classRTFileStream_a835f8a26bae1528a3cfcbc13db62548d}{m\-\_\-file}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRTFileStream_a9fc06ec1548eead586a4d3e98ba43921}{\index{R\-T\-File\-Stream@{R\-T\-File\-Stream}!R\-T\-File\-Stream@{R\-T\-File\-Stream}}
+\index{R\-T\-File\-Stream@{R\-T\-File\-Stream}!RTFileStream@{R\-T\-File\-Stream}}
+\subsubsection[{R\-T\-File\-Stream}]{\setlength{\rightskip}{0pt plus 5cm}R\-T\-File\-Stream\-::\-R\-T\-File\-Stream (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRTFileStream_a9fc06ec1548eead586a4d3e98ba43921}
+\hypertarget{classRTFileStream_ad7666167a8f708f4f42cc27df446033b}{\index{R\-T\-File\-Stream@{R\-T\-File\-Stream}!$\sim$\-R\-T\-File\-Stream@{$\sim$\-R\-T\-File\-Stream}}
+\index{$\sim$\-R\-T\-File\-Stream@{$\sim$\-R\-T\-File\-Stream}!RTFileStream@{R\-T\-File\-Stream}}
+\subsubsection[{$\sim$\-R\-T\-File\-Stream}]{\setlength{\rightskip}{0pt plus 5cm}R\-T\-File\-Stream\-::$\sim$\-R\-T\-File\-Stream (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRTFileStream_ad7666167a8f708f4f42cc27df446033b}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classRTFileStream_ad7666167a8f708f4f42cc27df446033b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRTFileStream_acaae552bed709bfeb980b392ce5d7752}{\index{R\-T\-File\-Stream@{R\-T\-File\-Stream}!Close@{Close}}
+\index{Close@{Close}!RTFileStream@{R\-T\-File\-Stream}}
+\subsubsection[{Close}]{\setlength{\rightskip}{0pt plus 5cm}void R\-T\-File\-Stream\-::\-Close (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRTFileStream_acaae552bed709bfeb980b392ce5d7752}
+\hypertarget{classRTFileStream_ac6173a0c9e27f20e6be7967973a4c88a}{\index{R\-T\-File\-Stream@{R\-T\-File\-Stream}!Open\-Read@{Open\-Read}}
+\index{Open\-Read@{Open\-Read}!RTFileStream@{R\-T\-File\-Stream}}
+\subsubsection[{Open\-Read}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-T\-File\-Stream\-::\-Open\-Read (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{a\-\_\-file\-Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRTFileStream_ac6173a0c9e27f20e6be7967973a4c88a}
+\hypertarget{classRTFileStream_a96b4770d34e8c5188d928ca5e53adb8b}{\index{R\-T\-File\-Stream@{R\-T\-File\-Stream}!Open\-Write@{Open\-Write}}
+\index{Open\-Write@{Open\-Write}!RTFileStream@{R\-T\-File\-Stream}}
+\subsubsection[{Open\-Write}]{\setlength{\rightskip}{0pt plus 5cm}bool R\-T\-File\-Stream\-::\-Open\-Write (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{a\-\_\-file\-Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRTFileStream_a96b4770d34e8c5188d928ca5e53adb8b}
+\hypertarget{classRTFileStream_a389780f31ac4853b850fce1ce6ee9df9}{\index{R\-T\-File\-Stream@{R\-T\-File\-Stream}!Read@{Read}}
+\index{Read@{Read}!RTFileStream@{R\-T\-File\-Stream}}
+\subsubsection[{Read}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\-Y\-P\-E $>$ size\-\_\-t R\-T\-File\-Stream\-::\-Read (
+\begin{DoxyParamCaption}
+\item[{T\-Y\-P\-E \&}]{a\-\_\-value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRTFileStream_a389780f31ac4853b850fce1ce6ee9df9}
+\hypertarget{classRTFileStream_afb034999c38e44e2a80637bfc3b907e5}{\index{R\-T\-File\-Stream@{R\-T\-File\-Stream}!Read\-Array@{Read\-Array}}
+\index{Read\-Array@{Read\-Array}!RTFileStream@{R\-T\-File\-Stream}}
+\subsubsection[{Read\-Array}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\-Y\-P\-E $>$ size\-\_\-t R\-T\-File\-Stream\-::\-Read\-Array (
+\begin{DoxyParamCaption}
+\item[{T\-Y\-P\-E $\ast$}]{a\-\_\-array, }
+\item[{int}]{a\-\_\-count}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRTFileStream_afb034999c38e44e2a80637bfc3b907e5}
+\hypertarget{classRTFileStream_a5f58ae8de73d979a992e4d7cfcbd462c}{\index{R\-T\-File\-Stream@{R\-T\-File\-Stream}!Write@{Write}}
+\index{Write@{Write}!RTFileStream@{R\-T\-File\-Stream}}
+\subsubsection[{Write}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\-Y\-P\-E $>$ size\-\_\-t R\-T\-File\-Stream\-::\-Write (
+\begin{DoxyParamCaption}
+\item[{const T\-Y\-P\-E \&}]{a\-\_\-value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRTFileStream_a5f58ae8de73d979a992e4d7cfcbd462c}
+\hypertarget{classRTFileStream_a7f13b1aa9c3fd6c116c9d482bfc4ae0d}{\index{R\-T\-File\-Stream@{R\-T\-File\-Stream}!Write\-Array@{Write\-Array}}
+\index{Write\-Array@{Write\-Array}!RTFileStream@{R\-T\-File\-Stream}}
+\subsubsection[{Write\-Array}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\-Y\-P\-E $>$ size\-\_\-t R\-T\-File\-Stream\-::\-Write\-Array (
+\begin{DoxyParamCaption}
+\item[{const T\-Y\-P\-E $\ast$}]{a\-\_\-array, }
+\item[{int}]{a\-\_\-count}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRTFileStream_a7f13b1aa9c3fd6c116c9d482bfc4ae0d}
+
+
+\subsection{Field Documentation}
+\hypertarget{classRTFileStream_a835f8a26bae1528a3cfcbc13db62548d}{\index{R\-T\-File\-Stream@{R\-T\-File\-Stream}!m\-\_\-file@{m\-\_\-file}}
+\index{m\-\_\-file@{m\-\_\-file}!RTFileStream@{R\-T\-File\-Stream}}
+\subsubsection[{m\-\_\-file}]{\setlength{\rightskip}{0pt plus 5cm}F\-I\-L\-E$\ast$ R\-T\-File\-Stream\-::m\-\_\-file\hspace{0.3cm}{\ttfamily [private]}}}\label{classRTFileStream_a835f8a26bae1528a3cfcbc13db62548d}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{RTree_8h}{R\-Tree.\-h}\end{DoxyCompactItemize}

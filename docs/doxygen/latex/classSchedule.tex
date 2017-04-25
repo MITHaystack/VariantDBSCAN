@@ -1,0 +1,109 @@
+\hypertarget{classSchedule}{\section{Schedule Class Reference}
+\label{classSchedule}\index{Schedule@{Schedule}}
+}
+
+
+{\ttfamily \#include \char`\"{}schedule.\-h\char`\"{}}
+
+
+
+Collaboration diagram for Schedule\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSchedule__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSchedule_a5e92f7e6f259168a8634d60d33cd65ed}{Schedule} (vector$<$ struct \hyperlink{structexperiment}{experiment} $>$ $\ast$experiment\-List)
+\item 
+bool \hyperlink{classSchedule_a2f1dfef54409f093d3900169af84b850}{determine\-Reuse} (int in\-Exper\-I\-D, int $\ast$out\-I\-D\-Reuse, int $\ast$out\-Instance\-Cluster)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+std\-::vector$<$ bool $>$ \hyperlink{classSchedule_a0e3d2c52318e5c7060c9fa9ea4e9956b}{finished\-List}
+\item 
+std\-::vector$<$ struct \hyperlink{structexperiment}{experiment} $>$ $\ast$ \hyperlink{classSchedule_a6be64e3a9e572d346e11481b49d55b7f}{exp\-Ptr}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classSchedule_ac301aeb664a5c22bdd0d91aa794d5f7d}{sched\-Greedy} (int $\ast$out\-I\-D, int $\ast$out\-Instance\-Cluster)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::vector$<$ int $>$ \hyperlink{classSchedule_a3bb97864bd4c176f2c55180671abd0a5}{priority\-List}
+\item 
+std\-::vector$<$ bool $>$ \hyperlink{classSchedule_a2077242582962c5100fd8d5b086398cb}{cluster\-Scratch\-List}
+\item 
+std\-::queue$<$ int $>$ \hyperlink{classSchedule_a5ee0c3a418d3d356c972f09ba4bd1513}{job\-Queue}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classSchedule_a5e92f7e6f259168a8634d60d33cd65ed}{\index{Schedule@{Schedule}!Schedule@{Schedule}}
+\index{Schedule@{Schedule}!Schedule@{Schedule}}
+\subsubsection[{Schedule}]{\setlength{\rightskip}{0pt plus 5cm}Schedule\-::\-Schedule (
+\begin{DoxyParamCaption}
+\item[{vector$<$ struct {\bf experiment} $>$ $\ast$}]{experiment\-List}
+\end{DoxyParamCaption}
+)}}\label{classSchedule_a5e92f7e6f259168a8634d60d33cd65ed}
+\hyperlink{classSchedule}{Schedule} constructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classSchedule_a2f1dfef54409f093d3900169af84b850}{\index{Schedule@{Schedule}!determine\-Reuse@{determine\-Reuse}}
+\index{determine\-Reuse@{determine\-Reuse}!Schedule@{Schedule}}
+\subsubsection[{determine\-Reuse}]{\setlength{\rightskip}{0pt plus 5cm}bool Schedule\-::determine\-Reuse (
+\begin{DoxyParamCaption}
+\item[{int}]{in\-Exper\-I\-D, }
+\item[{int $\ast$}]{out\-I\-D\-Reuse, }
+\item[{int $\ast$}]{out\-Instance\-Cluster}
+\end{DoxyParamCaption}
+)}}\label{classSchedule_a2f1dfef54409f093d3900169af84b850}
+Determines if the variant should be clustered from scratch or not If reusing data, then it uses the completed out\-I\-D\-Reuse, and clusters variant out\-Instance\-Cluster 
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSchedule_a2f1dfef54409f093d3900169af84b850_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classSchedule_ac301aeb664a5c22bdd0d91aa794d5f7d}{\index{Schedule@{Schedule}!sched\-Greedy@{sched\-Greedy}}
+\index{sched\-Greedy@{sched\-Greedy}!Schedule@{Schedule}}
+\subsubsection[{sched\-Greedy}]{\setlength{\rightskip}{0pt plus 5cm}bool Schedule\-::sched\-Greedy (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{out\-I\-D, }
+\item[{int $\ast$}]{out\-Instance\-Cluster}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classSchedule_ac301aeb664a5c22bdd0d91aa794d5f7d}
+The schedule type\-: only use greedy schedule from the paper 
+
+\subsection{Field Documentation}
+\hypertarget{classSchedule_a2077242582962c5100fd8d5b086398cb}{\index{Schedule@{Schedule}!cluster\-Scratch\-List@{cluster\-Scratch\-List}}
+\index{cluster\-Scratch\-List@{cluster\-Scratch\-List}!Schedule@{Schedule}}
+\subsubsection[{cluster\-Scratch\-List}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$bool$>$ Schedule\-::cluster\-Scratch\-List\hspace{0.3cm}{\ttfamily [private]}}}\label{classSchedule_a2077242582962c5100fd8d5b086398cb}
+Corresponding list of variants that must be clustered from scratch \hypertarget{classSchedule_a6be64e3a9e572d346e11481b49d55b7f}{\index{Schedule@{Schedule}!exp\-Ptr@{exp\-Ptr}}
+\index{exp\-Ptr@{exp\-Ptr}!Schedule@{Schedule}}
+\subsubsection[{exp\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$struct {\bf experiment}$>$$\ast$ Schedule\-::exp\-Ptr}}\label{classSchedule_a6be64e3a9e572d346e11481b49d55b7f}
+Pointer to the vector of defined variants \hypertarget{classSchedule_a0e3d2c52318e5c7060c9fa9ea4e9956b}{\index{Schedule@{Schedule}!finished\-List@{finished\-List}}
+\index{finished\-List@{finished\-List}!Schedule@{Schedule}}
+\subsubsection[{finished\-List}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$bool$>$ Schedule\-::finished\-List}}\label{classSchedule_a0e3d2c52318e5c7060c9fa9ea4e9956b}
+Keeps track of variants that have completely finished \hypertarget{classSchedule_a5ee0c3a418d3d356c972f09ba4bd1513}{\index{Schedule@{Schedule}!job\-Queue@{job\-Queue}}
+\index{job\-Queue@{job\-Queue}!Schedule@{Schedule}}
+\subsubsection[{job\-Queue}]{\setlength{\rightskip}{0pt plus 5cm}std\-::queue$<$int$>$ Schedule\-::job\-Queue\hspace{0.3cm}{\ttfamily [private]}}}\label{classSchedule_a5ee0c3a418d3d356c972f09ba4bd1513}
+Queue for variant priority ordering \hypertarget{classSchedule_a3bb97864bd4c176f2c55180671abd0a5}{\index{Schedule@{Schedule}!priority\-List@{priority\-List}}
+\index{priority\-List@{priority\-List}!Schedule@{Schedule}}
+\subsubsection[{priority\-List}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$int$>$ Schedule\-::priority\-List\hspace{0.3cm}{\ttfamily [private]}}}\label{classSchedule_a3bb97864bd4c176f2c55180671abd0a5}
+The order in which the variants should be clustered; stores the ids of the variant list 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{schedule_8h}{schedule.\-h}\item 
+\hyperlink{schedule_8cpp}{schedule.\-cpp}\end{DoxyCompactItemize}

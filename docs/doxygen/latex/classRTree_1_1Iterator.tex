@@ -1,0 +1,337 @@
+\hypertarget{classRTree_1_1Iterator}{\section{R\-Tree$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-:\-:Iterator Class Reference}
+\label{classRTree_1_1Iterator}\index{R\-Tree$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::\-Iterator@{R\-Tree$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::\-Iterator}}
+}
+
+
+\hyperlink{classRTree_1_1Iterator}{Iterator} is not remove safe.  
+
+
+
+
+{\ttfamily \#include \char`\"{}R\-Tree.\-h\char`\"{}}
+
+
+
+Collaboration diagram for R\-Tree$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-:\-:Iterator\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classRTree_1_1Iterator__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structRTree_1_1Iterator_1_1StackElement}{Stack\-Element}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRTree_1_1Iterator_a59b2600d21bebdbfd5406ae42612ef7f}{Iterator} ()
+\item 
+\hyperlink{classRTree_1_1Iterator_a4823daecb48994f28175139ccbd763d8}{$\sim$\-Iterator} ()
+\item 
+bool \hyperlink{classRTree_1_1Iterator_a23f756ac37acc2b162b61230c27732b3}{Is\-Null} ()
+\begin{DoxyCompactList}\small\item\em Is iterator invalid. \end{DoxyCompactList}\item 
+bool \hyperlink{classRTree_1_1Iterator_a8cd6bf4fa228497ac736e8d7993e7daf}{Is\-Not\-Null} ()
+\begin{DoxyCompactList}\small\item\em Is iterator pointing to valid data. \end{DoxyCompactList}\item 
+D\-A\-T\-A\-T\-Y\-P\-E \& \hyperlink{classRTree_1_1Iterator_abb61d3a8396473b543cb15aa9002cfeb}{operator$\ast$} ()
+\begin{DoxyCompactList}\small\item\em Access the current data element. Caller must be sure iterator is not N\-U\-L\-L first. \end{DoxyCompactList}\item 
+const D\-A\-T\-A\-T\-Y\-P\-E \& \hyperlink{classRTree_1_1Iterator_a45496ad72eba6929d40239ed711bf129}{operator$\ast$} () const 
+\begin{DoxyCompactList}\small\item\em Access the current data element. Caller must be sure iterator is not N\-U\-L\-L first. \end{DoxyCompactList}\item 
+bool \hyperlink{classRTree_1_1Iterator_ad578bac71cfc7d324b84595032feda21}{operator++} ()
+\begin{DoxyCompactList}\small\item\em Find the next data element. \end{DoxyCompactList}\item 
+void \hyperlink{classRTree_1_1Iterator_abbf4f08d825f6b475b7cdb6e5bc223d7}{Get\-Data} (D\-A\-T\-A\-T\-Y\-P\-E $\ast$t\-\_\-id, D\-A\-T\-A\-T\-Y\-P\-E $\ast$t\-\_\-segment\-\_\-id)
+\item 
+void \hyperlink{classRTree_1_1Iterator_a65121f5016c2b1bf4696797748092709}{Get\-Bounds} (E\-L\-E\-M\-T\-Y\-P\-E a\-\_\-min\mbox{[}N\-U\-M\-D\-I\-M\-S\mbox{]}, E\-L\-E\-M\-T\-Y\-P\-E a\-\_\-max\mbox{[}N\-U\-M\-D\-I\-M\-S\mbox{]})
+\begin{DoxyCompactList}\small\item\em Get the bounds for this node. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{classRTree_1_1Iterator_a1e45c4c1d6d735b999df1cbe1a0e36ada26b6ad9c0a591145b71370b87ce125e8}{M\-A\-X\-\_\-\-S\-T\-A\-C\-K} = 32
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classRTree_1_1Iterator_a923e4fe7dc813630c4b20b8468f9dcc7}{Init} ()
+\begin{DoxyCompactList}\small\item\em Reset iterator. \end{DoxyCompactList}\item 
+bool \hyperlink{classRTree_1_1Iterator_ae1dc5968481efa8c8c916323472b159b}{Find\-Next\-Data} ()
+\begin{DoxyCompactList}\small\item\em Find the next data element in the tree (For internal use only) \end{DoxyCompactList}\item 
+void \hyperlink{classRTree_1_1Iterator_afb35dcd6c652052684d5e8801d9cda7c}{Push} (\hyperlink{structRTree_1_1Node}{Node} $\ast$a\-\_\-node, int a\-\_\-branch\-Index)
+\begin{DoxyCompactList}\small\item\em Push node and branch onto iteration stack (For internal use only) \end{DoxyCompactList}\item 
+\hyperlink{structRTree_1_1Iterator_1_1StackElement}{Stack\-Element} \& \hyperlink{classRTree_1_1Iterator_a6f75eaf8c9ebe60f4a8cacbb7f4998fe}{Pop} ()
+\begin{DoxyCompactList}\small\item\em Pop element off iteration stack (For internal use only) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structRTree_1_1Iterator_1_1StackElement}{Stack\-Element} \hyperlink{classRTree_1_1Iterator_a71a0c70b553212a62c135343831f74b0}{m\-\_\-stack} \mbox{[}\hyperlink{classRTree_1_1Iterator_a1e45c4c1d6d735b999df1cbe1a0e36ada26b6ad9c0a591145b71370b87ce125e8}{M\-A\-X\-\_\-\-S\-T\-A\-C\-K}\mbox{]}
+\begin{DoxyCompactList}\small\item\em Stack as we are doing iteration instead of recursion. \end{DoxyCompactList}\item 
+int \hyperlink{classRTree_1_1Iterator_aa925698d64e938a5644b4ccdb247fd97}{m\-\_\-tos}
+\begin{DoxyCompactList}\small\item\em Top Of Stack index. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classRTree_1_1Iterator_af5d7fbb9e949ef77e8d3e32670fa9dd6}{R\-Tree}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$class R\-Tree$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::\-Iterator}
+
+\hyperlink{classRTree_1_1Iterator}{Iterator} is not remove safe. 
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classRTree_1_1Iterator_a1e45c4c1d6d735b999df1cbe1a0e36ad}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ anonymous enum\hspace{0.3cm}{\ttfamily [private]}}}\label{classRTree_1_1Iterator_a1e45c4c1d6d735b999df1cbe1a0e36ad}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{M\-A\-X\-\_\-\-S\-T\-A\-C\-K@{M\-A\-X\-\_\-\-S\-T\-A\-C\-K}!R\-Tree\-::\-Iterator@{R\-Tree\-::\-Iterator}}\index{R\-Tree\-::\-Iterator@{R\-Tree\-::\-Iterator}!M\-A\-X\-\_\-\-S\-T\-A\-C\-K@{M\-A\-X\-\_\-\-S\-T\-A\-C\-K}}\item[{\em 
+\hypertarget{classRTree_1_1Iterator_a1e45c4c1d6d735b999df1cbe1a0e36ada26b6ad9c0a591145b71370b87ce125e8}{M\-A\-X\-\_\-\-S\-T\-A\-C\-K}\label{classRTree_1_1Iterator_a1e45c4c1d6d735b999df1cbe1a0e36ada26b6ad9c0a591145b71370b87ce125e8}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRTree_1_1Iterator_a59b2600d21bebdbfd5406ae42612ef7f}{\index{R\-Tree\-::\-Iterator@{R\-Tree\-::\-Iterator}!Iterator@{Iterator}}
+\index{Iterator@{Iterator}!RTree::Iterator@{R\-Tree\-::\-Iterator}}
+\subsubsection[{Iterator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Iterator\-::\-Iterator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRTree_1_1Iterator_a59b2600d21bebdbfd5406ae42612ef7f}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{classRTree_1_1Iterator_a59b2600d21bebdbfd5406ae42612ef7f_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classRTree_1_1Iterator_a4823daecb48994f28175139ccbd763d8}{\index{R\-Tree\-::\-Iterator@{R\-Tree\-::\-Iterator}!$\sim$\-Iterator@{$\sim$\-Iterator}}
+\index{$\sim$\-Iterator@{$\sim$\-Iterator}!RTree::Iterator@{R\-Tree\-::\-Iterator}}
+\subsubsection[{$\sim$\-Iterator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Iterator\-::$\sim$\-Iterator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRTree_1_1Iterator_a4823daecb48994f28175139ccbd763d8}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRTree_1_1Iterator_ae1dc5968481efa8c8c916323472b159b}{\index{R\-Tree\-::\-Iterator@{R\-Tree\-::\-Iterator}!Find\-Next\-Data@{Find\-Next\-Data}}
+\index{Find\-Next\-Data@{Find\-Next\-Data}!RTree::Iterator@{R\-Tree\-::\-Iterator}}
+\subsubsection[{Find\-Next\-Data}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ bool {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Iterator\-::\-Find\-Next\-Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{classRTree_1_1Iterator_ae1dc5968481efa8c8c916323472b159b}
+
+
+Find the next data element in the tree (For internal use only) 
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classRTree_1_1Iterator_ae1dc5968481efa8c8c916323472b159b_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classRTree_1_1Iterator_a65121f5016c2b1bf4696797748092709}{\index{R\-Tree\-::\-Iterator@{R\-Tree\-::\-Iterator}!Get\-Bounds@{Get\-Bounds}}
+\index{Get\-Bounds@{Get\-Bounds}!RTree::Iterator@{R\-Tree\-::\-Iterator}}
+\subsubsection[{Get\-Bounds}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ void {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Iterator\-::\-Get\-Bounds (
+\begin{DoxyParamCaption}
+\item[{E\-L\-E\-M\-T\-Y\-P\-E}]{a\-\_\-min\mbox{[}\-N\-U\-M\-D\-I\-M\-S\mbox{]}, }
+\item[{E\-L\-E\-M\-T\-Y\-P\-E}]{a\-\_\-max\mbox{[}\-N\-U\-M\-D\-I\-M\-S\mbox{]}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRTree_1_1Iterator_a65121f5016c2b1bf4696797748092709}
+
+
+Get the bounds for this node. 
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classRTree_1_1Iterator_a65121f5016c2b1bf4696797748092709_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classRTree_1_1Iterator_abbf4f08d825f6b475b7cdb6e5bc223d7}{\index{R\-Tree\-::\-Iterator@{R\-Tree\-::\-Iterator}!Get\-Data@{Get\-Data}}
+\index{Get\-Data@{Get\-Data}!RTree::Iterator@{R\-Tree\-::\-Iterator}}
+\subsubsection[{Get\-Data}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ void {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Iterator\-::\-Get\-Data (
+\begin{DoxyParamCaption}
+\item[{D\-A\-T\-A\-T\-Y\-P\-E $\ast$}]{t\-\_\-id, }
+\item[{D\-A\-T\-A\-T\-Y\-P\-E $\ast$}]{t\-\_\-segment\-\_\-id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRTree_1_1Iterator_abbf4f08d825f6b475b7cdb6e5bc223d7}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classRTree_1_1Iterator_abbf4f08d825f6b475b7cdb6e5bc223d7_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classRTree_1_1Iterator_a923e4fe7dc813630c4b20b8468f9dcc7}{\index{R\-Tree\-::\-Iterator@{R\-Tree\-::\-Iterator}!Init@{Init}}
+\index{Init@{Init}!RTree::Iterator@{R\-Tree\-::\-Iterator}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ void {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Iterator\-::\-Init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{classRTree_1_1Iterator_a923e4fe7dc813630c4b20b8468f9dcc7}
+
+
+Reset iterator. 
+
+\hypertarget{classRTree_1_1Iterator_a8cd6bf4fa228497ac736e8d7993e7daf}{\index{R\-Tree\-::\-Iterator@{R\-Tree\-::\-Iterator}!Is\-Not\-Null@{Is\-Not\-Null}}
+\index{Is\-Not\-Null@{Is\-Not\-Null}!RTree::Iterator@{R\-Tree\-::\-Iterator}}
+\subsubsection[{Is\-Not\-Null}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ bool {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Iterator\-::\-Is\-Not\-Null (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRTree_1_1Iterator_a8cd6bf4fa228497ac736e8d7993e7daf}
+
+
+Is iterator pointing to valid data. 
+
+\hypertarget{classRTree_1_1Iterator_a23f756ac37acc2b162b61230c27732b3}{\index{R\-Tree\-::\-Iterator@{R\-Tree\-::\-Iterator}!Is\-Null@{Is\-Null}}
+\index{Is\-Null@{Is\-Null}!RTree::Iterator@{R\-Tree\-::\-Iterator}}
+\subsubsection[{Is\-Null}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ bool {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Iterator\-::\-Is\-Null (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRTree_1_1Iterator_a23f756ac37acc2b162b61230c27732b3}
+
+
+Is iterator invalid. 
+
+\hypertarget{classRTree_1_1Iterator_abb61d3a8396473b543cb15aa9002cfeb}{\index{R\-Tree\-::\-Iterator@{R\-Tree\-::\-Iterator}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!RTree::Iterator@{R\-Tree\-::\-Iterator}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ D\-A\-T\-A\-T\-Y\-P\-E\& {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Iterator\-::operator$\ast$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRTree_1_1Iterator_abb61d3a8396473b543cb15aa9002cfeb}
+
+
+Access the current data element. Caller must be sure iterator is not N\-U\-L\-L first. 
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classRTree_1_1Iterator_abb61d3a8396473b543cb15aa9002cfeb_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classRTree_1_1Iterator_a45496ad72eba6929d40239ed711bf129}{\index{R\-Tree\-::\-Iterator@{R\-Tree\-::\-Iterator}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!RTree::Iterator@{R\-Tree\-::\-Iterator}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ const D\-A\-T\-A\-T\-Y\-P\-E\& {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Iterator\-::operator$\ast$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRTree_1_1Iterator_a45496ad72eba6929d40239ed711bf129}
+
+
+Access the current data element. Caller must be sure iterator is not N\-U\-L\-L first. 
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classRTree_1_1Iterator_a45496ad72eba6929d40239ed711bf129_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classRTree_1_1Iterator_ad578bac71cfc7d324b84595032feda21}{\index{R\-Tree\-::\-Iterator@{R\-Tree\-::\-Iterator}!operator++@{operator++}}
+\index{operator++@{operator++}!RTree::Iterator@{R\-Tree\-::\-Iterator}}
+\subsubsection[{operator++}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ bool {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Iterator\-::operator++ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classRTree_1_1Iterator_ad578bac71cfc7d324b84595032feda21}
+
+
+Find the next data element. 
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classRTree_1_1Iterator_ad578bac71cfc7d324b84595032feda21_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classRTree_1_1Iterator_a6f75eaf8c9ebe60f4a8cacbb7f4998fe}{\index{R\-Tree\-::\-Iterator@{R\-Tree\-::\-Iterator}!Pop@{Pop}}
+\index{Pop@{Pop}!RTree::Iterator@{R\-Tree\-::\-Iterator}}
+\subsubsection[{Pop}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ {\bf Stack\-Element}\& {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Iterator\-::\-Pop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{classRTree_1_1Iterator_a6f75eaf8c9ebe60f4a8cacbb7f4998fe}
+
+
+Pop element off iteration stack (For internal use only) 
+
+\hypertarget{classRTree_1_1Iterator_afb35dcd6c652052684d5e8801d9cda7c}{\index{R\-Tree\-::\-Iterator@{R\-Tree\-::\-Iterator}!Push@{Push}}
+\index{Push@{Push}!RTree::Iterator@{R\-Tree\-::\-Iterator}}
+\subsubsection[{Push}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ void {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Iterator\-::\-Push (
+\begin{DoxyParamCaption}
+\item[{{\bf Node} $\ast$}]{a\-\_\-node, }
+\item[{int}]{a\-\_\-branch\-Index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{classRTree_1_1Iterator_afb35dcd6c652052684d5e8801d9cda7c}
+
+
+Push node and branch onto iteration stack (For internal use only) 
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classRTree_1_1Iterator_af5d7fbb9e949ef77e8d3e32670fa9dd6}{\index{R\-Tree\-::\-Iterator@{R\-Tree\-::\-Iterator}!R\-Tree@{R\-Tree}}
+\index{R\-Tree@{R\-Tree}!RTree::Iterator@{R\-Tree\-::\-Iterator}}
+\subsubsection[{R\-Tree}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ friend class {\bf R\-Tree}\hspace{0.3cm}{\ttfamily [friend]}}}\label{classRTree_1_1Iterator_af5d7fbb9e949ef77e8d3e32670fa9dd6}
+
+
+\subsection{Field Documentation}
+\hypertarget{classRTree_1_1Iterator_a71a0c70b553212a62c135343831f74b0}{\index{R\-Tree\-::\-Iterator@{R\-Tree\-::\-Iterator}!m\-\_\-stack@{m\-\_\-stack}}
+\index{m\-\_\-stack@{m\-\_\-stack}!RTree::Iterator@{R\-Tree\-::\-Iterator}}
+\subsubsection[{m\-\_\-stack}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ {\bf Stack\-Element} {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Iterator\-::m\-\_\-stack\mbox{[}{\bf M\-A\-X\-\_\-\-S\-T\-A\-C\-K}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}}\label{classRTree_1_1Iterator_a71a0c70b553212a62c135343831f74b0}
+
+
+Stack as we are doing iteration instead of recursion. 
+
+\hypertarget{classRTree_1_1Iterator_aa925698d64e938a5644b4ccdb247fd97}{\index{R\-Tree\-::\-Iterator@{R\-Tree\-::\-Iterator}!m\-\_\-tos@{m\-\_\-tos}}
+\index{m\-\_\-tos@{m\-\_\-tos}!RTree::Iterator@{R\-Tree\-::\-Iterator}}
+\subsubsection[{m\-\_\-tos}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L = E\-L\-E\-M\-T\-Y\-P\-E, int T\-M\-A\-X\-N\-O\-D\-E\-S = 8, int T\-M\-I\-N\-N\-O\-D\-E\-S = T\-M\-A\-X\-N\-O\-D\-E\-S / 2$>$ int {\bf R\-Tree}$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::Iterator\-::m\-\_\-tos\hspace{0.3cm}{\ttfamily [private]}}}\label{classRTree_1_1Iterator_aa925698d64e938a5644b4ccdb247fd97}
+
+
+Top Of Stack index. 
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{RTree_8h}{R\-Tree.\-h}\end{DoxyCompactItemize}

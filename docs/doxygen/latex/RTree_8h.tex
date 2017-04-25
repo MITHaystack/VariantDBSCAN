@@ -1,0 +1,84 @@
+\hypertarget{RTree_8h}{\section{R\-Tree.\-h File Reference}
+\label{RTree_8h}\index{R\-Tree.\-h@{R\-Tree.\-h}}
+}
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$math.\-h$>$}\\*
+{\ttfamily \#include $<$assert.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$algorithm$>$}\\*
+Include dependency graph for R\-Tree.\-h\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{RTree_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{RTree_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classRTree}{R\-Tree$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$}
+\item 
+class \hyperlink{classRTree_1_1Iterator}{R\-Tree$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::\-Iterator}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classRTree_1_1Iterator}{Iterator} is not remove safe. \end{DoxyCompactList}\item 
+struct \hyperlink{structRTree_1_1Iterator_1_1StackElement}{R\-Tree$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::\-Iterator\-::\-Stack\-Element}
+\item 
+struct \hyperlink{structRTree_1_1Rect}{R\-Tree$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::\-Rect}
+\begin{DoxyCompactList}\small\item\em Minimal bounding rectangle (n-\/dimensional) \end{DoxyCompactList}\item 
+struct \hyperlink{structRTree_1_1Branch}{R\-Tree$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::\-Branch}
+\item 
+struct \hyperlink{structRTree_1_1Node}{R\-Tree$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::\-Node}
+\begin{DoxyCompactList}\small\item\em \hyperlink{structRTree_1_1Node}{Node} for each branch level. \end{DoxyCompactList}\item 
+struct \hyperlink{structRTree_1_1ListNode}{R\-Tree$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::\-List\-Node}
+\begin{DoxyCompactList}\small\item\em A link list of nodes for reinsertion after a delete operation. \end{DoxyCompactList}\item 
+struct \hyperlink{structRTree_1_1PartitionVars}{R\-Tree$<$ D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S $>$\-::\-Partition\-Vars}
+\begin{DoxyCompactList}\small\item\em Variables for finding a split partition. \end{DoxyCompactList}\item 
+class \hyperlink{classRTFileStream}{R\-T\-File\-Stream}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{RTree_8h_af343b20373ba49a92fce523e948f2ab3}{A\-S\-S\-E\-R\-T}~assert
+\item 
+\#define \hyperlink{RTree_8h_a86d632fa0bef69c8cc19f84f1683de9e}{Min}~std\-::min
+\item 
+\#define \hyperlink{RTree_8h_a406ea73ae9534077b145f331cd542401}{Max}~std\-::max
+\item 
+\#define \hyperlink{RTree_8h_aa9b462b3b7b1c8cda40b182c09eed713}{R\-T\-R\-E\-E\-\_\-\-T\-E\-M\-P\-L\-A\-T\-E}~template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, int T\-M\-A\-X\-N\-O\-D\-E\-S, int T\-M\-I\-N\-N\-O\-D\-E\-S$>$
+\item 
+\#define \hyperlink{RTree_8h_a21aed6cfcbda84c4663c90768cefee0b}{R\-T\-R\-E\-E\-\_\-\-Q\-U\-A\-L}~\hyperlink{classRTree}{R\-Tree}$<$D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S$>$
+\item 
+\#define \hyperlink{RTree_8h_a48ab98477536b7144da4b56f4a69af99}{R\-T\-R\-E\-E\-\_\-\-D\-O\-N\-T\-\_\-\-U\-S\-E\-\_\-\-M\-E\-M\-P\-O\-O\-L\-S}
+\item 
+\#define \hyperlink{RTree_8h_a6f664e156a52787974ce765dd81641f3}{R\-T\-R\-E\-E\-\_\-\-U\-S\-E\-\_\-\-S\-P\-H\-E\-R\-I\-C\-A\-L\-\_\-\-V\-O\-L\-U\-M\-E}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{RTree_8h_af343b20373ba49a92fce523e948f2ab3}{\index{R\-Tree.\-h@{R\-Tree.\-h}!A\-S\-S\-E\-R\-T@{A\-S\-S\-E\-R\-T}}
+\index{A\-S\-S\-E\-R\-T@{A\-S\-S\-E\-R\-T}!RTree.h@{R\-Tree.\-h}}
+\subsubsection[{A\-S\-S\-E\-R\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-S\-S\-E\-R\-T~assert}}\label{RTree_8h_af343b20373ba49a92fce523e948f2ab3}
+\hypertarget{RTree_8h_a406ea73ae9534077b145f331cd542401}{\index{R\-Tree.\-h@{R\-Tree.\-h}!Max@{Max}}
+\index{Max@{Max}!RTree.h@{R\-Tree.\-h}}
+\subsubsection[{Max}]{\setlength{\rightskip}{0pt plus 5cm}\#define Max~std\-::max}}\label{RTree_8h_a406ea73ae9534077b145f331cd542401}
+\hypertarget{RTree_8h_a86d632fa0bef69c8cc19f84f1683de9e}{\index{R\-Tree.\-h@{R\-Tree.\-h}!Min@{Min}}
+\index{Min@{Min}!RTree.h@{R\-Tree.\-h}}
+\subsubsection[{Min}]{\setlength{\rightskip}{0pt plus 5cm}\#define Min~std\-::min}}\label{RTree_8h_a86d632fa0bef69c8cc19f84f1683de9e}
+\hypertarget{RTree_8h_a48ab98477536b7144da4b56f4a69af99}{\index{R\-Tree.\-h@{R\-Tree.\-h}!R\-T\-R\-E\-E\-\_\-\-D\-O\-N\-T\-\_\-\-U\-S\-E\-\_\-\-M\-E\-M\-P\-O\-O\-L\-S@{R\-T\-R\-E\-E\-\_\-\-D\-O\-N\-T\-\_\-\-U\-S\-E\-\_\-\-M\-E\-M\-P\-O\-O\-L\-S}}
+\index{R\-T\-R\-E\-E\-\_\-\-D\-O\-N\-T\-\_\-\-U\-S\-E\-\_\-\-M\-E\-M\-P\-O\-O\-L\-S@{R\-T\-R\-E\-E\-\_\-\-D\-O\-N\-T\-\_\-\-U\-S\-E\-\_\-\-M\-E\-M\-P\-O\-O\-L\-S}!RTree.h@{R\-Tree.\-h}}
+\subsubsection[{R\-T\-R\-E\-E\-\_\-\-D\-O\-N\-T\-\_\-\-U\-S\-E\-\_\-\-M\-E\-M\-P\-O\-O\-L\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\-T\-R\-E\-E\-\_\-\-D\-O\-N\-T\-\_\-\-U\-S\-E\-\_\-\-M\-E\-M\-P\-O\-O\-L\-S}}\label{RTree_8h_a48ab98477536b7144da4b56f4a69af99}
+\hypertarget{RTree_8h_a21aed6cfcbda84c4663c90768cefee0b}{\index{R\-Tree.\-h@{R\-Tree.\-h}!R\-T\-R\-E\-E\-\_\-\-Q\-U\-A\-L@{R\-T\-R\-E\-E\-\_\-\-Q\-U\-A\-L}}
+\index{R\-T\-R\-E\-E\-\_\-\-Q\-U\-A\-L@{R\-T\-R\-E\-E\-\_\-\-Q\-U\-A\-L}!RTree.h@{R\-Tree.\-h}}
+\subsubsection[{R\-T\-R\-E\-E\-\_\-\-Q\-U\-A\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\-T\-R\-E\-E\-\_\-\-Q\-U\-A\-L~{\bf R\-Tree}$<$D\-A\-T\-A\-T\-Y\-P\-E, E\-L\-E\-M\-T\-Y\-P\-E, N\-U\-M\-D\-I\-M\-S, E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, T\-M\-A\-X\-N\-O\-D\-E\-S, T\-M\-I\-N\-N\-O\-D\-E\-S$>$}}\label{RTree_8h_a21aed6cfcbda84c4663c90768cefee0b}
+\hypertarget{RTree_8h_aa9b462b3b7b1c8cda40b182c09eed713}{\index{R\-Tree.\-h@{R\-Tree.\-h}!R\-T\-R\-E\-E\-\_\-\-T\-E\-M\-P\-L\-A\-T\-E@{R\-T\-R\-E\-E\-\_\-\-T\-E\-M\-P\-L\-A\-T\-E}}
+\index{R\-T\-R\-E\-E\-\_\-\-T\-E\-M\-P\-L\-A\-T\-E@{R\-T\-R\-E\-E\-\_\-\-T\-E\-M\-P\-L\-A\-T\-E}!RTree.h@{R\-Tree.\-h}}
+\subsubsection[{R\-T\-R\-E\-E\-\_\-\-T\-E\-M\-P\-L\-A\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\-T\-R\-E\-E\-\_\-\-T\-E\-M\-P\-L\-A\-T\-E~template$<$class D\-A\-T\-A\-T\-Y\-P\-E, class E\-L\-E\-M\-T\-Y\-P\-E, int N\-U\-M\-D\-I\-M\-S, class E\-L\-E\-M\-T\-Y\-P\-E\-R\-E\-A\-L, int T\-M\-A\-X\-N\-O\-D\-E\-S, int T\-M\-I\-N\-N\-O\-D\-E\-S$>$}}\label{RTree_8h_aa9b462b3b7b1c8cda40b182c09eed713}
+\hypertarget{RTree_8h_a6f664e156a52787974ce765dd81641f3}{\index{R\-Tree.\-h@{R\-Tree.\-h}!R\-T\-R\-E\-E\-\_\-\-U\-S\-E\-\_\-\-S\-P\-H\-E\-R\-I\-C\-A\-L\-\_\-\-V\-O\-L\-U\-M\-E@{R\-T\-R\-E\-E\-\_\-\-U\-S\-E\-\_\-\-S\-P\-H\-E\-R\-I\-C\-A\-L\-\_\-\-V\-O\-L\-U\-M\-E}}
+\index{R\-T\-R\-E\-E\-\_\-\-U\-S\-E\-\_\-\-S\-P\-H\-E\-R\-I\-C\-A\-L\-\_\-\-V\-O\-L\-U\-M\-E@{R\-T\-R\-E\-E\-\_\-\-U\-S\-E\-\_\-\-S\-P\-H\-E\-R\-I\-C\-A\-L\-\_\-\-V\-O\-L\-U\-M\-E}!RTree.h@{R\-Tree.\-h}}
+\subsubsection[{R\-T\-R\-E\-E\-\_\-\-U\-S\-E\-\_\-\-S\-P\-H\-E\-R\-I\-C\-A\-L\-\_\-\-V\-O\-L\-U\-M\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\-T\-R\-E\-E\-\_\-\-U\-S\-E\-\_\-\-S\-P\-H\-E\-R\-I\-C\-A\-L\-\_\-\-V\-O\-L\-U\-M\-E}}\label{RTree_8h_a6f664e156a52787974ce765dd81641f3}

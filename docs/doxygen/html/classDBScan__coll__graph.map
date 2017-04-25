@@ -1,0 +1,7 @@
+<map id="DBScan" name="DBScan">
+<area shape="rect" id="node5" href="$structdataElem.html" title="dataElem" alt="" coords="92,133,169,160"/>
+<area shape="rect" id="node7" href="$classRTree.html" title="RTree\&lt; int, double,\l 2, float \&gt;" alt="" coords="410,191,545,233"/>
+<area shape="rect" id="node8" href="$structRTree_1_1Node.html" title="Node for each branch level. " alt="" coords="5,227,256,283"/>
+<area shape="rect" id="node9" href="$structRTree_1_1Branch.html" title="RTree\&lt; DATATYPE, ELEMTYPE,\l NUMDIMS, ELEMTYPEREAL,\l TMAXNODES, TMINNODES \&gt;\l::Branch" alt="" coords="365,262,589,333"/>
+<area shape="rect" id="node10" href="$structRTree_1_1Rect.html" title="Minimal bounding rectangle (n&#45;dimensional) " alt="" coords="7,317,255,373"/>
+</map>

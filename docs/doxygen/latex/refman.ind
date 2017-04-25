@@ -1,0 +1,872 @@
+\begin{theindex}
+
+  \item {$\sim $\discretionary {-}{}{}Iterator}
+    \subitem {R\discretionary {-}{}{}Tree\discretionary {-}{}{}::\discretionary {-}{}{}Iterator}, 
+		\hyperpage{16}
+  \item {$\sim $\discretionary {-}{}{}R\discretionary {-}{}{}T\discretionary {-}{}{}File\discretionary {-}{}{}Stream}
+    \subitem {R\discretionary {-}{}{}T\discretionary {-}{}{}File\discretionary {-}{}{}Stream}, 
+		\hyperpage{28}
+  \item {$\sim $\discretionary {-}{}{}R\discretionary {-}{}{}Tree}
+    \subitem {R\discretionary {-}{}{}Tree}, \hyperpage{32}
+
+  \indexspace
+
+  \item {A\discretionary {-}{}{}S\discretionary {-}{}{}S\discretionary {-}{}{}E\discretionary {-}{}{}R\discretionary {-}{}{}T}
+    \subitem {R\discretionary {-}{}{}Tree.\discretionary {-}{}{}h}, 
+		\hyperpage{53}
+  \item {Add\discretionary {-}{}{}Branch}
+    \subitem {R\discretionary {-}{}{}Tree}, \hyperpage{32}
+  \item {alg\discretionary {-}{}{}D\discretionary {-}{}{}B\discretionary {-}{}{}Scan\discretionary {-}{}{}Parallel}
+    \subitem {D\discretionary {-}{}{}B\discretionary {-}{}{}Scan}, 
+		\hyperpage{8}
+  \item {alg\discretionary {-}{}{}D\discretionary {-}{}{}B\discretionary {-}{}{}Scan\discretionary {-}{}{}Parallel\discretionary {-}{}{}Reuse\discretionary {-}{}{}Cluster\discretionary {-}{}{}Results}
+    \subitem {D\discretionary {-}{}{}B\discretionary {-}{}{}Scan}, 
+		\hyperpage{8}
+  \item {Alloc\discretionary {-}{}{}List\discretionary {-}{}{}Node}
+    \subitem {R\discretionary {-}{}{}Tree}, \hyperpage{32}
+  \item {Alloc\discretionary {-}{}{}Node}
+    \subitem {R\discretionary {-}{}{}Tree}, \hyperpage{32}
+  \item {append\discretionary {-}{}{}M\discretionary {-}{}{}B\discretionary {-}{}{}B\discretionary {-}{}{}By\discretionary {-}{}{}Epsilon}
+    \subitem {D\discretionary {-}{}{}B\discretionary {-}{}{}Scan}, 
+		\hyperpage{9}
+  \item {assign\discretionary {-}{}{}Points\discretionary {-}{}{}To\discretionary {-}{}{}Predefined\discretionary {-}{}{}Cluster}
+    \subitem {D\discretionary {-}{}{}B\discretionary {-}{}{}Scan}, 
+		\hyperpage{9}
+
+  \indexspace
+
+  \item {bin\discretionary {-}{}{}\_\discretionary {-}{}{}x}
+    \subitem {main.\discretionary {-}{}{}cpp}, \hyperpage{46}
+    \subitem {prototypes.\discretionary {-}{}{}h}, \hyperpage{50}
+  \item {bin\discretionary {-}{}{}\_\discretionary {-}{}{}y}
+    \subitem {main.\discretionary {-}{}{}cpp}, \hyperpage{46}
+    \subitem {prototypes.\discretionary {-}{}{}h}, \hyperpage{50}
+  \item {bin\discretionary {-}{}{}Dataset}
+    \subitem {main.\discretionary {-}{}{}cpp}, \hyperpage{47}
+    \subitem {prototypes.\discretionary {-}{}{}h}, \hyperpage{50}
+
+  \indexspace
+
+  \item {c\discretionary {-}{}{}\_\discretionary {-}{}{}test\discretionary {-}{}{}\_\discretionary {-}{}{}prog.\discretionary {-}{}{}cpp}, 
+		\hyperpage{41}
+    \subitem {main}, \hyperpage{41}
+  \item {c\discretionary {-}{}{}\_\discretionary {-}{}{}test\discretionary {-}{}{}\_\discretionary {-}{}{}prog.\discretionary {-}{}{}h}, 
+		\hyperpage{42}
+    \subitem {lib\discretionary {-}{}{}V\discretionary {-}{}{}D\discretionary {-}{}{}B\discretionary {-}{}{}S\discretionary {-}{}{}C\discretionary {-}{}{}A\discretionary {-}{}{}N}, 
+		\hyperpage{42}
+  \item {Calc\discretionary {-}{}{}Rect\discretionary {-}{}{}Volume}
+    \subitem {R\discretionary {-}{}{}Tree}, \hyperpage{32}
+  \item {Choose\discretionary {-}{}{}Partition}
+    \subitem {R\discretionary {-}{}{}Tree}, \hyperpage{32}
+  \item {Classify}
+    \subitem {R\discretionary {-}{}{}Tree}, \hyperpage{32}
+  \item {Close}
+    \subitem {R\discretionary {-}{}{}T\discretionary {-}{}{}File\discretionary {-}{}{}Stream}, 
+		\hyperpage{28}
+  \item {cluster\discretionary {-}{}{}Cnt}
+    \subitem {D\discretionary {-}{}{}B\discretionary {-}{}{}Scan}, 
+		\hyperpage{12}
+  \item {cluster\discretionary {-}{}{}I\discretionary {-}{}{}D}
+    \subitem {density\discretionary {-}{}{}Struct}, \hyperpage{14}
+  \item {cluster\discretionary {-}{}{}I\discretionary {-}{}{}Ds}
+    \subitem {D\discretionary {-}{}{}B\discretionary {-}{}{}Scan}, 
+		\hyperpage{12}
+  \item {cluster\discretionary {-}{}{}Scratch}
+    \subitem {sched\discretionary {-}{}{}Info}, \hyperpage{37}
+  \item {cluster\discretionary {-}{}{}Scratch\discretionary {-}{}{}List}
+    \subitem {Schedule}, \hyperpage{38}
+  \item {Combine\discretionary {-}{}{}Rect}
+    \subitem {R\discretionary {-}{}{}Tree}, \hyperpage{32}
+  \item {compare\discretionary {-}{}{}By\discretionary {-}{}{}Epsilon}
+    \subitem {main.\discretionary {-}{}{}cpp}, \hyperpage{47}
+    \subitem {prototypes.\discretionary {-}{}{}h}, \hyperpage{50}
+  \item {compare\discretionary {-}{}{}Data\discretionary {-}{}{}Elem\discretionary {-}{}{}Struct\discretionary {-}{}{}Func}
+    \subitem {main.\discretionary {-}{}{}cpp}, \hyperpage{47}
+    \subitem {prototypes.\discretionary {-}{}{}h}, \hyperpage{50}
+  \item {comparedensity\discretionary {-}{}{}Structfn}
+    \subitem {D\discretionary {-}{}{}B\discretionary {-}{}{}Scan}, 
+		\hyperpage{9}
+  \item {copy\discretionary {-}{}{}Vect}
+    \subitem {D\discretionary {-}{}{}B\discretionary {-}{}{}Scan}, 
+		\hyperpage{9}
+  \item {Count}
+    \subitem {R\discretionary {-}{}{}Tree}, \hyperpage{32}
+  \item {Count\discretionary {-}{}{}Rec}
+    \subitem {R\discretionary {-}{}{}Tree}, \hyperpage{32}
+  \item {create\discretionary {-}{}{}Entry\discretionary {-}{}{}M\discretionary {-}{}{}B\discretionary {-}{}{}B\discretionary {-}{}{}Multiple\discretionary {-}{}{}Points}
+    \subitem {main.\discretionary {-}{}{}cpp}, \hyperpage{47}
+    \subitem {prototypes.\discretionary {-}{}{}h}, \hyperpage{50}
+  \item {create\discretionary {-}{}{}Entry\discretionary {-}{}{}M\discretionary {-}{}{}B\discretionary {-}{}{}Bs}
+    \subitem {main.\discretionary {-}{}{}cpp}, \hyperpage{47}
+    \subitem {prototypes.\discretionary {-}{}{}h}, \hyperpage{51}
+  \item {Create\discretionary {-}{}{}M\discretionary {-}{}{}B\discretionary {-}{}{}B}
+    \subitem {M\discretionary {-}{}{}P\discretionary {-}{}{}B\discretionary {-}{}{}Rect}, 
+		\hyperpage{21}
+    \subitem {Query\discretionary {-}{}{}Rect}, \hyperpage{25}
+    \subitem {Rect}, \hyperpage{27}
+
+  \indexspace
+
+  \item {D\discretionary {-}{}{}B\discretionary {-}{}{}S\discretionary {-}{}{}C\discretionary {-}{}{}A\discretionary {-}{}{}Nmy\discretionary {-}{}{}Search\discretionary {-}{}{}Callback\discretionary {-}{}{}Parallel}
+    \subitem {prototypes.\discretionary {-}{}{}h}, \hyperpage{51}
+    \subitem {tree\discretionary {-}{}{}\_\discretionary {-}{}{}functions.\discretionary {-}{}{}cpp}, 
+		\hyperpage{57}
+  \item {D\discretionary {-}{}{}B\discretionary {-}{}{}Scan}, 
+		\hyperpage{6}
+    \subitem {alg\discretionary {-}{}{}D\discretionary {-}{}{}B\discretionary {-}{}{}Scan\discretionary {-}{}{}Parallel}, 
+		\hyperpage{8}
+    \subitem {alg\discretionary {-}{}{}D\discretionary {-}{}{}B\discretionary {-}{}{}Scan\discretionary {-}{}{}Parallel\discretionary {-}{}{}Reuse\discretionary {-}{}{}Cluster\discretionary {-}{}{}Results}, 
+		\hyperpage{8}
+    \subitem {append\discretionary {-}{}{}M\discretionary {-}{}{}B\discretionary {-}{}{}B\discretionary {-}{}{}By\discretionary {-}{}{}Epsilon}, 
+		\hyperpage{9}
+    \subitem {assign\discretionary {-}{}{}Points\discretionary {-}{}{}To\discretionary {-}{}{}Predefined\discretionary {-}{}{}Cluster}, 
+		\hyperpage{9}
+    \subitem {cluster\discretionary {-}{}{}Cnt}, \hyperpage{12}
+    \subitem {cluster\discretionary {-}{}{}I\discretionary {-}{}{}Ds}, 
+		\hyperpage{12}
+    \subitem {comparedensity\discretionary {-}{}{}Structfn}, 
+		\hyperpage{9}
+    \subitem {copy\discretionary {-}{}{}Vect}, \hyperpage{9}
+    \subitem {D\discretionary {-}{}{}B\discretionary {-}{}{}Scan}, 
+		\hyperpage{8}
+    \subitem {D\discretionary {-}{}{}B\discretionary {-}{}{}Scan\discretionary {-}{}{}Parallel\discretionary {-}{}{}M\discretionary {-}{}{}P\discretionary {-}{}{}B\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}U\discretionary {-}{}{}M\discretionary {-}{}{}P}, 
+		\hyperpage{9}
+    \subitem {data\discretionary {-}{}{}Points}, \hyperpage{12}
+    \subitem {D\discretionary {-}{}{}B\discretionary {-}{}{}Scan}, 
+		\hyperpage{8}
+    \subitem {distance}, \hyperpage{12}
+    \subitem {Euclidian\discretionary {-}{}{}Distance}, \hyperpage{10}
+    \subitem {filter\discretionary {-}{}{}Candidates\discretionary {-}{}{}M\discretionary {-}{}{}P\discretionary {-}{}{}B}, 
+		\hyperpage{10}
+    \subitem {generate\discretionary {-}{}{}M\discretionary {-}{}{}B\discretionary {-}{}{}B}, 
+		\hyperpage{10}
+    \subitem {generate\discretionary {-}{}{}M\discretionary {-}{}{}B\discretionary {-}{}{}B\discretionary {-}{}{}Around\discretionary {-}{}{}Cluster}, 
+		\hyperpage{10}
+    \subitem {generate\discretionary {-}{}{}M\discretionary {-}{}{}B\discretionary {-}{}{}B\discretionary {-}{}{}Normal}, 
+		\hyperpage{10}
+    \subitem {get\discretionary {-}{}{}D\discretionary {-}{}{}B\discretionary {-}{}{}Scan\discretionary {-}{}{}Num\discretionary {-}{}{}Clusters}, 
+		\hyperpage{11}
+    \subitem {get\discretionary {-}{}{}Neighbours\discretionary {-}{}{}Parallel\discretionary {-}{}{}M\discretionary {-}{}{}P\discretionary {-}{}{}B}, 
+		\hyperpage{11}
+    \subitem {initialize\discretionary {-}{}{}Cluster\discretionary {-}{}{}I\discretionary {-}{}{}Ds}, 
+		\hyperpage{11}
+    \subitem {initialize\discretionary {-}{}{}Visited\discretionary {-}{}{}Points}, 
+		\hyperpage{11}
+    \subitem {instance\discretionary {-}{}{}Vect}, \hyperpage{12}
+    \subitem {min\discretionary {-}{}{}Pts}, \hyperpage{13}
+    \subitem {num\discretionary {-}{}{}Clusters\discretionary {-}{}{}For\discretionary {-}{}{}Stats}, 
+		\hyperpage{13}
+    \subitem {ptr\discretionary {-}{}{}M\discretionary {-}{}{}P\discretionary {-}{}{}Blookup}, 
+		\hyperpage{13}
+    \subitem {schedule\discretionary {-}{}{}Selector}, \hyperpage{11}
+    \subitem {set\discretionary {-}{}{}Cluster\discretionary {-}{}{}Schedule\discretionary {-}{}{}Density}, 
+		\hyperpage{12}
+    \subitem {set\discretionary {-}{}{}I\discretionary {-}{}{}Ds\discretionary {-}{}{}In\discretionary {-}{}{}Dist}, 
+		\hyperpage{13}
+    \subitem {tree}, \hyperpage{13}
+    \subitem {tree\discretionary {-}{}{}High\discretionary {-}{}{}Resolution}, 
+		\hyperpage{13}
+    \subitem {visited}, \hyperpage{13}
+  \item {D\discretionary {-}{}{}B\discretionary {-}{}{}Scan.\discretionary {-}{}{}cpp}, 
+		\hyperpage{43}
+    \subitem {N\discretionary {-}{}{}U\discretionary {-}{}{}M\discretionary {-}{}{}M\discretionary {-}{}{}I\discretionary {-}{}{}N\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}U\discretionary {-}{}{}S\discretionary {-}{}{}E\discretionary {-}{}{}P\discretionary {-}{}{}T\discretionary {-}{}{}S}, 
+		\hyperpage{44}
+    \subitem {neighbour\discretionary {-}{}{}List}, \hyperpage{44}
+    \subitem {neighbour\discretionary {-}{}{}List\discretionary {-}{}{}Parallel}, 
+		\hyperpage{44}
+  \item {D\discretionary {-}{}{}B\discretionary {-}{}{}Scan.\discretionary {-}{}{}h}, 
+		\hyperpage{44}
+  \item {D\discretionary {-}{}{}B\discretionary {-}{}{}Scan\discretionary {-}{}{}Parallel\discretionary {-}{}{}M\discretionary {-}{}{}P\discretionary {-}{}{}B\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}U\discretionary {-}{}{}M\discretionary {-}{}{}P}
+    \subitem {D\discretionary {-}{}{}B\discretionary {-}{}{}Scan}, 
+		\hyperpage{9}
+  \item {data\discretionary {-}{}{}Elem}, \hyperpage{6}
+    \subitem {x}, \hyperpage{6}
+    \subitem {y}, \hyperpage{6}
+  \item {data\discretionary {-}{}{}Points}
+    \subitem {D\discretionary {-}{}{}B\discretionary {-}{}{}Scan}, 
+		\hyperpage{12}
+    \subitem {globals.\discretionary {-}{}{}h}, \hyperpage{45}
+  \item {density}
+    \subitem {density\discretionary {-}{}{}Struct}, \hyperpage{14}
+  \item {density\discretionary {-}{}{}Struct}, \hyperpage{13}
+    \subitem {cluster\discretionary {-}{}{}I\discretionary {-}{}{}D}, 
+		\hyperpage{14}
+    \subitem {density}, \hyperpage{14}
+  \item {determine\discretionary {-}{}{}Reuse}
+    \subitem {Schedule}, \hyperpage{38}
+  \item {Disconnect\discretionary {-}{}{}Branch}
+    \subitem {R\discretionary {-}{}{}Tree}, \hyperpage{32}
+  \item {distance}
+    \subitem {D\discretionary {-}{}{}B\discretionary {-}{}{}Scan}, 
+		\hyperpage{12}
+
+  \indexspace
+
+  \item {epsilon}
+    \subitem {experiment}, \hyperpage{14}
+  \item {Euclidian\discretionary {-}{}{}Distance}
+    \subitem {D\discretionary {-}{}{}B\discretionary {-}{}{}Scan}, 
+		\hyperpage{10}
+  \item {exp\discretionary {-}{}{}Ptr}
+    \subitem {Schedule}, \hyperpage{38}
+  \item {experiment}, \hyperpage{14}
+    \subitem {epsilon}, \hyperpage{14}
+    \subitem {minpts}, \hyperpage{14}
+    \subitem {variant\discretionary {-}{}{}I\discretionary {-}{}{}D}, 
+		\hyperpage{14}
+
+  \indexspace
+
+  \item {filter\discretionary {-}{}{}Candidates\discretionary {-}{}{}M\discretionary {-}{}{}P\discretionary {-}{}{}B}
+    \subitem {D\discretionary {-}{}{}B\discretionary {-}{}{}Scan}, 
+		\hyperpage{10}
+  \item {Find\discretionary {-}{}{}Next\discretionary {-}{}{}Data}
+    \subitem {R\discretionary {-}{}{}Tree\discretionary {-}{}{}::\discretionary {-}{}{}Iterator}, 
+		\hyperpage{16}
+  \item {finished\discretionary {-}{}{}List}
+    \subitem {Schedule}, \hyperpage{38}
+  \item {Free\discretionary {-}{}{}List\discretionary {-}{}{}Node}
+    \subitem {R\discretionary {-}{}{}Tree}, \hyperpage{32}
+  \item {Free\discretionary {-}{}{}Node}
+    \subitem {R\discretionary {-}{}{}Tree}, \hyperpage{32}
+
+  \indexspace
+
+  \item {generate\discretionary {-}{}{}M\discretionary {-}{}{}B\discretionary {-}{}{}B}
+    \subitem {D\discretionary {-}{}{}B\discretionary {-}{}{}Scan}, 
+		\hyperpage{10}
+  \item {generate\discretionary {-}{}{}M\discretionary {-}{}{}B\discretionary {-}{}{}B\discretionary {-}{}{}Around\discretionary {-}{}{}Cluster}
+    \subitem {D\discretionary {-}{}{}B\discretionary {-}{}{}Scan}, 
+		\hyperpage{10}
+  \item {generate\discretionary {-}{}{}M\discretionary {-}{}{}B\discretionary {-}{}{}B\discretionary {-}{}{}Normal}
+    \subitem {D\discretionary {-}{}{}B\discretionary {-}{}{}Scan}, 
+		\hyperpage{10}
+  \item {Get\discretionary {-}{}{}At}
+    \subitem {R\discretionary {-}{}{}Tree}, \hyperpage{33}
+  \item {Get\discretionary {-}{}{}Bounds}
+    \subitem {R\discretionary {-}{}{}Tree\discretionary {-}{}{}::\discretionary {-}{}{}Iterator}, 
+		\hyperpage{17}
+  \item {Get\discretionary {-}{}{}Branches}
+    \subitem {R\discretionary {-}{}{}Tree}, \hyperpage{33}
+  \item {get\discretionary {-}{}{}D\discretionary {-}{}{}B\discretionary {-}{}{}Scan\discretionary {-}{}{}Num\discretionary {-}{}{}Clusters}
+    \subitem {D\discretionary {-}{}{}B\discretionary {-}{}{}Scan}, 
+		\hyperpage{11}
+  \item {Get\discretionary {-}{}{}Data}
+    \subitem {R\discretionary {-}{}{}Tree\discretionary {-}{}{}::\discretionary {-}{}{}Iterator}, 
+		\hyperpage{17}
+  \item {Get\discretionary {-}{}{}First}
+    \subitem {R\discretionary {-}{}{}Tree}, \hyperpage{33}
+  \item {get\discretionary {-}{}{}Neighbours\discretionary {-}{}{}Parallel\discretionary {-}{}{}M\discretionary {-}{}{}P\discretionary {-}{}{}B}
+    \subitem {D\discretionary {-}{}{}B\discretionary {-}{}{}Scan}, 
+		\hyperpage{11}
+  \item {Get\discretionary {-}{}{}Next}
+    \subitem {R\discretionary {-}{}{}Tree}, \hyperpage{33}
+  \item {globals.\discretionary {-}{}{}h}, \hyperpage{45}
+    \subitem {data\discretionary {-}{}{}Points}, \hyperpage{45}
+    \subitem {neighbour\discretionary {-}{}{}List\discretionary {-}{}{}Parallel}, 
+		\hyperpage{45}
+
+  \indexspace
+
+  \item {import\discretionary {-}{}{}D\discretionary {-}{}{}B\discretionary {-}{}{}Scan\discretionary {-}{}{}Instances}
+    \subitem {prototypes.\discretionary {-}{}{}h}, \hyperpage{51}
+  \item {import\discretionary {-}{}{}Dataset}
+    \subitem {prototypes.\discretionary {-}{}{}h}, \hyperpage{51}
+  \item {Init}
+    \subitem {R\discretionary {-}{}{}Tree\discretionary {-}{}{}::\discretionary {-}{}{}Iterator}, 
+		\hyperpage{18}
+  \item {Init\discretionary {-}{}{}Node}
+    \subitem {R\discretionary {-}{}{}Tree}, \hyperpage{33}
+  \item {Init\discretionary {-}{}{}Par\discretionary {-}{}{}Vars}
+    \subitem {R\discretionary {-}{}{}Tree}, \hyperpage{33}
+  \item {Init\discretionary {-}{}{}Rect}
+    \subitem {R\discretionary {-}{}{}Tree}, \hyperpage{33}
+  \item {initialize\discretionary {-}{}{}Cluster\discretionary {-}{}{}I\discretionary {-}{}{}Ds}
+    \subitem {D\discretionary {-}{}{}B\discretionary {-}{}{}Scan}, 
+		\hyperpage{11}
+  \item {initialize\discretionary {-}{}{}Visited\discretionary {-}{}{}Points}
+    \subitem {D\discretionary {-}{}{}B\discretionary {-}{}{}Scan}, 
+		\hyperpage{11}
+  \item {Insert}
+    \subitem {R\discretionary {-}{}{}Tree}, \hyperpage{33}
+  \item {Insert\discretionary {-}{}{}Rect}
+    \subitem {R\discretionary {-}{}{}Tree}, \hyperpage{33}
+  \item {Insert\discretionary {-}{}{}Rect\discretionary {-}{}{}Rec}
+    \subitem {R\discretionary {-}{}{}Tree}, \hyperpage{34}
+  \item {instance\discretionary {-}{}{}Vect}
+    \subitem {D\discretionary {-}{}{}B\discretionary {-}{}{}Scan}, 
+		\hyperpage{12}
+  \item {Is\discretionary {-}{}{}Internal\discretionary {-}{}{}Node}
+    \subitem {R\discretionary {-}{}{}Tree\discretionary {-}{}{}::\discretionary {-}{}{}Node}, 
+		\hyperpage{22}
+  \item {Is\discretionary {-}{}{}Leaf}
+    \subitem {R\discretionary {-}{}{}Tree\discretionary {-}{}{}::\discretionary {-}{}{}Node}, 
+		\hyperpage{22}
+  \item {Is\discretionary {-}{}{}Not\discretionary {-}{}{}Null}
+    \subitem {R\discretionary {-}{}{}Tree\discretionary {-}{}{}::\discretionary {-}{}{}Iterator}, 
+		\hyperpage{18}
+  \item {Is\discretionary {-}{}{}Null}
+    \subitem {R\discretionary {-}{}{}Tree}, \hyperpage{34}
+    \subitem {R\discretionary {-}{}{}Tree\discretionary {-}{}{}::\discretionary {-}{}{}Iterator}, 
+		\hyperpage{18}
+  \item {Iterator}
+    \subitem {R\discretionary {-}{}{}Tree\discretionary {-}{}{}::\discretionary {-}{}{}Iterator}, 
+		\hyperpage{16}
+
+  \indexspace
+
+  \item {job\discretionary {-}{}{}Queue}
+    \subitem {Schedule}, \hyperpage{38}
+
+  \indexspace
+
+  \item {lib\discretionary {-}{}{}V\discretionary {-}{}{}D\discretionary {-}{}{}B\discretionary {-}{}{}S\discretionary {-}{}{}C\discretionary {-}{}{}A\discretionary {-}{}{}N}
+    \subitem {c\discretionary {-}{}{}\_\discretionary {-}{}{}test\discretionary {-}{}{}\_\discretionary {-}{}{}prog.\discretionary {-}{}{}h}, 
+		\hyperpage{42}
+    \subitem {main.\discretionary {-}{}{}cpp}, \hyperpage{48}
+  \item {Load}
+    \subitem {R\discretionary {-}{}{}Tree}, \hyperpage{34}
+  \item {Load\discretionary {-}{}{}Nodes}
+    \subitem {R\discretionary {-}{}{}Tree}, \hyperpage{34}
+  \item {Load\discretionary {-}{}{}Rec}
+    \subitem {R\discretionary {-}{}{}Tree}, \hyperpage{34}
+
+  \indexspace
+
+  \item {M\-A\-X\-\_\-\-S\-T\-A\-C\-K}
+    \subitem {R\-Tree\-::\-Iterator}, \hyperpage{16}
+  \item {M\-A\-X\-N\-O\-D\-E\-S}
+    \subitem {R\-Tree}, \hyperpage{31}
+  \item {M\-I\-N\-N\-O\-D\-E\-S}
+    \subitem {R\-Tree}, \hyperpage{31}
+  \item {m\discretionary {-}{}{}\_\discretionary {-}{}{}area}
+    \subitem {R\discretionary {-}{}{}Tree\discretionary {-}{}{}::\discretionary {-}{}{}Partition\discretionary {-}{}{}Vars}, 
+		\hyperpage{24}
+  \item {m\discretionary {-}{}{}\_\discretionary {-}{}{}branch}
+    \subitem {R\discretionary {-}{}{}Tree\discretionary {-}{}{}::\discretionary {-}{}{}Node}, 
+		\hyperpage{22}
+  \item {m\discretionary {-}{}{}\_\discretionary {-}{}{}branch\discretionary {-}{}{}Buf}
+    \subitem {R\discretionary {-}{}{}Tree\discretionary {-}{}{}::\discretionary {-}{}{}Partition\discretionary {-}{}{}Vars}, 
+		\hyperpage{24}
+  \item {m\discretionary {-}{}{}\_\discretionary {-}{}{}branch\discretionary {-}{}{}Count}
+    \subitem {R\discretionary {-}{}{}Tree\discretionary {-}{}{}::\discretionary {-}{}{}Partition\discretionary {-}{}{}Vars}, 
+		\hyperpage{24}
+  \item {m\discretionary {-}{}{}\_\discretionary {-}{}{}branch\discretionary {-}{}{}Index}
+    \subitem {R\discretionary {-}{}{}Tree\discretionary {-}{}{}::\discretionary {-}{}{}Iterator\discretionary {-}{}{}::\discretionary {-}{}{}Stack\discretionary {-}{}{}Element}, 
+		\hyperpage{39}
+  \item {m\discretionary {-}{}{}\_\discretionary {-}{}{}child}
+    \subitem {R\discretionary {-}{}{}Tree\discretionary {-}{}{}::\discretionary {-}{}{}Branch}, 
+		\hyperpage{5}
+  \item {m\discretionary {-}{}{}\_\discretionary {-}{}{}count}
+    \subitem {R\discretionary {-}{}{}Tree\discretionary {-}{}{}::\discretionary {-}{}{}Node}, 
+		\hyperpage{23}
+    \subitem {R\discretionary {-}{}{}Tree\discretionary {-}{}{}::\discretionary {-}{}{}Partition\discretionary {-}{}{}Vars}, 
+		\hyperpage{24}
+  \item {m\discretionary {-}{}{}\_\discretionary {-}{}{}cover}
+    \subitem {R\discretionary {-}{}{}Tree\discretionary {-}{}{}::\discretionary {-}{}{}Partition\discretionary {-}{}{}Vars}, 
+		\hyperpage{24}
+  \item {m\discretionary {-}{}{}\_\discretionary {-}{}{}cover\discretionary {-}{}{}Split}
+    \subitem {R\discretionary {-}{}{}Tree\discretionary {-}{}{}::\discretionary {-}{}{}Partition\discretionary {-}{}{}Vars}, 
+		\hyperpage{24}
+  \item {m\discretionary {-}{}{}\_\discretionary {-}{}{}cover\discretionary {-}{}{}Split\discretionary {-}{}{}Area}
+    \subitem {R\discretionary {-}{}{}Tree\discretionary {-}{}{}::\discretionary {-}{}{}Partition\discretionary {-}{}{}Vars}, 
+		\hyperpage{24}
+  \item {m\discretionary {-}{}{}\_\discretionary {-}{}{}data}
+    \subitem {R\discretionary {-}{}{}Tree\discretionary {-}{}{}::\discretionary {-}{}{}Branch}, 
+		\hyperpage{6}
+  \item {m\discretionary {-}{}{}\_\discretionary {-}{}{}file}
+    \subitem {R\discretionary {-}{}{}T\discretionary {-}{}{}File\discretionary {-}{}{}Stream}, 
+		\hyperpage{28}
+  \item {m\discretionary {-}{}{}\_\discretionary {-}{}{}level}
+    \subitem {R\discretionary {-}{}{}Tree\discretionary {-}{}{}::\discretionary {-}{}{}Node}, 
+		\hyperpage{23}
+  \item {m\discretionary {-}{}{}\_\discretionary {-}{}{}max}
+    \subitem {R\discretionary {-}{}{}Tree\discretionary {-}{}{}::\discretionary {-}{}{}Rect}, 
+		\hyperpage{26}
+  \item {m\discretionary {-}{}{}\_\discretionary {-}{}{}min}
+    \subitem {R\discretionary {-}{}{}Tree\discretionary {-}{}{}::\discretionary {-}{}{}Rect}, 
+		\hyperpage{26}
+  \item {m\discretionary {-}{}{}\_\discretionary {-}{}{}min\discretionary {-}{}{}Fill}
+    \subitem {R\discretionary {-}{}{}Tree\discretionary {-}{}{}::\discretionary {-}{}{}Partition\discretionary {-}{}{}Vars}, 
+		\hyperpage{24}
+  \item {m\discretionary {-}{}{}\_\discretionary {-}{}{}next}
+    \subitem {R\discretionary {-}{}{}Tree\discretionary {-}{}{}::\discretionary {-}{}{}List\discretionary {-}{}{}Node}, 
+		\hyperpage{20}
+  \item {m\discretionary {-}{}{}\_\discretionary {-}{}{}node}
+    \subitem {R\discretionary {-}{}{}Tree\discretionary {-}{}{}::\discretionary {-}{}{}Iterator\discretionary {-}{}{}::\discretionary {-}{}{}Stack\discretionary {-}{}{}Element}, 
+		\hyperpage{39}
+    \subitem {R\discretionary {-}{}{}Tree\discretionary {-}{}{}::\discretionary {-}{}{}List\discretionary {-}{}{}Node}, 
+		\hyperpage{20}
+  \item {m\discretionary {-}{}{}\_\discretionary {-}{}{}partition}
+    \subitem {R\discretionary {-}{}{}Tree\discretionary {-}{}{}::\discretionary {-}{}{}Partition\discretionary {-}{}{}Vars}, 
+		\hyperpage{24}
+  \item {m\discretionary {-}{}{}\_\discretionary {-}{}{}rect}
+    \subitem {R\discretionary {-}{}{}Tree\discretionary {-}{}{}::\discretionary {-}{}{}Branch}, 
+		\hyperpage{6}
+  \item {m\discretionary {-}{}{}\_\discretionary {-}{}{}root}
+    \subitem {R\discretionary {-}{}{}Tree}, \hyperpage{36}
+  \item {m\discretionary {-}{}{}\_\discretionary {-}{}{}segment\discretionary {-}{}{}\_\discretionary {-}{}{}id}
+    \subitem {R\discretionary {-}{}{}Tree\discretionary {-}{}{}::\discretionary {-}{}{}Rect}, 
+		\hyperpage{26}
+  \item {m\discretionary {-}{}{}\_\discretionary {-}{}{}stack}
+    \subitem {R\discretionary {-}{}{}Tree\discretionary {-}{}{}::\discretionary {-}{}{}Iterator}, 
+		\hyperpage{19}
+  \item {m\discretionary {-}{}{}\_\discretionary {-}{}{}tos}
+    \subitem {R\discretionary {-}{}{}Tree\discretionary {-}{}{}::\discretionary {-}{}{}Iterator}, 
+		\hyperpage{19}
+  \item {m\discretionary {-}{}{}\_\discretionary {-}{}{}total}
+    \subitem {R\discretionary {-}{}{}Tree\discretionary {-}{}{}::\discretionary {-}{}{}Partition\discretionary {-}{}{}Vars}, 
+		\hyperpage{25}
+  \item {m\discretionary {-}{}{}\_\discretionary {-}{}{}traj\discretionary {-}{}{}\_\discretionary {-}{}{}id}
+    \subitem {R\discretionary {-}{}{}Tree\discretionary {-}{}{}::\discretionary {-}{}{}Rect}, 
+		\hyperpage{26}
+  \item {m\discretionary {-}{}{}\_\discretionary {-}{}{}unit\discretionary {-}{}{}Sphere\discretionary {-}{}{}Volume}
+    \subitem {R\discretionary {-}{}{}Tree}, \hyperpage{36}
+  \item {M\discretionary {-}{}{}B\discretionary {-}{}{}B\discretionary {-}{}{}\_\discretionary {-}{}{}max}
+    \subitem {M\discretionary {-}{}{}P\discretionary {-}{}{}B\discretionary {-}{}{}Rect}, 
+		\hyperpage{21}
+    \subitem {Query\discretionary {-}{}{}Rect}, \hyperpage{25}
+    \subitem {Rect}, \hyperpage{27}
+  \item {M\discretionary {-}{}{}B\discretionary {-}{}{}B\discretionary {-}{}{}\_\discretionary {-}{}{}min}
+    \subitem {M\discretionary {-}{}{}P\discretionary {-}{}{}B\discretionary {-}{}{}Rect}, 
+		\hyperpage{21}
+    \subitem {Query\discretionary {-}{}{}Rect}, \hyperpage{25}
+    \subitem {Rect}, \hyperpage{27}
+  \item {M\discretionary {-}{}{}P\discretionary {-}{}{}B\discretionary {-}{}{}Rect}, 
+		\hyperpage{21}
+    \subitem {Create\discretionary {-}{}{}M\discretionary {-}{}{}B\discretionary {-}{}{}B}, 
+		\hyperpage{21}
+    \subitem {M\discretionary {-}{}{}B\discretionary {-}{}{}B\discretionary {-}{}{}\_\discretionary {-}{}{}max}, 
+		\hyperpage{21}
+    \subitem {M\discretionary {-}{}{}B\discretionary {-}{}{}B\discretionary {-}{}{}\_\discretionary {-}{}{}min}, 
+		\hyperpage{21}
+    \subitem {pid}, \hyperpage{21}
+  \item {main}
+    \subitem {c\discretionary {-}{}{}\_\discretionary {-}{}{}test\discretionary {-}{}{}\_\discretionary {-}{}{}prog.\discretionary {-}{}{}cpp}, 
+		\hyperpage{41}
+  \item {main.\discretionary {-}{}{}cpp}, \hyperpage{45}
+    \subitem {bin\discretionary {-}{}{}\_\discretionary {-}{}{}x}, 
+		\hyperpage{46}
+    \subitem {bin\discretionary {-}{}{}\_\discretionary {-}{}{}y}, 
+		\hyperpage{46}
+    \subitem {bin\discretionary {-}{}{}Dataset}, \hyperpage{47}
+    \subitem {compare\discretionary {-}{}{}By\discretionary {-}{}{}Epsilon}, 
+		\hyperpage{47}
+    \subitem {compare\discretionary {-}{}{}Data\discretionary {-}{}{}Elem\discretionary {-}{}{}Struct\discretionary {-}{}{}Func}, 
+		\hyperpage{47}
+    \subitem {create\discretionary {-}{}{}Entry\discretionary {-}{}{}M\discretionary {-}{}{}B\discretionary {-}{}{}B\discretionary {-}{}{}Multiple\discretionary {-}{}{}Points}, 
+		\hyperpage{47}
+    \subitem {create\discretionary {-}{}{}Entry\discretionary {-}{}{}M\discretionary {-}{}{}B\discretionary {-}{}{}Bs}, 
+		\hyperpage{47}
+    \subitem {lib\discretionary {-}{}{}V\discretionary {-}{}{}D\discretionary {-}{}{}B\discretionary {-}{}{}S\discretionary {-}{}{}C\discretionary {-}{}{}A\discretionary {-}{}{}N}, 
+		\hyperpage{48}
+  \item {Max}
+    \subitem {R\discretionary {-}{}{}Tree.\discretionary {-}{}{}h}, 
+		\hyperpage{53}
+  \item {Min}
+    \subitem {R\discretionary {-}{}{}Tree.\discretionary {-}{}{}h}, 
+		\hyperpage{53}
+  \item {min\discretionary {-}{}{}Pts}
+    \subitem {D\discretionary {-}{}{}B\discretionary {-}{}{}Scan}, 
+		\hyperpage{13}
+  \item {minpts}
+    \subitem {experiment}, \hyperpage{14}
+
+  \indexspace
+
+  \item {N\-O\-T\-\_\-\-T\-A\-K\-E\-N}
+    \subitem {R\-Tree\-::\-Partition\-Vars}, \hyperpage{24}
+  \item {N\discretionary {-}{}{}U\discretionary {-}{}{}M\discretionary {-}{}{}M\discretionary {-}{}{}I\discretionary {-}{}{}N\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}U\discretionary {-}{}{}S\discretionary {-}{}{}E\discretionary {-}{}{}P\discretionary {-}{}{}T\discretionary {-}{}{}S}
+    \subitem {D\discretionary {-}{}{}B\discretionary {-}{}{}Scan.\discretionary {-}{}{}cpp}, 
+		\hyperpage{44}
+  \item {neighbour\discretionary {-}{}{}List}
+    \subitem {D\discretionary {-}{}{}B\discretionary {-}{}{}Scan.\discretionary {-}{}{}cpp}, 
+		\hyperpage{44}
+  \item {neighbour\discretionary {-}{}{}List\discretionary {-}{}{}Parallel}
+    \subitem {D\discretionary {-}{}{}B\discretionary {-}{}{}Scan.\discretionary {-}{}{}cpp}, 
+		\hyperpage{44}
+    \subitem {globals.\discretionary {-}{}{}h}, \hyperpage{45}
+  \item {Node\discretionary {-}{}{}Cover}
+    \subitem {R\discretionary {-}{}{}Tree}, \hyperpage{34}
+  \item {num\discretionary {-}{}{}Clusters\discretionary {-}{}{}For\discretionary {-}{}{}Stats}
+    \subitem {D\discretionary {-}{}{}B\discretionary {-}{}{}Scan}, 
+		\hyperpage{13}
+
+  \indexspace
+
+  \item {Open\discretionary {-}{}{}Read}
+    \subitem {R\discretionary {-}{}{}T\discretionary {-}{}{}File\discretionary {-}{}{}Stream}, 
+		\hyperpage{28}
+  \item {Open\discretionary {-}{}{}Write}
+    \subitem {R\discretionary {-}{}{}T\discretionary {-}{}{}File\discretionary {-}{}{}Stream}, 
+		\hyperpage{28}
+  \item {operator$\ast $}
+    \subitem {R\discretionary {-}{}{}Tree\discretionary {-}{}{}::\discretionary {-}{}{}Iterator}, 
+		\hyperpage{18}
+  \item {operator++}
+    \subitem {R\discretionary {-}{}{}Tree\discretionary {-}{}{}::\discretionary {-}{}{}Iterator}, 
+		\hyperpage{18}
+  \item {Overlap}
+    \subitem {R\discretionary {-}{}{}Tree}, \hyperpage{34}
+
+  \indexspace
+
+  \item {P1}
+    \subitem {Query\discretionary {-}{}{}Rect}, \hyperpage{25}
+    \subitem {Rect}, \hyperpage{27}
+  \item {P2}
+    \subitem {Query\discretionary {-}{}{}Rect}, \hyperpage{25}
+  \item {Pick\discretionary {-}{}{}Branch}
+    \subitem {R\discretionary {-}{}{}Tree}, \hyperpage{34}
+  \item {Pick\discretionary {-}{}{}Seeds}
+    \subitem {R\discretionary {-}{}{}Tree}, \hyperpage{34}
+  \item {pid}
+    \subitem {M\discretionary {-}{}{}P\discretionary {-}{}{}B\discretionary {-}{}{}Rect}, 
+		\hyperpage{21}
+    \subitem {Rect}, \hyperpage{27}
+  \item {Pop}
+    \subitem {R\discretionary {-}{}{}Tree\discretionary {-}{}{}::\discretionary {-}{}{}Iterator}, 
+		\hyperpage{19}
+  \item {priority\discretionary {-}{}{}List}
+    \subitem {Schedule}, \hyperpage{38}
+  \item {prototypes.\discretionary {-}{}{}h}, \hyperpage{48}
+    \subitem {bin\discretionary {-}{}{}\_\discretionary {-}{}{}x}, 
+		\hyperpage{50}
+    \subitem {bin\discretionary {-}{}{}\_\discretionary {-}{}{}y}, 
+		\hyperpage{50}
+    \subitem {bin\discretionary {-}{}{}Dataset}, \hyperpage{50}
+    \subitem {compare\discretionary {-}{}{}By\discretionary {-}{}{}Epsilon}, 
+		\hyperpage{50}
+    \subitem {compare\discretionary {-}{}{}Data\discretionary {-}{}{}Elem\discretionary {-}{}{}Struct\discretionary {-}{}{}Func}, 
+		\hyperpage{50}
+    \subitem {create\discretionary {-}{}{}Entry\discretionary {-}{}{}M\discretionary {-}{}{}B\discretionary {-}{}{}B\discretionary {-}{}{}Multiple\discretionary {-}{}{}Points}, 
+		\hyperpage{50}
+    \subitem {create\discretionary {-}{}{}Entry\discretionary {-}{}{}M\discretionary {-}{}{}B\discretionary {-}{}{}Bs}, 
+		\hyperpage{51}
+    \subitem {D\discretionary {-}{}{}B\discretionary {-}{}{}S\discretionary {-}{}{}C\discretionary {-}{}{}A\discretionary {-}{}{}Nmy\discretionary {-}{}{}Search\discretionary {-}{}{}Callback\discretionary {-}{}{}Parallel}, 
+		\hyperpage{51}
+    \subitem {import\discretionary {-}{}{}D\discretionary {-}{}{}B\discretionary {-}{}{}Scan\discretionary {-}{}{}Instances}, 
+		\hyperpage{51}
+    \subitem {import\discretionary {-}{}{}Dataset}, \hyperpage{51}
+  \item {ptr\discretionary {-}{}{}M\discretionary {-}{}{}P\discretionary {-}{}{}Blookup}
+    \subitem {D\discretionary {-}{}{}B\discretionary {-}{}{}Scan}, 
+		\hyperpage{13}
+  \item {Push}
+    \subitem {R\discretionary {-}{}{}Tree\discretionary {-}{}{}::\discretionary {-}{}{}Iterator}, 
+		\hyperpage{19}
+
+  \indexspace
+
+  \item {Query\discretionary {-}{}{}Rect}, \hyperpage{25}
+    \subitem {Create\discretionary {-}{}{}M\discretionary {-}{}{}B\discretionary {-}{}{}B}, 
+		\hyperpage{25}
+    \subitem {M\discretionary {-}{}{}B\discretionary {-}{}{}B\discretionary {-}{}{}\_\discretionary {-}{}{}max}, 
+		\hyperpage{25}
+    \subitem {M\discretionary {-}{}{}B\discretionary {-}{}{}B\discretionary {-}{}{}\_\discretionary {-}{}{}min}, 
+		\hyperpage{25}
+    \subitem {P1}, \hyperpage{25}
+    \subitem {P2}, \hyperpage{25}
+    \subitem {Query\discretionary {-}{}{}Rect}, \hyperpage{25}
+    \subitem {Query\discretionary {-}{}{}Rect}, \hyperpage{25}
+
+  \indexspace
+
+  \item {R\-Tree}
+    \subitem {M\-A\-X\-N\-O\-D\-E\-S}, \hyperpage{31}
+    \subitem {M\-I\-N\-N\-O\-D\-E\-S}, \hyperpage{31}
+  \item {R\-Tree\-::\-Iterator}
+    \subitem {M\-A\-X\-\_\-\-S\-T\-A\-C\-K}, \hyperpage{16}
+  \item {R\-Tree\-::\-Partition\-Vars}
+    \subitem {N\-O\-T\-\_\-\-T\-A\-K\-E\-N}, \hyperpage{24}
+  \item {R\discretionary {-}{}{}T\discretionary {-}{}{}File\discretionary {-}{}{}Stream}, 
+		\hyperpage{27}
+    \subitem {$\sim $\discretionary {-}{}{}R\discretionary {-}{}{}T\discretionary {-}{}{}File\discretionary {-}{}{}Stream}, 
+		\hyperpage{28}
+    \subitem {Close}, \hyperpage{28}
+    \subitem {m\discretionary {-}{}{}\_\discretionary {-}{}{}file}, 
+		\hyperpage{28}
+    \subitem {Open\discretionary {-}{}{}Read}, \hyperpage{28}
+    \subitem {Open\discretionary {-}{}{}Write}, \hyperpage{28}
+    \subitem {R\discretionary {-}{}{}T\discretionary {-}{}{}File\discretionary {-}{}{}Stream}, 
+		\hyperpage{28}
+    \subitem {Read}, \hyperpage{28}
+    \subitem {Read\discretionary {-}{}{}Array}, \hyperpage{28}
+    \subitem {R\discretionary {-}{}{}T\discretionary {-}{}{}File\discretionary {-}{}{}Stream}, 
+		\hyperpage{28}
+    \subitem {Write}, \hyperpage{28}
+    \subitem {Write\discretionary {-}{}{}Array}, \hyperpage{28}
+  \item {R\discretionary {-}{}{}T\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Q\discretionary {-}{}{}U\discretionary {-}{}{}A\discretionary {-}{}{}L}
+    \subitem {R\discretionary {-}{}{}Tree.\discretionary {-}{}{}h}, 
+		\hyperpage{53}
+  \item {R\discretionary {-}{}{}T\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}T\discretionary {-}{}{}E\discretionary {-}{}{}M\discretionary {-}{}{}P\discretionary {-}{}{}L\discretionary {-}{}{}A\discretionary {-}{}{}T\discretionary {-}{}{}E}
+    \subitem {R\discretionary {-}{}{}Tree.\discretionary {-}{}{}h}, 
+		\hyperpage{53}
+  \item {R\discretionary {-}{}{}Tree}
+    \subitem {$\sim $\discretionary {-}{}{}R\discretionary {-}{}{}Tree}, 
+		\hyperpage{32}
+    \subitem {Add\discretionary {-}{}{}Branch}, \hyperpage{32}
+    \subitem {Alloc\discretionary {-}{}{}List\discretionary {-}{}{}Node}, 
+		\hyperpage{32}
+    \subitem {Alloc\discretionary {-}{}{}Node}, \hyperpage{32}
+    \subitem {Calc\discretionary {-}{}{}Rect\discretionary {-}{}{}Volume}, 
+		\hyperpage{32}
+    \subitem {Choose\discretionary {-}{}{}Partition}, \hyperpage{32}
+    \subitem {Classify}, \hyperpage{32}
+    \subitem {Combine\discretionary {-}{}{}Rect}, \hyperpage{32}
+    \subitem {Count}, \hyperpage{32}
+    \subitem {Count\discretionary {-}{}{}Rec}, \hyperpage{32}
+    \subitem {Disconnect\discretionary {-}{}{}Branch}, \hyperpage{32}
+    \subitem {Free\discretionary {-}{}{}List\discretionary {-}{}{}Node}, 
+		\hyperpage{32}
+    \subitem {Free\discretionary {-}{}{}Node}, \hyperpage{32}
+    \subitem {Get\discretionary {-}{}{}At}, \hyperpage{33}
+    \subitem {Get\discretionary {-}{}{}Branches}, \hyperpage{33}
+    \subitem {Get\discretionary {-}{}{}First}, \hyperpage{33}
+    \subitem {Get\discretionary {-}{}{}Next}, \hyperpage{33}
+    \subitem {Init\discretionary {-}{}{}Node}, \hyperpage{33}
+    \subitem {Init\discretionary {-}{}{}Par\discretionary {-}{}{}Vars}, 
+		\hyperpage{33}
+    \subitem {Init\discretionary {-}{}{}Rect}, \hyperpage{33}
+    \subitem {Insert}, \hyperpage{33}
+    \subitem {Insert\discretionary {-}{}{}Rect}, \hyperpage{33}
+    \subitem {Insert\discretionary {-}{}{}Rect\discretionary {-}{}{}Rec}, 
+		\hyperpage{34}
+    \subitem {Is\discretionary {-}{}{}Null}, \hyperpage{34}
+    \subitem {Load}, \hyperpage{34}
+    \subitem {Load\discretionary {-}{}{}Nodes}, \hyperpage{34}
+    \subitem {Load\discretionary {-}{}{}Rec}, \hyperpage{34}
+    \subitem {m\discretionary {-}{}{}\_\discretionary {-}{}{}root}, 
+		\hyperpage{36}
+    \subitem {m\discretionary {-}{}{}\_\discretionary {-}{}{}unit\discretionary {-}{}{}Sphere\discretionary {-}{}{}Volume}, 
+		\hyperpage{36}
+    \subitem {Node\discretionary {-}{}{}Cover}, \hyperpage{34}
+    \subitem {Overlap}, \hyperpage{34}
+    \subitem {Pick\discretionary {-}{}{}Branch}, \hyperpage{34}
+    \subitem {Pick\discretionary {-}{}{}Seeds}, \hyperpage{34}
+    \subitem {R\discretionary {-}{}{}Tree}, \hyperpage{31}
+    \subitem {Re\discretionary {-}{}{}Insert}, \hyperpage{35}
+    \subitem {Rect\discretionary {-}{}{}Spherical\discretionary {-}{}{}Volume}, 
+		\hyperpage{34}
+    \subitem {Rect\discretionary {-}{}{}Volume}, \hyperpage{35}
+    \subitem {Remove}, \hyperpage{35}
+    \subitem {Remove\discretionary {-}{}{}All}, \hyperpage{35}
+    \subitem {Remove\discretionary {-}{}{}All\discretionary {-}{}{}Rec}, 
+		\hyperpage{35}
+    \subitem {Remove\discretionary {-}{}{}Rect}, \hyperpage{35}
+    \subitem {Remove\discretionary {-}{}{}Rect\discretionary {-}{}{}Rec}, 
+		\hyperpage{35}
+    \subitem {Reset}, \hyperpage{35}
+    \subitem {R\discretionary {-}{}{}Tree}, \hyperpage{31}
+    \subitem {R\discretionary {-}{}{}Tree\discretionary {-}{}{}::\discretionary {-}{}{}Iterator}, 
+		\hyperpage{19}
+    \subitem {Save}, \hyperpage{35}
+    \subitem {Save\discretionary {-}{}{}Rec}, \hyperpage{36}
+    \subitem {Search}, \hyperpage{36}
+    \subitem {Split\discretionary {-}{}{}Node}, \hyperpage{36}
+    \subitem {t\discretionary {-}{}{}\_\discretionary {-}{}{}result\discretionary {-}{}{}Callback}, 
+		\hyperpage{31}
+  \item {R\discretionary {-}{}{}Tree.\discretionary {-}{}{}h}, 
+		\hyperpage{51}
+    \subitem {A\discretionary {-}{}{}S\discretionary {-}{}{}S\discretionary {-}{}{}E\discretionary {-}{}{}R\discretionary {-}{}{}T}, 
+		\hyperpage{53}
+    \subitem {Max}, \hyperpage{53}
+    \subitem {Min}, \hyperpage{53}
+    \subitem {R\discretionary {-}{}{}T\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Q\discretionary {-}{}{}U\discretionary {-}{}{}A\discretionary {-}{}{}L}, 
+		\hyperpage{53}
+    \subitem {R\discretionary {-}{}{}T\discretionary {-}{}{}R\discretionary {-}{}{}E\discretionary {-}{}{}E\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}T\discretionary {-}{}{}E\discretionary {-}{}{}M\discretionary {-}{}{}P\discretionary {-}{}{}L\discretionary {-}{}{}A\discretionary {-}{}{}T\discretionary {-}{}{}E}, 
+		\hyperpage{53}
+  \item {R\discretionary {-}{}{}Tree\discretionary {-}{}{}::\discretionary {-}{}{}Branch}
+    \subitem {m\discretionary {-}{}{}\_\discretionary {-}{}{}child}, 
+		\hyperpage{5}
+    \subitem {m\discretionary {-}{}{}\_\discretionary {-}{}{}data}, 
+		\hyperpage{6}
+    \subitem {m\discretionary {-}{}{}\_\discretionary {-}{}{}rect}, 
+		\hyperpage{6}
+  \item {R\discretionary {-}{}{}Tree\discretionary {-}{}{}::\discretionary {-}{}{}Iterator}
+    \subitem {$\sim $\discretionary {-}{}{}Iterator}, \hyperpage{16}
+    \subitem {Find\discretionary {-}{}{}Next\discretionary {-}{}{}Data}, 
+		\hyperpage{16}
+    \subitem {Get\discretionary {-}{}{}Bounds}, \hyperpage{17}
+    \subitem {Get\discretionary {-}{}{}Data}, \hyperpage{17}
+    \subitem {Init}, \hyperpage{18}
+    \subitem {Is\discretionary {-}{}{}Not\discretionary {-}{}{}Null}, 
+		\hyperpage{18}
+    \subitem {Is\discretionary {-}{}{}Null}, \hyperpage{18}
+    \subitem {Iterator}, \hyperpage{16}
+    \subitem {m\discretionary {-}{}{}\_\discretionary {-}{}{}stack}, 
+		\hyperpage{19}
+    \subitem {m\discretionary {-}{}{}\_\discretionary {-}{}{}tos}, 
+		\hyperpage{19}
+    \subitem {operator$\ast $}, \hyperpage{18}
+    \subitem {operator++}, \hyperpage{18}
+    \subitem {Pop}, \hyperpage{19}
+    \subitem {Push}, \hyperpage{19}
+    \subitem {R\discretionary {-}{}{}Tree}, \hyperpage{19}
+  \item {R\discretionary {-}{}{}Tree\discretionary {-}{}{}::\discretionary {-}{}{}Iterator\discretionary {-}{}{}::\discretionary {-}{}{}Stack\discretionary {-}{}{}Element}
+    \subitem {m\discretionary {-}{}{}\_\discretionary {-}{}{}branch\discretionary {-}{}{}Index}, 
+		\hyperpage{39}
+    \subitem {m\discretionary {-}{}{}\_\discretionary {-}{}{}node}, 
+		\hyperpage{39}
+  \item {R\discretionary {-}{}{}Tree\discretionary {-}{}{}::\discretionary {-}{}{}List\discretionary {-}{}{}Node}
+    \subitem {m\discretionary {-}{}{}\_\discretionary {-}{}{}next}, 
+		\hyperpage{20}
+    \subitem {m\discretionary {-}{}{}\_\discretionary {-}{}{}node}, 
+		\hyperpage{20}
+  \item {R\discretionary {-}{}{}Tree\discretionary {-}{}{}::\discretionary {-}{}{}Node}
+    \subitem {Is\discretionary {-}{}{}Internal\discretionary {-}{}{}Node}, 
+		\hyperpage{22}
+    \subitem {Is\discretionary {-}{}{}Leaf}, \hyperpage{22}
+    \subitem {m\discretionary {-}{}{}\_\discretionary {-}{}{}branch}, 
+		\hyperpage{22}
+    \subitem {m\discretionary {-}{}{}\_\discretionary {-}{}{}count}, 
+		\hyperpage{23}
+    \subitem {m\discretionary {-}{}{}\_\discretionary {-}{}{}level}, 
+		\hyperpage{23}
+  \item {R\discretionary {-}{}{}Tree\discretionary {-}{}{}::\discretionary {-}{}{}Partition\discretionary {-}{}{}Vars}
+    \subitem {m\discretionary {-}{}{}\_\discretionary {-}{}{}area}, 
+		\hyperpage{24}
+    \subitem {m\discretionary {-}{}{}\_\discretionary {-}{}{}branch\discretionary {-}{}{}Buf}, 
+		\hyperpage{24}
+    \subitem {m\discretionary {-}{}{}\_\discretionary {-}{}{}branch\discretionary {-}{}{}Count}, 
+		\hyperpage{24}
+    \subitem {m\discretionary {-}{}{}\_\discretionary {-}{}{}count}, 
+		\hyperpage{24}
+    \subitem {m\discretionary {-}{}{}\_\discretionary {-}{}{}cover}, 
+		\hyperpage{24}
+    \subitem {m\discretionary {-}{}{}\_\discretionary {-}{}{}cover\discretionary {-}{}{}Split}, 
+		\hyperpage{24}
+    \subitem {m\discretionary {-}{}{}\_\discretionary {-}{}{}cover\discretionary {-}{}{}Split\discretionary {-}{}{}Area}, 
+		\hyperpage{24}
+    \subitem {m\discretionary {-}{}{}\_\discretionary {-}{}{}min\discretionary {-}{}{}Fill}, 
+		\hyperpage{24}
+    \subitem {m\discretionary {-}{}{}\_\discretionary {-}{}{}partition}, 
+		\hyperpage{24}
+    \subitem {m\discretionary {-}{}{}\_\discretionary {-}{}{}total}, 
+		\hyperpage{25}
+  \item {R\discretionary {-}{}{}Tree\discretionary {-}{}{}::\discretionary {-}{}{}Rect}
+    \subitem {m\discretionary {-}{}{}\_\discretionary {-}{}{}max}, 
+		\hyperpage{26}
+    \subitem {m\discretionary {-}{}{}\_\discretionary {-}{}{}min}, 
+		\hyperpage{26}
+    \subitem {m\discretionary {-}{}{}\_\discretionary {-}{}{}segment\discretionary {-}{}{}\_\discretionary {-}{}{}id}, 
+		\hyperpage{26}
+    \subitem {m\discretionary {-}{}{}\_\discretionary {-}{}{}traj\discretionary {-}{}{}\_\discretionary {-}{}{}id}, 
+		\hyperpage{26}
+  \item {Re\discretionary {-}{}{}Insert}
+    \subitem {R\discretionary {-}{}{}Tree}, \hyperpage{35}
+  \item {Read}
+    \subitem {R\discretionary {-}{}{}T\discretionary {-}{}{}File\discretionary {-}{}{}Stream}, 
+		\hyperpage{28}
+  \item {Read\discretionary {-}{}{}Array}
+    \subitem {R\discretionary {-}{}{}T\discretionary {-}{}{}File\discretionary {-}{}{}Stream}, 
+		\hyperpage{28}
+  \item {Rect}, \hyperpage{27}
+    \subitem {Create\discretionary {-}{}{}M\discretionary {-}{}{}B\discretionary {-}{}{}B}, 
+		\hyperpage{27}
+    \subitem {M\discretionary {-}{}{}B\discretionary {-}{}{}B\discretionary {-}{}{}\_\discretionary {-}{}{}max}, 
+		\hyperpage{27}
+    \subitem {M\discretionary {-}{}{}B\discretionary {-}{}{}B\discretionary {-}{}{}\_\discretionary {-}{}{}min}, 
+		\hyperpage{27}
+    \subitem {P1}, \hyperpage{27}
+    \subitem {pid}, \hyperpage{27}
+    \subitem {Rect}, \hyperpage{27}
+  \item {Rect\discretionary {-}{}{}Spherical\discretionary {-}{}{}Volume}
+    \subitem {R\discretionary {-}{}{}Tree}, \hyperpage{34}
+  \item {Rect\discretionary {-}{}{}Volume}
+    \subitem {R\discretionary {-}{}{}Tree}, \hyperpage{35}
+  \item {Remove}
+    \subitem {R\discretionary {-}{}{}Tree}, \hyperpage{35}
+  \item {Remove\discretionary {-}{}{}All}
+    \subitem {R\discretionary {-}{}{}Tree}, \hyperpage{35}
+  \item {Remove\discretionary {-}{}{}All\discretionary {-}{}{}Rec}
+    \subitem {R\discretionary {-}{}{}Tree}, \hyperpage{35}
+  \item {Remove\discretionary {-}{}{}Rect}
+    \subitem {R\discretionary {-}{}{}Tree}, \hyperpage{35}
+  \item {Remove\discretionary {-}{}{}Rect\discretionary {-}{}{}Rec}
+    \subitem {R\discretionary {-}{}{}Tree}, \hyperpage{35}
+  \item {Reset}
+    \subitem {R\discretionary {-}{}{}Tree}, \hyperpage{35}
+
+  \indexspace
+
+  \item {Save}
+    \subitem {R\discretionary {-}{}{}Tree}, \hyperpage{35}
+  \item {Save\discretionary {-}{}{}Rec}
+    \subitem {R\discretionary {-}{}{}Tree}, \hyperpage{36}
+  \item {sched\discretionary {-}{}{}Greedy}
+    \subitem {Schedule}, \hyperpage{38}
+  \item {sched\discretionary {-}{}{}Info}, \hyperpage{37}
+    \subitem {cluster\discretionary {-}{}{}Scratch}, \hyperpage{37}
+    \subitem {status}, \hyperpage{37}
+  \item {Schedule}, \hyperpage{37}
+    \subitem {cluster\discretionary {-}{}{}Scratch\discretionary {-}{}{}List}, 
+		\hyperpage{38}
+    \subitem {determine\discretionary {-}{}{}Reuse}, \hyperpage{38}
+    \subitem {exp\discretionary {-}{}{}Ptr}, \hyperpage{38}
+    \subitem {finished\discretionary {-}{}{}List}, \hyperpage{38}
+    \subitem {job\discretionary {-}{}{}Queue}, \hyperpage{38}
+    \subitem {priority\discretionary {-}{}{}List}, \hyperpage{38}
+    \subitem {sched\discretionary {-}{}{}Greedy}, \hyperpage{38}
+    \subitem {Schedule}, \hyperpage{38}
+  \item {schedule.\discretionary {-}{}{}cpp}, \hyperpage{53}
+  \item {schedule.\discretionary {-}{}{}h}, \hyperpage{54}
+  \item {schedule\discretionary {-}{}{}Selector}
+    \subitem {D\discretionary {-}{}{}B\discretionary {-}{}{}Scan}, 
+		\hyperpage{11}
+  \item {Search}
+    \subitem {R\discretionary {-}{}{}Tree}, \hyperpage{36}
+  \item {set\discretionary {-}{}{}Cluster\discretionary {-}{}{}Schedule\discretionary {-}{}{}Density}
+    \subitem {D\discretionary {-}{}{}B\discretionary {-}{}{}Scan}, 
+		\hyperpage{12}
+  \item {set\discretionary {-}{}{}I\discretionary {-}{}{}Ds\discretionary {-}{}{}In\discretionary {-}{}{}Dist}
+    \subitem {D\discretionary {-}{}{}B\discretionary {-}{}{}Scan}, 
+		\hyperpage{13}
+  \item {Split\discretionary {-}{}{}Node}
+    \subitem {R\discretionary {-}{}{}Tree}, \hyperpage{36}
+  \item {status}
+    \subitem {sched\discretionary {-}{}{}Info}, \hyperpage{37}
+  \item {structs.\discretionary {-}{}{}h}, \hyperpage{55}
+
+  \indexspace
+
+  \item {t\discretionary {-}{}{}\_\discretionary {-}{}{}result\discretionary {-}{}{}Callback}
+    \subitem {R\discretionary {-}{}{}Tree}, \hyperpage{31}
+  \item {tree}
+    \subitem {D\discretionary {-}{}{}B\discretionary {-}{}{}Scan}, 
+		\hyperpage{13}
+  \item {tree\discretionary {-}{}{}\_\discretionary {-}{}{}functions.\discretionary {-}{}{}cpp}, 
+		\hyperpage{56}
+    \subitem {D\discretionary {-}{}{}B\discretionary {-}{}{}S\discretionary {-}{}{}C\discretionary {-}{}{}A\discretionary {-}{}{}Nmy\discretionary {-}{}{}Search\discretionary {-}{}{}Callback\discretionary {-}{}{}Parallel}, 
+		\hyperpage{57}
+  \item {tree\discretionary {-}{}{}High\discretionary {-}{}{}Resolution}
+    \subitem {D\discretionary {-}{}{}B\discretionary {-}{}{}Scan}, 
+		\hyperpage{13}
+
+  \indexspace
+
+  \item {variant\discretionary {-}{}{}I\discretionary {-}{}{}D}
+    \subitem {experiment}, \hyperpage{14}
+  \item {visited}
+    \subitem {D\discretionary {-}{}{}B\discretionary {-}{}{}Scan}, 
+		\hyperpage{13}
+
+  \indexspace
+
+  \item {Write}
+    \subitem {R\discretionary {-}{}{}T\discretionary {-}{}{}File\discretionary {-}{}{}Stream}, 
+		\hyperpage{28}
+  \item {Write\discretionary {-}{}{}Array}
+    \subitem {R\discretionary {-}{}{}T\discretionary {-}{}{}File\discretionary {-}{}{}Stream}, 
+		\hyperpage{28}
+
+  \indexspace
+
+  \item {x}
+    \subitem {data\discretionary {-}{}{}Elem}, \hyperpage{6}
+
+  \indexspace
+
+  \item {y}
+    \subitem {data\discretionary {-}{}{}Elem}, \hyperpage{6}
+
+\end{theindex}
