@@ -22,7 +22,8 @@ libpath = /usr/local/lib/
 
 
 OBJECTS =  main.o tree_functions.o DBScan.o schedule.o
-CC = g++
+CC = gcc-5
+CXX= g++-5
 CXXFLAGS = -O3 $(SEARCHTHREADS)	
 
 
