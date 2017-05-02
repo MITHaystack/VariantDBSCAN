@@ -49,7 +49,7 @@ def VariantDBSCAN(eps_array,mp_array, x_array, y_array, mbbsize = 70, verbose=Fa
     lib_path = '/usr/local/lib/' 
     
     # Load variant dbscan shared library
-    libvdbscan = npct.load_library('libSharedVDBSCAN', lib_path)
+    libvdbscan = npct.load_library('libSharedVDBSCAN.so', lib_path)
 
     # Create variables that define C interface
     array_1d_double = npct.ndpointer(dtype=c_double, ndim=1, flags='CONTIGUOUS')
