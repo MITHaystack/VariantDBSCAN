@@ -3,9 +3,7 @@
 #
 # Author: Cody Rude and Michael Gowanlock
 # This software is part of the NSF DIBBS Project "An Infrastructure for
-# Computer Aided Discovery in Geoscience" (PI: V. Pankratius) and 
-# NASA AIST Project "Computer-Aided Discovery of Earth Surface 
-# Deformation Phenomena" (PI: V. Pankratius)
+# Computer Aided Discovery in Geoscience" (PI: V. Pankratius)
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -23,7 +21,6 @@
 # LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
-
 
 import numpy as np
 import numpy.ctypeslib as npct
@@ -52,7 +49,7 @@ def VariantDBSCAN(eps_array,mp_array, x_array, y_array, mbbsize = 70, verbose=Fa
     lib_path = '/usr/local/lib/' 
     
     # Load variant dbscan shared library
-    libvdbscan = npct.load_library('libSharedVDBSCAN', lib_path)
+    libvdbscan = npct.load_library('libSharedVDBSCAN.so', lib_path)
 
     # Create variables that define C interface
     array_1d_double = npct.ndpointer(dtype=c_double, ndim=1, flags='CONTIGUOUS')
@@ -79,9 +76,9 @@ def VariantDBSCAN(eps_array,mp_array, x_array, y_array, mbbsize = 70, verbose=Fa
         ret_array = in_array
         
         if not isinstance(in_array, np.ndarray):
-            ret_array = np.array(in_array)
+            ret_array = np.array(in_array, dtype=new_dtype)
         
-        if in_array.dtype != new_dtype:
+        elif in_array.dtype != new_dtype:
             ret_array = np.array(ret_array, dtype=new_dtype)
 
         if ret_array.flags['C_CONTIGUOUS'] == False:
