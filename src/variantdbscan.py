@@ -2,8 +2,8 @@
 # Copyright (c) 2017 Massachusetts Institute of Technology
 #
 # Author: Cody Rude and Michael Gowanlock
-# This software is part of the NSF DIBBS Project "An Infrastructure for
-# Computer Aided Discovery in Geoscience" (PI: V. Pankratius)
+# This software has been created in projects supported by the US National
+# Science Foundation and NASA (PI: Pankratius, NSF ACI-1442997, NASA AIST-NNX15AG84G)
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal

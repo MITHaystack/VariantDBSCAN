@@ -3,7 +3,7 @@
 
 //Authors: Mike Gowanlock
 //This software has been created in projects supported by the US National
-//Science Foundation and NASA (PI: Pankratius)
+//Science Foundation and NASA (PI: Pankratius, NSF ACI-1442997, NASA AIST-NNX15AG84G)
 
 
 //Permission is hereby granted, free of charge, to any person obtaining a copy
