@@ -1,0 +1,1 @@
+To build package, copy src directory located in the root of the repository into this folder
