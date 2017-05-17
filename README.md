@@ -11,7 +11,7 @@ Relevant papers:
 * Gowanlock, M., Blair, D. M., Pankratius, V. Optimizing Parallel Clustering Throughput in Shared Memory. IEEE Transactions on Parallel and Distributed Systems doi:10.1109/TPDS.2017.2675421 
 [[preprint]](http://www.mit.edu/~gowanloc/publications/preprints/Gowanlock2017TPDS_VDBSCAN.pdf)
 
-![alt text][https://github.com/MITHaystack/VariantDBSCAN/VDBSCAN.png]
+![alt text](https://github.com/MITHaystack/VariantDBSCAN/VDBSCAN.png)
 
 
 Acknowledgements: This software has been created in projects supported by the US National Science Foundation and NASA.
