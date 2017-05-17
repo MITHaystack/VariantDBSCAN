@@ -33,6 +33,7 @@ packages = ['vdbscan']
 author = 'MITHAGI'
 install_requires = ['numpy',
                     'setuptools',]
+url = 'https://github.com/MITHaystack/VariantDBSCAN'
 
 classifiers=[
     'Topic :: Scientific/Engineering',
@@ -76,5 +77,6 @@ setup(name = name,
       ext_modules = [module1],          
       package_data={'vdbscan': ['examples/test_dataset.csv','examples/variant_example.py', 'examples/vtest.py']},
       zip_safe = False,
+      url=url,
 )
 
