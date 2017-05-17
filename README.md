@@ -13,7 +13,7 @@ Relevant papers:
 
 ![alt text](https://github.com/MITHaystack/VariantDBSCAN/blob/master/img/VDBSCAN.png)
 
-Figure: Relative performance gains utilizing all of the optimizations over the sequential implementation on space weather TEC datasets in [2]. Values over the black line indicate a performance improvement. The red line indicates the performance gain from index optimizations only. See the papers above.    
+Figure: Relative performance gains utilizing all of the optimizations over the sequential implementation on a space weather TEC dataset in [1, 2]. Values over the black line indicate a performance improvement. The red line indicates the performance gain from index optimizations only. See the papers above.    
 
 
 Acknowledgments: This software has been created in projects supported by the US National Science Foundation and NASA.
